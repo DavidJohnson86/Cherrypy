@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+	<STYLE type="text/css">
+    <link href="../public/css/style.css" rel="stylesheet">
+	</STYLE>
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+
+        $("#submit").click(function(e) {
+          $.post("/generator", {"name": $("input[name='email']").val(),
+								"pw": $("input[name='psw']").val()})								
+         .done(function(string) {
+			alert(string)
+            if(string=="VERIFIED"){
+				window.location.href = "logined";
+			};
+          });
+       
+        });
+
+        $("#replace-string").click(function(e) {
+          $.ajax({
+            type: "PUT",
+            url: "/generator",
+            data: {"another_string": $("#the-string input").val()}
+          })
+          .done(function() {
+            alert("Replaced!");
+          });
+          e.preventDefault();
+        });
+
+        $("#delete-string").click(function(e) {
+          $.ajax({
+            type: "DELETE",
+            url: "/generator"
+          })
+          .done(function() {
+            $("#the-string").hide();
+          });
+          e.preventDefault();
+        });
+
+      });
+    </script>
+  </head>
+  <body>
+	<div class="container">
+    <h1>Register</h1>
+	<link href="../public/css/style.css" rel="stylesheet">
+	<p>Please fill in this form to create an account.</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+    <button id="submit" name="register" class="registerbtn">Register</button>
+	</div>
+
+  </body>
+</html>
