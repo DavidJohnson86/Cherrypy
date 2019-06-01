@@ -1,25 +1,9 @@
-import os.path
+"""Login Page Example"""
 import cherrypy
-
-conf = {
-        '/': {
-            'tools.sessions.on': True,
-            'tools.staticdir.root': os.path.abspath(os.getcwd())},
-
-        '/logined': {
-                'tools.sessions.on': True,
-                'tools.staticdir.root': os.path.abspath(os.getcwd())},
-
-        '/generator': {
-            'request.dispatch': cherrypy.dispatch.MethodDispatcher(),
-            'tools.response_headers.on': True,
-            'tools.response_headers.headers': [('Content-Type', 'text/plain')],
-        },
-        '/public': {
-            'tools.staticdir.on': True,
-            'tools.staticdir.dir': './public'
-        }
-    }
+import os.path
+import requests
+from cherrypy import dispatch
+from time import time
 
 
 class LoginPage:
@@ -47,7 +31,9 @@ class LoginWebService(object):
 
     @cherrypy.tools.accept(media='text/plain')
     def GET(self):
-        return cherrypy.session['mystring']
+        cherrypy.session['ts'] = time()
+        cherrypy.log("hello")
+        cherrypy.log(cherrypy.session['ts'])
 
     def POST(self, **kwargs):
         name = kwargs['name']
@@ -68,8 +54,33 @@ class LoginWebService(object):
         cherrypy.session.pop('mystring', None)
 
 
+cherrpy_run_conf = {
+
+        '/': {
+            'tools.sessions.on': True,
+            'tools.staticdir.root': os.path.abspath(os.getcwd()),
+            'tools.proxy.on': True,
+            'tools.response_headers.on': True,
+            },
+
+        '/logined': {
+                'tools.sessions.on': True,
+                'tools.staticdir.root': os.path.abspath(os.getcwd())},
+
+        '/generator': {
+            'request.dispatch': dispatch.MethodDispatcher(),
+            'tools.response_headers.on': True,
+            'tools.response_headers.headers': [('Content-Type', 'text/plain')],
+        },
+        '/public': {
+            'tools.staticdir.on': True,
+            'tools.staticdir.dir': './public',
+
+        }
+    }
+
 if __name__ == '__main__':
     webapp = LoginPage()
     webapp.logined = VerifiedPage()
     webapp.generator = LoginWebService()
-    cherrypy.quickstart(webapp, '/', conf)
+    cherrypy.quickstart(webapp, '/', cherrpy_run_conf)
