@@ -4,6 +4,7 @@ import os.path
 import requests
 from cherrypy import dispatch
 from time import time
+import database.database_handler as db
 
 
 class LoginPage:
@@ -27,31 +28,30 @@ class VerifiedPage:
 class LoginWebService(object):
 
     def __init__(self):
-        self._database = {'name': 'admin', 'pw': 'admin'}
-
+        pass
     @cherrypy.tools.accept(media='text/plain')
     def GET(self):
         cherrypy.session['ts'] = time()
-        cherrypy.log("hello")
         cherrypy.log(cherrypy.session['ts'])
 
     def POST(self, **kwargs):
         name = kwargs['name']
         pw = kwargs['pw']
-        if name not in self._database.values():
+        validate = db.SqLiteHandler().sql_query("user_credentials", name, "name,pw")
+        if name != validate[0][0]:
             return "INV_USER"
         else:
-            if self._database['pw'] == pw:
+            if validate[0][1] == pw:
                 cherrypy.session['authorized'] = True
                 return "VERIFIED"
             else:
                 return "WRONG PASSWORD"
 
     def PUT(self, another_string):
-        cherrypy.session['mystring'] = another_string
+        cherrypy.session['authorized'] = another_string
 
     def DELETE(self):
-        cherrypy.session.pop('mystring', None)
+        cherrypy.session.pop('authorized', None)
 
 
 cherrpy_run_conf = {

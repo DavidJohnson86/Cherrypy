@@ -24,6 +24,11 @@
           });
        
         });
+		$("#regiteruser").click(function(e){
+			aler("works");
+		
+		});
+		
 
         $("#replace-string").click(function(e) {
           $.ajax({
@@ -62,7 +67,7 @@
     <input type="text" placeholder="Enter Email" name="email" required size="4">
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
-    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+    <p id=regiteruser>Don't have an account please register <a href="regiteruser">Register</a>.</p>
     <button id="submit" name="l" class="registerbtn">Login</button>
 	<hr>
 		<font id ="invalid" color="red" size="5"<b>Invalid User. Please register</b></font>
