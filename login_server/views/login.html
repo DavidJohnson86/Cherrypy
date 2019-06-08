@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+	<STYLE type="text/css">
+    <link href="../public/css/style.css" rel="stylesheet">
+	</STYLE>
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(e) {
+		$("#invalid").hide();
+		$("#badpw").hide();
+		$("#invalid").hide();
+		$("#invalid_mail").hide();
+        $("#submit").click(function(e) {
+		$("#invalid").hide();
+		$("#invalid_mail").hide();
+		$("#badpw").hide();
+          $.post("/POST", {"name": $("input[name='email']").val(),
+								"pw": $("input[name='psw']").val()})								
+         .done(function(string) {
+			if(string=="VERIFIED"){
+				window.location.href = '/verified';}
+			else if (string=="INV_MAIL"){
+				$("#invalid_mail").show(1500);}
+			else if (string=="INV_USER"){
+				$("#invalid").show(1500);}
+			else if (string == "WRONG PASSWORD"){
+				$("#badpw").show(1500);}
+          });
+       
+        });
+		$("#regiteruser").click(function(e){
+			aler("works");
+		
+		});
+		
+
+        $("#replace-string").click(function(e) {
+          $.ajax({
+            type: "PUT",
+            url: "/generator",
+            data: {"another_string": $("#the-string input").val()}
+          })
+          .done(function() {
+            alert("Replaced!");
+          });
+          e.preventDefault();
+        });
+
+        $("#delete-string").click(function(e) {
+          $.ajax({
+            type: "DELETE",
+            url: "/generator"
+          })
+          .done(function() {
+            $("#the-string").hide();
+          });
+          e.preventDefault();
+        });
+
+      });
+    </script>
+  </head>
+  <body>
+	<div class="container">
+    <h1>{{Title}}</h1>
+	<link href="../public/css/style.css" rel="stylesheet">
+	<p>{{Hint}}</p>
+    <hr>
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required size="4">
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <p id=regiteruser>{{Guide}}<a href={{Href_Link}}>{{Href_Text}}.</a></p>
+    <button id="submit" name="l" class="registerbtn">{{ActionBtn}}</button>
+	<hr>
+		<font id ="invalid" color="red" size="5"<b>Invalid User. Please register</b></font>
+        <font id ="invalid_mail" color="red" size="5"<b>Invalid email adress</b></font>
+		<font id ="badpw" color="red" size="5"<b>Bad password. Please try again</b></font>
+	</hr>
+	</div>
+	</body>
+</html>
