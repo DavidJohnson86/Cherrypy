@@ -20,6 +20,7 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
+
 body {
   background: #ffffff; }
   body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -656,6 +657,51 @@ table tfoot {
   border-top-color: rgba(0, 0, 0, 0.25); }
 table.alt tbody tr td {
   border-color: rgba(0, 0, 0, 0.25); }
+
+/*Adeed by me navigation bar*/  
+.topnav {
+  overflow: hidden;
+  background-color: #edebe1;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  /*background-color: gray;*/
+  color: black;
+}
+
+/*Added by me wrapper header*/
+div#wrapperHeader {
+ width:100%;
+ height;200px; /* height of the background image? */
+ background:url(../images/lights.jpg) repeat-x 0 0;
+ text-align:center;
+}
+
+div#wrapperHeader div#header {
+ width:1000px;
+ height:200px;
+ margin:0 auto;
+}
+
+div#wrapperHeader div#header img {
+ width: 1000px; 
+ height:10px; 
+ margin:0 auto;
+}
 
 /* Highlights */
 .highlights {
@@ -2205,7 +2251,7 @@ ul.icons {
 
 /* Footer */
 #footer {
-  background-color: #111111;
+  /*background-color: #111111;*/
   color: rgba(255, 255, 255, 0.5);
   padding: 8rem 0 6rem 0 ; }
   #footer input, #footer select, #footer textarea {
@@ -2339,7 +2385,7 @@ ul.icons {
     #footer .testimonials .content .credit strong {
       color: #ce1b28; }
   #footer a {
-    color: rgba(255, 255, 255, 0.5);
+    color: blue;
     text-decoration: none; }
     #footer a:hover {
       color: #ce1b28; }
@@ -2391,7 +2437,7 @@ body {
   padding-top: 3.25rem; }
   body:before {
     content: ' ';
-    background-image: url('http://127.0.0.1:8080/public/images/p3.jpg');
+    background-image: url('http://127.0.0.1:8080/public/images/p2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;

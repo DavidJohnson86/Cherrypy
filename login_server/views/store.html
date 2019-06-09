@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Store{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+{% block content %}
+  <p>Please check our products.</p>
+ <table>
+ <thead>
+  {% for column in columns %}
+     <th>{{ column }}</th>
+  {% endfor %}
+ </thead>
+ <tbody>
+ {% for row in items %}
+    <tr>
+    {% for column in columns %}
+        {% if column=="ProductName" %}
+        <td><a href={{row|attr(column)}}>{{row|attr(column)}}</a></td>
+        {% else %}
+        <td>{{row|attr(column)}}</td>
+        {% endif %}
+       <!--td><a href={{row|attr(column)}}>={{row|attr(column)}}></a></td>-->
+    {% endfor %}
+    </tr>
+ {% endfor %}
+ </tbody>
+ </table>
+{% endblock %}

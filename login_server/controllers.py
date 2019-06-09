@@ -1,8 +1,9 @@
 """Login Page Example"""
-import cherrypy
-import config
+# pylint --disable=F0401 cherrypy
 import re
 from time import time
+import config
+import cherrypy
 import models.database_handler as db
 from jinja2 import Environment, FileSystemLoader
 
@@ -18,34 +19,25 @@ class WebService:
         self._html_file = self._environment.get_template(html_template_file_name)
 
 
-class VerifiedPage(WebService):
+class StorePage(WebService):
     """If user authorized returns welcome screen"""
     @cherrypy.expose
     def index(self):
+        """User must to be authorized to access this page"""
         if cherrypy.session['authorized'] is True:
-            prods = db.MySqlHandler()
-            prods.select_query('products')
-            column_content = '  '.join([i for i in prods.get_column_name('')])
-            body_content = ""
-            for elem in prods.select_query('products'):
-                cherrypy.log(str(elem))
-                body_content += "<p>"
-                for j in elem:
-                    cherrypy.log(str(j))
-                    body_content += "****{0}>****".format(j)
-                """ body_content = [y for prod in prods.select_query('products') for y in prod]"""
-                body_content+="</p>"
-            return self._html_file.render(COLUMNS=column_content,
-                                          CONTENT=body_content)
-        else:
-            return 'error.html'
+            products_table = db.MySqlHandler('products')
+            columns = [col for col in products_table.get_column_name(products_table.tables)]
+            items = [item for item in products_table.set_store_details()]
+            return self._html_file.render(columns=columns, items=items)
+        return 'error.html'
 
-
+# pylint: disable=C0103
 class LoginWebService(WebService):
     """Serves as login web service which is responsible for user login etc..."""
 
     @cherrypy.expose
     def index(self):
+        """Refers to LoginPage"""
         return self._html_file.render(Title='Login',
                                       Hint='Please enter credentials to login.',
                                       Href_Text='Register',
@@ -55,11 +47,22 @@ class LoginWebService(WebService):
 
     @cherrypy.tools.accept(media='text/plain')
     def GET(self):
+        """GET method implementation"""
         cherrypy.session['ts'] = time()
         cherrypy.log(cherrypy.session['ts'])
 
     @cherrypy.expose
     def POST(self, **kwargs):
+        """
+        POST method for REST user credentials handling.
+
+        Args:
+            **kwargs: {user: pw}
+
+        Returns:
+            string to the JS
+
+        """
         name = kwargs['name']
         pw = kwargs['pw']
         validate = db.SqLiteHandler().sql_query("user_credentials", name, "name,pw")
@@ -69,21 +72,27 @@ class LoginWebService(WebService):
             if validate[0][1] == pw:
                 cherrypy.session['authorized'] = True
                 return "VERIFIED"
-            else:
-                return "WRONG PASSWORD"
+        return "WRONG PASSWORD"
 
-    def PUT(self, another_string):
-        cherrypy.session['authorized'] = another_string
+    def PUT(self, string):
+        """
+        Update resource
+        Args:
+            string(str): Could be a state or anyting else
+
+        Returns:
+
+        """
+        cherrypy.session['authorized'] = string
 
     def DELETE(self):
+        """DELETE HTTP METHOD"""
         cherrypy.session.pop('authorized', None)
 
     def validate_mail(self, email):
+        """Validate email"""
         match = re.search(r"(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9]+\.[a-zA-Z0-9.]*\.*[com|org|edu]{3}$)", email)
-        if match:
-            return True
-        else:
-            return False
+        return bool(match)
 
 
 class RegisterWebService(WebService):
@@ -91,6 +100,7 @@ class RegisterWebService(WebService):
 
     @cherrypy.expose
     def index(self):
+        """Refers to register page"""
         return self._html_file.render(Title='Register',
                                       Hint='Please fill in this form to create an account.',
                                       Guide='Already have an account ?',
@@ -100,6 +110,7 @@ class RegisterWebService(WebService):
 
     @cherrypy.tools.accept(media='text/plain')
     def GET(self):
+        """GET implementation"""
         cherrypy.session['ts'] = time()
         cherrypy.log(cherrypy.session['ts'])
 
@@ -108,7 +119,8 @@ if __name__ == '__main__':
     cherrypy.config.update({'log.screen': True,
                             'log.access_file': '',
                             'log.error_file': 'error.txt'})
-    webapp = LoginWebService('login.html')
-    webapp.verified = VerifiedPage('logined.html')
-    webapp.register = RegisterWebService('login.html')
-    cherrypy.quickstart(webapp, '/', config.cherrpy_run_conf)
+    WEBAPP = LoginWebService('login.html')
+    WEBAPP.store = StorePage('store.html')
+    WEBAPP.login = LoginWebService('login.html')
+    WEBAPP.register = RegisterWebService('login.html')
+    cherrypy.quickstart(WEBAPP, '/', config.cherrpy_run_conf)

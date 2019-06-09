@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html>
-  <head> 
-	<STYLE type="text/css">
-    <link href="../public/css/style.css" rel="stylesheet">
-	</STYLE>
-    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+{% extends "base.html" %}
+{% block title %}Login{% endblock %}
+{% block head %}
+    {{ super() }}
     <script type="text/javascript">
       $(document).ready(function(e) {
 		$("#invalid").hide();
@@ -16,10 +13,10 @@
 		$("#invalid_mail").hide();
 		$("#badpw").hide();
           $.post("/POST", {"name": $("input[name='email']").val(),
-								"pw": $("input[name='psw']").val()})								
+								"pw": $("input[name='psw']").val()})
          .done(function(string) {
 			if(string=="VERIFIED"){
-				window.location.href = '/verified';}
+				window.location.href = '/store';}
 			else if (string=="INV_MAIL"){
 				$("#invalid_mail").show(1500);}
 			else if (string=="INV_USER"){
@@ -27,13 +24,13 @@
 			else if (string == "WRONG PASSWORD"){
 				$("#badpw").show(1500);}
           });
-       
+
         });
 		$("#regiteruser").click(function(e){
 			aler("works");
-		
+
 		});
-		
+
 
         $("#replace-string").click(function(e) {
           $.ajax({
@@ -60,11 +57,10 @@
 
       });
     </script>
-  </head>
-  <body>
+    {% endblock %}
+    {% block content %}
 	<div class="container">
     <h1>{{Title}}</h1>
-	<link href="../public/css/style.css" rel="stylesheet">
 	<p>{{Hint}}</p>
     <hr>
     <label for="email"><b>Email</b></label>
@@ -79,5 +75,4 @@
 		<font id ="badpw" color="red" size="5"<b>Bad password. Please try again</b></font>
 	</hr>
 	</div>
-	</body>
-</html>
+    {% endblock %}
