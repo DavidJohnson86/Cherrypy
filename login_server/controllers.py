@@ -7,6 +7,7 @@ import cherrypy
 import models.database_handler as db
 from jinja2 import Environment, FileSystemLoader
 
+# TODO css input field for html templates
 
 class WebService:
     """This class should be inherited for different pages"""
@@ -21,6 +22,18 @@ class WebService:
 
 class StorePage(WebService):
     """If user authorized returns welcome screen"""
+
+    def _cp_dispatch(self, vpath):
+        """Perform URI dispatching for store services"""
+
+        if len(vpath) == 0:
+            return self
+
+        if len(vpath) == 1:
+            cherrypy.request.params['product'] = vpath.pop(0)
+            return ProductPage('product.html')
+
+
     @cherrypy.expose
     def index(self):
         """User must to be authorized to access this page"""
@@ -30,6 +43,21 @@ class StorePage(WebService):
             items = [item for item in products_table.set_store_details()]
             return self._html_file.render(columns=columns, items=items)
         return 'error.html'
+
+
+class ProductPage(WebService):
+
+
+    @cherrypy.expose
+    def index(self, product):
+        cherrypy.log(product)
+        return self._html_file.render(Title=product,
+                                      Hint='Please enter credentials to login.',
+                                      Href_Text='Register',
+                                      Href_Link='/register',
+                                      Guide='Don not have an account ? Please',
+                                      ActionBtn='Login')
+
 
 # pylint: disable=C0103
 class LoginWebService(WebService):

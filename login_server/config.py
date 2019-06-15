@@ -94,6 +94,7 @@ cherrpy_run_conf = {
             'tools.staticdir.on': True,
             'tools.staticdir.dir': './public',
 
+
         }
     }
 
