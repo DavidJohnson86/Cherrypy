@@ -1,8 +1,6 @@
 import os.path
 from cherrypy import dispatch
-import logging
 import logging.config
-import cherrypy
 
 logger = logging.getLogger()
 db_logger = logging.getLogger('db')
@@ -78,12 +76,11 @@ cherrpy_run_conf = {
         '/': {
             'tools.sessions.on': True,
             'tools.staticdir.root': os.path.abspath(os.getcwd()),
+            'tools.sessions.storage_path': 'sessions',
+            'tools.sessions.timeout': 10
 
             },
 
-        '/logined': {
-                'tools.sessions.on': True,
-                'tools.staticdir.root': os.path.abspath(os.getcwd())},
 
         '/generator': {
             'request.dispatch': dispatch.MethodDispatcher(),
@@ -92,10 +89,7 @@ cherrpy_run_conf = {
         },
         '/public': {
             'tools.staticdir.on': True,
-            'tools.staticdir.dir': './public',
-
-
-        }
+            'tools.staticdir.dir': './public'}
     }
 
 

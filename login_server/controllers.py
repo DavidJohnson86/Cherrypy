@@ -9,6 +9,7 @@ from jinja2 import Environment, FileSystemLoader
 
 # TODO css input field for html templates
 
+
 class WebService:
     """This class should be inherited for different pages"""
 
@@ -19,9 +20,20 @@ class WebService:
         self._environment = Environment(loader=FileSystemLoader(WebService.TEMPLATE_FOLDER))
         self._html_file = self._environment.get_template(html_template_file_name)
 
+    @staticmethod
+    def authorized():
+        """Check if user credentials are correct"""
+        if cherrypy.session["authorized"] is None:
+            raise cherrypy.HTTPError(401, 'Unauthorized')
+        else:
+            return True
+
 
 class StorePage(WebService):
     """If user authorized returns welcome screen"""
+
+    def __init__(self, html_file_template):
+        super().__init__(html_file_template)
 
     def _cp_dispatch(self, vpath):
         """Perform URI dispatching for store services"""
@@ -33,30 +45,23 @@ class StorePage(WebService):
             cherrypy.request.params['product'] = vpath.pop(0)
             return ProductPage('product.html')
 
-
     @cherrypy.expose
     def index(self):
         """User must to be authorized to access this page"""
+        if cherrypy.session["authorized"] is None:
+            raise cherrypy.HTTPError(401, 'Unauthorized')
         if cherrypy.session['authorized'] is True:
             products_table = db.MySqlHandler('products')
             columns = [col for col in products_table.get_column_name(products_table.tables)]
             items = [item for item in products_table.set_store_details()]
             return self._html_file.render(columns=columns, items=items)
-        return 'error.html'
 
 
 class ProductPage(WebService):
 
-
     @cherrypy.expose
     def index(self, product):
-        cherrypy.log(product)
-        return self._html_file.render(Title=product,
-                                      Hint='Please enter credentials to login.',
-                                      Href_Text='Register',
-                                      Href_Link='/register',
-                                      Guide='Don not have an account ? Please',
-                                      ActionBtn='Login')
+        return self._html_file.render(Product=product)
 
 
 # pylint: disable=C0103

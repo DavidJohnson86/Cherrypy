@@ -1,4 +1,4 @@
-@import url(font-awesome.min.css);
+
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600");
 /*
 	Industrious by TEMPLATED
@@ -2437,7 +2437,7 @@ body {
   padding-top: 3.25rem; }
   body:before {
     content: ' ';
-    background-image: url('http://127.0.0.1:8080/public/images/p2.jpg');
+    background-image: url('http://127.0.0.1:8080/public/images/p1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;

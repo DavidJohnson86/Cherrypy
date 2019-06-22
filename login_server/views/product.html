@@ -1,34 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <STYLE type="text/css">
-        <link href="../../public/css/style.css" rel="stylesheet">
-	    </STYLE>
-        <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-    {% block head %}
-    <link rel="stylesheet" href="style.css" />
-    <title> Anything</title>
-        <h1>{{Title}}</h1>>
-    <!--<div id="wrapperHeader">
-        <div id="header">
-        <img src="../public/images/lights.jpg" alt="logo" />
- </div>-->
-</div>
-    {% endblock %}
-</head>
-<body>
-   <link href="../../public/css/style.css" rel="stylesheet">
-   <div class="topnav">
-        <a class="active" href="/">Home</a>
-        <a href="/login">Login</a>
-        <a href="/store">Store</a>
-        <a href="/about">About</a>
-    </div>
-    <div id="content">{% block content %}{% endblock %}</div>
-    <div id="footer">
-        {% block footer %}
-        <font id ="copyright" color="black" size="2"<b>&copy; Copyright 2008 by<a href="http://domain.invalid/">Owner of product</a></b></font>
-        {% endblock %}
-    </div>
-</body>
-</html>
+{% extends "base.html" %}
+{% block title %}Store{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+{% block content %}
+  <h1>{{Product}}</h1>
+  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+    galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+    the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+    like Aldus PageMaker including versions of Lorem Ipsum.</p>
+{% endblock %}
