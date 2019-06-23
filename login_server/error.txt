@@ -23329,3 +23329,2258 @@ Request Headers:
 [16/Jun/2019:00:06:52]  Chang
 [16/Jun/2019:00:07:07]  style.css
 [16/Jun/2019:00:07:09]  Aniseed
+[16/Jun/2019:00:08:47] ENGINE Listening for SIGTERM.
+[16/Jun/2019:00:08:47] ENGINE Bus STARTING
+[16/Jun/2019:00:08:47] ENGINE Set handler for console events.
+[16/Jun/2019:00:08:47] ENGINE Started monitor thread 'Autoreloader'.
+[16/Jun/2019:00:08:47] ENGINE Serving on http://127.0.0.1:8080
+[16/Jun/2019:00:08:47] ENGINE Bus STARTED
+[16/Jun/2019:00:08:50] ENGINE Started monitor thread 'Session cleanup'.
+[16/Jun/2019:00:08:50] HTTP 
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 628, in respond
+    self._do_respond(path_info)
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 687, in _do_respond
+    response.body = self.handler()
+  File "C:\Python36\lib\site-packages\cherrypy\lib\encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python36\lib\site-packages\cherrypy\_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "D:/07_Development/Projects/Cherrypy/login_server/controllers.py", line 40, in index
+    if cherrypy.session['authorized'] is True:
+  File "C:\Python36\lib\site-packages\cherrypy\__init__.py", line 246, in __getitem__
+    return child[key]
+  File "C:\Python36\lib\site-packages\cherrypy\lib\sessions.py", line 325, in __getitem__
+    return self._data[key]
+KeyError: 'authorized'
+[16/Jun/2019:00:08:50] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  UPGRADE-INSECURE-REQUESTS: 1
+  USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+  REFERER: http://127.0.0.1:8080/
+  ACCEPT-ENCODING: gzip, deflate, br
+  ACCEPT-LANGUAGE: en-US,en;q=0.9,hu;q=0.8
+  COOKIE: session_id=92b232016bc0ea10ce67ceb2e68f7f3309360a41
+[16/Jun/2019:00:10:11] ENGINE Listening for SIGTERM.
+[16/Jun/2019:00:10:11] ENGINE Bus STARTING
+[16/Jun/2019:00:10:11] ENGINE Set handler for console events.
+[16/Jun/2019:00:10:11] ENGINE Started monitor thread 'Autoreloader'.
+[16/Jun/2019:00:10:11] ENGINE Serving on http://127.0.0.1:8080
+[16/Jun/2019:00:10:11] ENGINE Bus STARTED
+[16/Jun/2019:00:10:13] ENGINE Started monitor thread 'Session cleanup'.
+[16/Jun/2019:00:10:13] HTTP 
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 628, in respond
+    self._do_respond(path_info)
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 687, in _do_respond
+    response.body = self.handler()
+  File "C:\Python36\lib\site-packages\cherrypy\lib\encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python36\lib\site-packages\cherrypy\_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "D:/07_Development/Projects/Cherrypy/login_server/controllers.py", line 40, in index
+    if cherrypy.session['authorized'] is True:
+  File "C:\Python36\lib\site-packages\cherrypy\__init__.py", line 246, in __getitem__
+    return child[key]
+  File "C:\Python36\lib\site-packages\cherrypy\lib\sessions.py", line 325, in __getitem__
+    return self._data[key]
+KeyError: 'authorized'
+[16/Jun/2019:00:10:13] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  UPGRADE-INSECURE-REQUESTS: 1
+  USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+  REFERER: http://127.0.0.1:8080/
+  ACCEPT-ENCODING: gzip, deflate, br
+  ACCEPT-LANGUAGE: en-US,en;q=0.9,hu;q=0.8
+  COOKIE: session_id=c7902214152ae2daff2b7bf785c54f795e7bae33
+[16/Jun/2019:00:11:06] ENGINE Listening for SIGTERM.
+[16/Jun/2019:00:11:06] ENGINE Bus STARTING
+[16/Jun/2019:00:11:06] ENGINE Set handler for console events.
+[16/Jun/2019:00:11:06] ENGINE Started monitor thread 'Autoreloader'.
+[16/Jun/2019:00:11:07] ENGINE Serving on http://127.0.0.1:8080
+[16/Jun/2019:00:11:07] ENGINE Bus STARTED
+[16/Jun/2019:00:11:09] ENGINE Started monitor thread 'Session cleanup'.
+[16/Jun/2019:00:11:09] HTTP 
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 628, in respond
+    self._do_respond(path_info)
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 687, in _do_respond
+    response.body = self.handler()
+  File "C:\Python36\lib\site-packages\cherrypy\lib\encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python36\lib\site-packages\cherrypy\_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "D:/07_Development/Projects/Cherrypy/login_server/controllers.py", line 40, in index
+    if not cherrypy.session['authorized']:
+  File "C:\Python36\lib\site-packages\cherrypy\__init__.py", line 246, in __getitem__
+    return child[key]
+  File "C:\Python36\lib\site-packages\cherrypy\lib\sessions.py", line 325, in __getitem__
+    return self._data[key]
+KeyError: 'authorized'
+[16/Jun/2019:00:11:09] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  UPGRADE-INSECURE-REQUESTS: 1
+  USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+  REFERER: http://127.0.0.1:8080/
+  ACCEPT-ENCODING: gzip, deflate, br
+  ACCEPT-LANGUAGE: en-US,en;q=0.9,hu;q=0.8
+  COOKIE: session_id=77c59486e0fa7930dca3b6184a1c52cc884eb6b3
+[16/Jun/2019:00:12:49] ENGINE Listening for SIGTERM.
+[16/Jun/2019:00:12:49] ENGINE Bus STARTING
+[16/Jun/2019:00:12:49] ENGINE Set handler for console events.
+[16/Jun/2019:00:12:49] ENGINE Started monitor thread 'Autoreloader'.
+[16/Jun/2019:00:12:49] ENGINE Serving on http://127.0.0.1:8080
+[16/Jun/2019:00:12:49] ENGINE Bus STARTED
+[16/Jun/2019:00:12:52] ENGINE Started monitor thread 'Session cleanup'.
+[16/Jun/2019:00:12:52] HTTP 
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 628, in respond
+    self._do_respond(path_info)
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 687, in _do_respond
+    response.body = self.handler()
+  File "C:\Python36\lib\site-packages\cherrypy\lib\encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python36\lib\site-packages\cherrypy\_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "D:/07_Development/Projects/Cherrypy/login_server/controllers.py", line 40, in index
+    if  cherrypy.session['authorized'] is None:
+  File "C:\Python36\lib\site-packages\cherrypy\__init__.py", line 246, in __getitem__
+    return child[key]
+  File "C:\Python36\lib\site-packages\cherrypy\lib\sessions.py", line 325, in __getitem__
+    return self._data[key]
+KeyError: 'authorized'
+[16/Jun/2019:00:12:52] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  UPGRADE-INSECURE-REQUESTS: 1
+  USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+  REFERER: http://127.0.0.1:8080/
+  ACCEPT-ENCODING: gzip, deflate, br
+  ACCEPT-LANGUAGE: en-US,en;q=0.9,hu;q=0.8
+  COOKIE: session_id=751ad21f9e4037fb79d5592a4c006f3dbec07a13
+[16/Jun/2019:00:16:02] ENGINE Listening for SIGTERM.
+[16/Jun/2019:00:16:02] ENGINE Bus STARTING
+[16/Jun/2019:00:16:02] ENGINE Set handler for console events.
+[16/Jun/2019:00:16:02] ENGINE Started monitor thread 'Autoreloader'.
+[16/Jun/2019:00:16:02] ENGINE Serving on http://127.0.0.1:8080
+[16/Jun/2019:00:16:02] ENGINE Bus STARTED
+[16/Jun/2019:00:16:04] ENGINE Started monitor thread 'Session cleanup'.
+[16/Jun/2019:00:16:45] ENGINE Listening for SIGTERM.
+[16/Jun/2019:00:16:45] ENGINE Bus STARTING
+[16/Jun/2019:00:16:45] ENGINE Set handler for console events.
+[16/Jun/2019:00:16:45] ENGINE Started monitor thread 'Autoreloader'.
+[16/Jun/2019:00:16:45] ENGINE Serving on http://127.0.0.1:8080
+[16/Jun/2019:00:16:45] ENGINE Bus STARTED
+[16/Jun/2019:00:16:47] ENGINE Started monitor thread 'Session cleanup'.
+[16/Jun/2019:00:17:22]  style.css
+[16/Jun/2019:00:17:31]  Chai
+[16/Jun/2019:00:17:34]  style.css
+[16/Jun/2019:00:17:36]  Chef
+[16/Jun/2019:00:17:39]  style.css
+[16/Jun/2019:00:17:51]  Chef
+[16/Jun/2019:00:18:10]  style.css
+[16/Jun/2019:00:18:36]  style.css
+[16/Jun/2019:00:18:41]  style.css
+[16/Jun/2019:00:18:47]  style.css
+[16/Jun/2019:00:18:49]  Aniseed
+[16/Jun/2019:00:18:54]  Grandma's
+[16/Jun/2019:00:18:57]  Uncle
+[16/Jun/2019:00:19:01]  Queso
+[16/Jun/2019:00:19:04]  Guaran
+[16/Jun/2019:00:19:07]  Geitost
+[16/Jun/2019:00:19:10]  Ipoh
+[16/Jun/2019:00:19:35]  style.css
+[16/Jun/2019:00:19:37]  Konbu
+[16/Jun/2019:00:19:57]  style.css
+[16/Jun/2019:00:20:22]  style.css
+[16/Jun/2019:00:20:26]  style.css
+[16/Jun/2019:00:22:55] ENGINE Listening for SIGTERM.
+[16/Jun/2019:00:22:55] ENGINE Bus STARTING
+[16/Jun/2019:00:22:55] ENGINE Set handler for console events.
+[16/Jun/2019:00:22:55] ENGINE Started monitor thread 'Autoreloader'.
+[16/Jun/2019:00:22:55] ENGINE Serving on http://127.0.0.1:8080
+[16/Jun/2019:00:22:55] ENGINE Bus STARTED
+[16/Jun/2019:00:23:22] ENGINE Started monitor thread 'Session cleanup'.
+[21/Jun/2019:18:26:45] ENGINE Listening for SIGTERM.
+[21/Jun/2019:18:26:45] ENGINE Bus STARTING
+[21/Jun/2019:18:26:45] ENGINE Set handler for console events.
+[21/Jun/2019:18:26:45] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:18:26:45] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:18:26:45] ENGINE Bus STARTED
+[21/Jun/2019:18:26:54] ENGINE Started monitor thread 'Session cleanup'.
+[21/Jun/2019:18:26:54]  style.css
+[21/Jun/2019:18:27:00]  Chai
+[21/Jun/2019:18:27:03]  Chang
+[21/Jun/2019:18:29:06] ENGINE Listening for SIGTERM.
+[21/Jun/2019:18:29:06] ENGINE Bus STARTING
+[21/Jun/2019:18:29:06] ENGINE Set handler for console events.
+[21/Jun/2019:18:29:06] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:18:29:06] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:18:29:06] ENGINE Bus STARTED
+[21/Jun/2019:18:29:16] ENGINE Started monitor thread 'Session cleanup'.
+[21/Jun/2019:18:31:52] ENGINE Listening for SIGTERM.
+[21/Jun/2019:18:31:52] ENGINE Bus STARTING
+[21/Jun/2019:18:31:52] ENGINE Set handler for console events.
+[21/Jun/2019:18:31:52] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:18:31:52] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:18:31:52] ENGINE Bus STARTED
+[21/Jun/2019:18:31:58] ENGINE Started monitor thread 'Session cleanup'.
+[21/Jun/2019:18:33:49] ENGINE Listening for SIGTERM.
+[21/Jun/2019:18:33:49] ENGINE Bus STARTING
+[21/Jun/2019:18:33:49] ENGINE Set handler for console events.
+[21/Jun/2019:18:33:49] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:18:33:49] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:18:33:49] ENGINE Bus STARTED
+[21/Jun/2019:18:33:54] ENGINE Started monitor thread 'Session cleanup'.
+[21/Jun/2019:18:37:18] ENGINE Listening for SIGTERM.
+[21/Jun/2019:18:37:18] ENGINE Bus STARTING
+[21/Jun/2019:18:37:18] ENGINE Set handler for console events.
+[21/Jun/2019:18:37:18] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:18:37:19] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:18:37:19] ENGINE Bus STARTED
+[21/Jun/2019:18:37:24] ENGINE Started monitor thread 'Session cleanup'.
+[21/Jun/2019:18:42:28] ENGINE Listening for SIGTERM.
+[21/Jun/2019:18:42:28] ENGINE Bus STARTING
+[21/Jun/2019:18:42:28] ENGINE Set handler for console events.
+[21/Jun/2019:18:42:28] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:18:42:28] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:18:42:28] ENGINE Bus STARTED
+[21/Jun/2019:18:42:33] ENGINE Started monitor thread 'Session cleanup'.
+[21/Jun/2019:18:42:48] ENGINE Listening for SIGTERM.
+[21/Jun/2019:18:42:48] ENGINE Bus STARTING
+[21/Jun/2019:18:42:48] ENGINE Set handler for console events.
+[21/Jun/2019:18:42:48] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:18:42:48] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:18:42:48] ENGINE Bus STARTED
+[21/Jun/2019:18:42:53] ENGINE Started monitor thread 'Session cleanup'.
+[21/Jun/2019:18:49:20] ENGINE Listening for SIGTERM.
+[21/Jun/2019:18:49:20] ENGINE Bus STARTING
+[21/Jun/2019:18:49:20] ENGINE Set handler for console events.
+[21/Jun/2019:18:49:20] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:18:49:21] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:18:49:21] ENGINE Bus STARTED
+[21/Jun/2019:18:49:26] ENGINE Started monitor thread 'Session cleanup'.
+[21/Jun/2019:18:49:26]  style.css
+[21/Jun/2019:18:49:27]  Chai
+[21/Jun/2019:18:49:31]  Chang
+[21/Jun/2019:18:49:34]  Chef
+[21/Jun/2019:18:49:36]  Chef
+[21/Jun/2019:18:50:02]  Chang
+[21/Jun/2019:18:50:04]  Chef
+[21/Jun/2019:18:50:23]  style.css
+[21/Jun/2019:18:50:31]  Chai
+[21/Jun/2019:18:51:47] ENGINE Restarting because D:/07_Development/Projects/Cherrypy/login_server/controllers.py changed.
+[21/Jun/2019:18:51:47] ENGINE Stopped thread 'Autoreloader'.
+[21/Jun/2019:18:51:47] ENGINE Bus STOPPING
+[21/Jun/2019:18:51:47] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jun/2019:18:51:47] ENGINE Removed handler for console events.
+[21/Jun/2019:18:51:47] ENGINE Stopped thread 'Session cleanup'.
+[21/Jun/2019:18:51:47] ENGINE Bus STOPPED
+[21/Jun/2019:18:51:47] ENGINE Bus EXITING
+[21/Jun/2019:18:51:47] ENGINE Bus EXITED
+[21/Jun/2019:18:51:47] ENGINE Waiting for child threads to terminate...
+[21/Jun/2019:18:51:47] ENGINE Re-spawning C:\Python36\python.exe D:/07_Development/Projects/Cherrypy/login_server/controllers.py
+[21/Jun/2019:18:51:49] ENGINE Listening for SIGTERM.
+[21/Jun/2019:18:51:49] ENGINE Bus STARTING
+[21/Jun/2019:18:51:49] ENGINE Set handler for console events.
+[21/Jun/2019:18:51:49] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:18:51:50] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:18:51:50] ENGINE Bus STARTED
+[21/Jun/2019:18:51:59] ENGINE Listening for SIGTERM.
+[21/Jun/2019:18:51:59] ENGINE Bus STARTING
+[21/Jun/2019:18:51:59] ENGINE Set handler for console events.
+[21/Jun/2019:18:51:59] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:18:51:59] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:18:51:59] ENGINE Bus STARTED
+[21/Jun/2019:18:52:03] ENGINE Started monitor thread 'Session cleanup'.
+[21/Jun/2019:18:55:51] ENGINE Listening for SIGTERM.
+[21/Jun/2019:18:55:51] ENGINE Bus STARTING
+[21/Jun/2019:18:55:51] ENGINE Set handler for console events.
+[21/Jun/2019:18:55:51] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:18:55:51] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:18:55:51] ENGINE Bus STARTED
+[21/Jun/2019:18:55:56] ENGINE Started monitor thread 'Session cleanup'.
+[21/Jun/2019:18:56:33] ENGINE Listening for SIGTERM.
+[21/Jun/2019:18:56:33] ENGINE Bus STARTING
+[21/Jun/2019:18:56:33] ENGINE Set handler for console events.
+[21/Jun/2019:18:56:33] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:18:56:34] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:18:56:34] ENGINE Bus STARTED
+[21/Jun/2019:18:56:40] ENGINE Started monitor thread 'Session cleanup'.
+[21/Jun/2019:18:56:40]  style.css
+[21/Jun/2019:18:56:41]  Chai
+[21/Jun/2019:18:56:44]  Chang
+[21/Jun/2019:18:57:31] ENGINE Listening for SIGTERM.
+[21/Jun/2019:18:57:31] ENGINE Bus STARTING
+[21/Jun/2019:18:57:31] ENGINE Set handler for console events.
+[21/Jun/2019:18:57:31] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:18:57:31] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:18:57:31] ENGINE Bus STARTED
+[21/Jun/2019:19:00:24] ENGINE Listening for SIGTERM.
+[21/Jun/2019:19:00:24] ENGINE Bus STARTING
+[21/Jun/2019:19:00:24] ENGINE Set handler for console events.
+[21/Jun/2019:19:00:24] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:19:00:25] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:19:00:25] ENGINE Bus STARTED
+[21/Jun/2019:19:01:51] ENGINE Listening for SIGTERM.
+[21/Jun/2019:19:01:51] ENGINE Bus STARTING
+[21/Jun/2019:19:01:51] ENGINE Set handler for console events.
+[21/Jun/2019:19:01:51] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:19:01:51] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:19:01:51] ENGINE Bus STARTED
+[21/Jun/2019:19:02:54] ENGINE Listening for SIGTERM.
+[21/Jun/2019:19:02:54] ENGINE Bus STARTING
+[21/Jun/2019:19:02:54] ENGINE Set handler for console events.
+[21/Jun/2019:19:02:54] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:19:02:54] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:19:02:54] ENGINE Bus STARTED
+[21/Jun/2019:19:04:16] ENGINE Listening for SIGTERM.
+[21/Jun/2019:19:04:16] ENGINE Bus STARTING
+[21/Jun/2019:19:04:16] ENGINE Set handler for console events.
+[21/Jun/2019:19:04:16] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:19:04:16] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:19:04:16] ENGINE Bus STARTED
+[21/Jun/2019:19:05:45] ENGINE Listening for SIGTERM.
+[21/Jun/2019:19:05:45] ENGINE Bus STARTING
+[21/Jun/2019:19:05:45] ENGINE Set handler for console events.
+[21/Jun/2019:19:05:45] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:19:05:45] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:19:05:45] ENGINE Bus STARTED
+[21/Jun/2019:19:06:26] ENGINE Listening for SIGTERM.
+[21/Jun/2019:19:06:26] ENGINE Bus STARTING
+[21/Jun/2019:19:06:26] ENGINE Set handler for console events.
+[21/Jun/2019:19:06:26] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:19:06:27] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:19:06:27] ENGINE Bus STARTED
+[21/Jun/2019:19:06:49] ENGINE Listening for SIGTERM.
+[21/Jun/2019:19:06:49] ENGINE Bus STARTING
+[21/Jun/2019:19:06:49] ENGINE Set handler for console events.
+[21/Jun/2019:19:06:49] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:19:06:49] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:19:06:49] ENGINE Bus STARTED
+[21/Jun/2019:19:07:21] ENGINE Listening for SIGTERM.
+[21/Jun/2019:19:07:21] ENGINE Bus STARTING
+[21/Jun/2019:19:07:21] ENGINE Set handler for console events.
+[21/Jun/2019:19:07:21] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:19:07:22] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:19:07:22] ENGINE Bus STARTED
+[21/Jun/2019:19:08:04] ENGINE Listening for SIGTERM.
+[21/Jun/2019:19:08:04] ENGINE Bus STARTING
+[21/Jun/2019:19:08:04] ENGINE Set handler for console events.
+[21/Jun/2019:19:08:04] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:19:08:04] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:19:08:04] ENGINE Bus STARTED
+[21/Jun/2019:19:09:05] ENGINE Listening for SIGTERM.
+[21/Jun/2019:19:09:05] ENGINE Bus STARTING
+[21/Jun/2019:19:09:05] ENGINE Set handler for console events.
+[21/Jun/2019:19:09:05] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:19:09:05] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:19:09:05] ENGINE Bus STARTED
+[21/Jun/2019:19:12:47] ENGINE Listening for SIGTERM.
+[21/Jun/2019:19:12:47] ENGINE Bus STARTING
+[21/Jun/2019:19:12:47] ENGINE Set handler for console events.
+[21/Jun/2019:19:12:47] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:19:12:47] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:19:12:47] ENGINE Bus STARTED
+[21/Jun/2019:19:13:26] ENGINE Listening for SIGTERM.
+[21/Jun/2019:19:13:26] ENGINE Bus STARTING
+[21/Jun/2019:19:13:26] ENGINE Set handler for console events.
+[21/Jun/2019:19:13:26] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:19:13:27] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:19:13:27] ENGINE Bus STARTED
+[21/Jun/2019:19:14:12] ENGINE Listening for SIGTERM.
+[21/Jun/2019:19:14:12] ENGINE Bus STARTING
+[21/Jun/2019:19:14:12] ENGINE Set handler for console events.
+[21/Jun/2019:19:14:12] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:19:14:12] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:19:14:12] ENGINE Bus STARTED
+[21/Jun/2019:19:17:58] ENGINE Listening for SIGTERM.
+[21/Jun/2019:19:17:58] ENGINE Bus STARTING
+[21/Jun/2019:19:17:58] ENGINE Set handler for console events.
+[21/Jun/2019:19:17:58] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:19:17:58] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:19:17:58] ENGINE Bus STARTED
+[21/Jun/2019:19:23:03] ENGINE Listening for SIGTERM.
+[21/Jun/2019:19:23:03] ENGINE Bus STARTING
+[21/Jun/2019:19:23:03] ENGINE Set handler for console events.
+[21/Jun/2019:19:23:03] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:19:23:03] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:19:23:03] ENGINE Bus STARTED
+[21/Jun/2019:19:23:16] ENGINE Listening for SIGTERM.
+[21/Jun/2019:19:23:16] ENGINE Bus STARTING
+[21/Jun/2019:19:23:16] ENGINE Set handler for console events.
+[21/Jun/2019:19:23:16] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:19:23:16] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:19:23:16] ENGINE Bus STARTED
+[21/Jun/2019:19:23:46] ENGINE Listening for SIGTERM.
+[21/Jun/2019:19:23:46] ENGINE Bus STARTING
+[21/Jun/2019:19:23:46] ENGINE Set handler for console events.
+[21/Jun/2019:19:23:46] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:19:23:46] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:19:23:46] ENGINE Bus STARTED
+[21/Jun/2019:19:26:28] ENGINE Listening for SIGTERM.
+[21/Jun/2019:19:26:28] ENGINE Bus STARTING
+[21/Jun/2019:19:26:28] ENGINE Set handler for console events.
+[21/Jun/2019:19:26:28] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:19:26:28] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:19:26:28] ENGINE Bus STARTED
+[21/Jun/2019:19:28:42] ENGINE Listening for SIGTERM.
+[21/Jun/2019:19:28:42] ENGINE Bus STARTING
+[21/Jun/2019:19:28:42] ENGINE Set handler for console events.
+[21/Jun/2019:19:28:42] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:19:28:43] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:19:28:43] ENGINE Bus STARTED
+[21/Jun/2019:19:29:52] ENGINE Listening for SIGTERM.
+[21/Jun/2019:19:29:52] ENGINE Bus STARTING
+[21/Jun/2019:19:29:52] ENGINE Set handler for console events.
+[21/Jun/2019:19:29:52] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:19:29:52] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:19:29:52] ENGINE Bus STARTED
+[21/Jun/2019:19:30:57] ENGINE Listening for SIGTERM.
+[21/Jun/2019:19:30:57] ENGINE Bus STARTING
+[21/Jun/2019:19:30:57] ENGINE Set handler for console events.
+[21/Jun/2019:19:30:57] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:19:30:57] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:19:30:57] ENGINE Bus STARTED
+[21/Jun/2019:19:31:13] ENGINE Started monitor thread 'Session cleanup'.
+[21/Jun/2019:19:31:14]  Chai
+[21/Jun/2019:19:31:17]  Chang
+[21/Jun/2019:19:32:34] ENGINE Listening for SIGTERM.
+[21/Jun/2019:19:32:34] ENGINE Bus STARTING
+[21/Jun/2019:19:32:34] ENGINE Set handler for console events.
+[21/Jun/2019:19:32:34] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:19:32:34] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:19:32:34] ENGINE Bus STARTED
+[21/Jun/2019:19:32:51] ENGINE Started monitor thread 'Session cleanup'.
+[21/Jun/2019:20:14:03] ENGINE Restarting because D:/07_Development/Projects/Cherrypy/login_server/controllers.py changed.
+[21/Jun/2019:20:14:03] ENGINE Stopped thread 'Autoreloader'.
+[21/Jun/2019:20:14:03] ENGINE Bus STOPPING
+[21/Jun/2019:20:14:03] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jun/2019:20:14:03] ENGINE Removed handler for console events.
+[21/Jun/2019:20:14:03] ENGINE Stopped thread 'Session cleanup'.
+[21/Jun/2019:20:14:03] ENGINE Bus STOPPED
+[21/Jun/2019:20:14:03] ENGINE Bus EXITING
+[21/Jun/2019:20:14:03] ENGINE Waiting for child threads to terminate...
+[21/Jun/2019:20:14:03] ENGINE Bus EXITED
+[21/Jun/2019:20:14:03] ENGINE Re-spawning C:\Python36\python.exe D:/07_Development/Projects/Cherrypy/login_server/controllers.py
+[21/Jun/2019:20:14:05] ENGINE Listening for SIGTERM.
+[21/Jun/2019:20:14:05] ENGINE Bus STARTING
+[21/Jun/2019:20:14:05] ENGINE Set handler for console events.
+[21/Jun/2019:20:14:05] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:20:14:05] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:20:14:05] ENGINE Bus STARTED
+[21/Jun/2019:20:18:53] ENGINE Restarting because D:/07_Development/Projects/Cherrypy/login_server/controllers.py changed.
+[21/Jun/2019:20:18:53] ENGINE Stopped thread 'Autoreloader'.
+[21/Jun/2019:20:18:53] ENGINE Bus STOPPING
+[21/Jun/2019:20:18:53] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jun/2019:20:18:53] ENGINE Removed handler for console events.
+[21/Jun/2019:20:18:53] ENGINE Bus STOPPED
+[21/Jun/2019:20:18:53] ENGINE Bus EXITING
+[21/Jun/2019:20:18:53] ENGINE Waiting for child threads to terminate...
+[21/Jun/2019:20:18:53] ENGINE Bus EXITED
+[21/Jun/2019:20:18:53] ENGINE Re-spawning C:\Python36\python.exe D:/07_Development/Projects/Cherrypy/login_server/controllers.py
+[21/Jun/2019:20:18:55] ENGINE Listening for SIGTERM.
+[21/Jun/2019:20:18:55] ENGINE Bus STARTING
+[21/Jun/2019:20:18:55] ENGINE Set handler for console events.
+[21/Jun/2019:20:18:55] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:20:18:56] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:20:18:56] ENGINE Bus STARTED
+[21/Jun/2019:20:22:12] ENGINE Listening for SIGTERM.
+[21/Jun/2019:20:22:12] ENGINE Bus STARTING
+[21/Jun/2019:20:22:12] ENGINE Set handler for console events.
+[21/Jun/2019:20:22:12] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:20:22:13] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x0426C3D0>>
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\cherrypy\process\wspbus.py", line 230, in publish
+    output.append(listener(*args, **kwargs))
+  File "C:\Python36\lib\site-packages\cherrypy\_cpserver.py", line 180, in start
+    super(Server, self).start()
+  File "C:\Python36\lib\site-packages\cherrypy\process\servers.py", line 177, in start
+    portend.free(*self.bind_addr, timeout=Timeouts.free)
+  File "C:\Python36\lib\site-packages\portend.py", line 123, in free
+    raise Timeout("Port {port} not free on {host}.".format(**locals()))
+portend.Timeout: Port 8080 not free on 127.0.0.1.
+
+[21/Jun/2019:20:22:13] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\cherrypy\process\wspbus.py", line 268, in start
+    self.publish('start')
+  File "C:\Python36\lib\site-packages\cherrypy\process\wspbus.py", line 248, in publish
+    raise exc
+cherrypy.process.wspbus.ChannelFailures: Timeout('Port 8080 not free on 127.0.0.1.',)
+
+[21/Jun/2019:20:22:13] ENGINE Bus STOPPING
+[21/Jun/2019:20:22:13] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) already shut down
+[21/Jun/2019:20:22:13] ENGINE Removed handler for console events.
+[21/Jun/2019:20:22:13] ENGINE Stopped thread 'Autoreloader'.
+[21/Jun/2019:20:22:13] ENGINE Bus STOPPED
+[21/Jun/2019:20:22:13] ENGINE Bus EXITING
+[21/Jun/2019:20:22:13] ENGINE Bus EXITED
+[21/Jun/2019:20:22:24] ENGINE Listening for SIGTERM.
+[21/Jun/2019:20:22:24] ENGINE Bus STARTING
+[21/Jun/2019:20:22:24] ENGINE Set handler for console events.
+[21/Jun/2019:20:22:24] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:20:22:24] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:20:22:24] ENGINE Bus STARTED
+[21/Jun/2019:20:22:33] ENGINE Started monitor thread 'Session cleanup'.
+[21/Jun/2019:20:22:40]  Chai
+[21/Jun/2019:20:23:23]  Chai
+[21/Jun/2019:20:23:33]  Chai
+[21/Jun/2019:20:24:26] ENGINE Listening for SIGTERM.
+[21/Jun/2019:20:24:26] ENGINE Bus STARTING
+[21/Jun/2019:20:24:26] ENGINE Set handler for console events.
+[21/Jun/2019:20:24:26] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:20:24:26] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:20:24:26] ENGINE Bus STARTED
+[21/Jun/2019:20:24:31] ENGINE Started monitor thread 'Session cleanup'.
+[21/Jun/2019:20:27:04] ENGINE Listening for SIGTERM.
+[21/Jun/2019:20:27:04] ENGINE Bus STARTING
+[21/Jun/2019:20:27:04] ENGINE Set handler for console events.
+[21/Jun/2019:20:27:04] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:20:27:04] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:20:27:04] ENGINE Bus STARTED
+[21/Jun/2019:20:27:09] ENGINE Started monitor thread 'Session cleanup'.
+[21/Jun/2019:20:28:29] ENGINE Listening for SIGTERM.
+[21/Jun/2019:20:28:29] ENGINE Bus STARTING
+[21/Jun/2019:20:28:29] ENGINE Set handler for console events.
+[21/Jun/2019:20:28:29] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:20:28:29] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:20:28:29] ENGINE Bus STARTED
+[21/Jun/2019:20:28:31] ENGINE Started monitor thread 'Session cleanup'.
+[21/Jun/2019:20:31:46] ENGINE Restarting because D:/07_Development/Projects/Cherrypy/login_server/controllers.py changed.
+[21/Jun/2019:20:31:46] ENGINE Stopped thread 'Autoreloader'.
+[21/Jun/2019:20:31:46] ENGINE Bus STOPPING
+[21/Jun/2019:20:31:47] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jun/2019:20:31:47] ENGINE Stopped thread 'Session cleanup'.
+[21/Jun/2019:20:31:47] ENGINE Removed handler for console events.
+[21/Jun/2019:20:31:47] ENGINE Bus STOPPED
+[21/Jun/2019:20:31:47] ENGINE Bus EXITING
+[21/Jun/2019:20:31:47] ENGINE Bus EXITED
+[21/Jun/2019:20:31:47] ENGINE Waiting for child threads to terminate...
+[21/Jun/2019:20:31:47] ENGINE Re-spawning C:\Python36\python.exe D:/07_Development/Projects/Cherrypy/login_server/controllers.py
+[21/Jun/2019:20:31:48] ENGINE Listening for SIGTERM.
+[21/Jun/2019:20:31:48] ENGINE Bus STARTING
+[21/Jun/2019:20:31:48] ENGINE Set handler for console events.
+[21/Jun/2019:20:31:48] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:20:31:49] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:20:31:49] ENGINE Bus STARTED
+[21/Jun/2019:20:32:23] ENGINE Restarting because D:/07_Development/Projects/Cherrypy/login_server/controllers.py changed.
+[21/Jun/2019:20:32:23] ENGINE Stopped thread 'Autoreloader'.
+[21/Jun/2019:20:32:23] ENGINE Bus STOPPING
+[21/Jun/2019:20:32:23] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jun/2019:20:32:23] ENGINE Removed handler for console events.
+[21/Jun/2019:20:32:23] ENGINE Bus STOPPED
+[21/Jun/2019:20:32:23] ENGINE Bus EXITING
+[21/Jun/2019:20:32:23] ENGINE Bus EXITED
+[21/Jun/2019:20:32:23] ENGINE Waiting for child threads to terminate...
+[21/Jun/2019:20:32:23] ENGINE Re-spawning C:\Python36\python.exe D:/07_Development/Projects/Cherrypy/login_server/controllers.py
+[21/Jun/2019:20:32:24] ENGINE Listening for SIGTERM.
+[21/Jun/2019:20:32:24] ENGINE Bus STARTING
+[21/Jun/2019:20:32:24] ENGINE Set handler for console events.
+[21/Jun/2019:20:32:24] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:20:32:25] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:20:32:25] ENGINE Bus STARTED
+[21/Jun/2019:20:33:20] ENGINE Listening for SIGTERM.
+[21/Jun/2019:20:33:20] ENGINE Bus STARTING
+[21/Jun/2019:20:33:20] ENGINE Set handler for console events.
+[21/Jun/2019:20:33:20] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:20:33:21] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x045730B0>>
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\cherrypy\process\wspbus.py", line 230, in publish
+    output.append(listener(*args, **kwargs))
+  File "C:\Python36\lib\site-packages\cherrypy\_cpserver.py", line 180, in start
+    super(Server, self).start()
+  File "C:\Python36\lib\site-packages\cherrypy\process\servers.py", line 177, in start
+    portend.free(*self.bind_addr, timeout=Timeouts.free)
+  File "C:\Python36\lib\site-packages\portend.py", line 123, in free
+    raise Timeout("Port {port} not free on {host}.".format(**locals()))
+portend.Timeout: Port 8080 not free on 127.0.0.1.
+
+[21/Jun/2019:20:33:21] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\cherrypy\process\wspbus.py", line 268, in start
+    self.publish('start')
+  File "C:\Python36\lib\site-packages\cherrypy\process\wspbus.py", line 248, in publish
+    raise exc
+cherrypy.process.wspbus.ChannelFailures: Timeout('Port 8080 not free on 127.0.0.1.',)
+
+[21/Jun/2019:20:33:21] ENGINE Bus STOPPING
+[21/Jun/2019:20:33:21] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) already shut down
+[21/Jun/2019:20:33:21] ENGINE Removed handler for console events.
+[21/Jun/2019:20:33:21] ENGINE Stopped thread 'Autoreloader'.
+[21/Jun/2019:20:33:21] ENGINE Bus STOPPED
+[21/Jun/2019:20:33:21] ENGINE Bus EXITING
+[21/Jun/2019:20:33:21] ENGINE Bus EXITED
+[21/Jun/2019:20:33:32] ENGINE Listening for SIGTERM.
+[21/Jun/2019:20:33:32] ENGINE Bus STARTING
+[21/Jun/2019:20:33:32] ENGINE Set handler for console events.
+[21/Jun/2019:20:33:32] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:20:33:33] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:20:33:33] ENGINE Bus STARTED
+[21/Jun/2019:20:33:38] ENGINE Started monitor thread 'Session cleanup'.
+[21/Jun/2019:20:48:15] ENGINE Listening for SIGTERM.
+[21/Jun/2019:20:48:15] ENGINE Bus STARTING
+[21/Jun/2019:20:48:15] ENGINE Set handler for console events.
+[21/Jun/2019:20:48:15] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:20:48:15] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:20:48:15] ENGINE Bus STARTED
+[21/Jun/2019:20:48:18] ENGINE Started monitor thread 'Session cleanup'.
+[21/Jun/2019:21:05:28] ENGINE Listening for SIGTERM.
+[21/Jun/2019:21:05:28] ENGINE Bus STARTING
+[21/Jun/2019:21:05:28] ENGINE Set handler for console events.
+[21/Jun/2019:21:05:28] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:21:05:28] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:21:05:28] ENGINE Bus STARTED
+[21/Jun/2019:21:05:30] ENGINE Started monitor thread 'Session cleanup'.
+[21/Jun/2019:21:11:16] ENGINE Listening for SIGTERM.
+[21/Jun/2019:21:11:16] ENGINE Bus STARTING
+[21/Jun/2019:21:11:16] ENGINE Set handler for console events.
+[21/Jun/2019:21:11:16] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:21:11:16] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:21:11:16] ENGINE Bus STARTED
+[21/Jun/2019:21:11:18] HTTP 
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 628, in respond
+    self._do_respond(path_info)
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 687, in _do_respond
+    response.body = self.handler()
+  File "C:\Python36\lib\site-packages\cherrypy\lib\encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python36\lib\site-packages\cherrypy\_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "D:/07_Development/Projects/Cherrypy/login_server/controllers.py", line 44, in index
+    if cherrypy.session("authorized") is None:
+TypeError: '_ThreadLocalProxy' object is not callable
+[21/Jun/2019:21:11:18] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  UPGRADE-INSECURE-REQUESTS: 1
+  USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+  REFERER: http://127.0.0.1:8080/
+  ACCEPT-ENCODING: gzip, deflate, br
+  ACCEPT-LANGUAGE: en-US,en;q=0.9,hu;q=0.8
+  COOKIE: session_id=9732afd75e889d2aa0422919ea2bd5519fa17bed
+[21/Jun/2019:21:12:25] ENGINE Listening for SIGTERM.
+[21/Jun/2019:21:12:25] ENGINE Bus STARTING
+[21/Jun/2019:21:12:25] ENGINE Set handler for console events.
+[21/Jun/2019:21:12:25] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:21:12:25] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:21:12:25] ENGINE Bus STARTED
+[21/Jun/2019:21:12:27] ENGINE Started monitor thread 'Session cleanup'.
+[21/Jun/2019:21:12:27] HTTP 
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 628, in respond
+    self._do_respond(path_info)
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 687, in _do_respond
+    response.body = self.handler()
+  File "C:\Python36\lib\site-packages\cherrypy\lib\encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python36\lib\site-packages\cherrypy\_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "D:/07_Development/Projects/Cherrypy/login_server/controllers.py", line 43, in index
+    if cherrypy.session["authorized"] is None:
+  File "C:\Python36\lib\site-packages\cherrypy\__init__.py", line 246, in __getitem__
+    return child[key]
+  File "C:\Python36\lib\site-packages\cherrypy\lib\sessions.py", line 325, in __getitem__
+    return self._data[key]
+KeyError: 'authorized'
+[21/Jun/2019:21:12:27] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  UPGRADE-INSECURE-REQUESTS: 1
+  USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+  REFERER: http://127.0.0.1:8080/
+  ACCEPT-ENCODING: gzip, deflate, br
+  ACCEPT-LANGUAGE: en-US,en;q=0.9,hu;q=0.8
+  COOKIE: session_id=f8eadd5881d001dc870ac602ba02e2a31345d181
+[21/Jun/2019:21:58:29] ENGINE Listening for SIGTERM.
+[21/Jun/2019:21:58:29] ENGINE Bus STARTING
+[21/Jun/2019:21:58:29] ENGINE Set handler for console events.
+[21/Jun/2019:21:58:29] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:21:58:30] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:21:58:30] ENGINE Bus STARTED
+[21/Jun/2019:21:58:32] ENGINE Started monitor thread 'Session cleanup'.
+[21/Jun/2019:22:05:29] ENGINE Listening for SIGTERM.
+[21/Jun/2019:22:05:29] ENGINE Bus STARTING
+[21/Jun/2019:22:05:29] ENGINE Set handler for console events.
+[21/Jun/2019:22:05:29] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:22:05:29] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:22:05:29] ENGINE Bus STARTED
+[21/Jun/2019:22:05:31] ENGINE Started monitor thread 'Session cleanup'.
+[21/Jun/2019:22:05:31] HTTP 
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 628, in respond
+    self._do_respond(path_info)
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 687, in _do_respond
+    response.body = self.handler()
+  File "C:\Python36\lib\site-packages\cherrypy\lib\encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python36\lib\site-packages\cherrypy\_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "D:/07_Development/Projects/Cherrypy/login_server/controllers.py", line 47, in index
+    if cherrypy.session['authorized'] is True:
+  File "C:\Python36\lib\site-packages\cherrypy\__init__.py", line 246, in __getitem__
+    return child[key]
+  File "C:\Python36\lib\site-packages\cherrypy\lib\sessions.py", line 325, in __getitem__
+    return self._data[key]
+KeyError: 'authorized'
+[21/Jun/2019:22:05:31] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  UPGRADE-INSECURE-REQUESTS: 1
+  USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+  REFERER: http://127.0.0.1:8080/
+  ACCEPT-ENCODING: gzip, deflate, br
+  ACCEPT-LANGUAGE: en-US,en;q=0.9,hu;q=0.8
+  COOKIE: session_id=c26619a2f388983c6cb36204423a8dc45dd9168d
+[21/Jun/2019:22:06:31] ENGINE Listening for SIGTERM.
+[21/Jun/2019:22:06:31] ENGINE Bus STARTING
+[21/Jun/2019:22:06:31] ENGINE Set handler for console events.
+[21/Jun/2019:22:06:31] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:22:06:31] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:22:06:31] ENGINE Bus STARTED
+[21/Jun/2019:22:06:34] ENGINE Started monitor thread 'Session cleanup'.
+[21/Jun/2019:22:06:34] HTTP 
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 628, in respond
+    self._do_respond(path_info)
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 687, in _do_respond
+    response.body = self.handler()
+  File "C:\Python36\lib\site-packages\cherrypy\lib\encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python36\lib\site-packages\cherrypy\_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "D:/07_Development/Projects/Cherrypy/login_server/controllers.py", line 51, in index
+    if cherrypy.session["authorized"] is None:
+  File "C:\Python36\lib\site-packages\cherrypy\__init__.py", line 246, in __getitem__
+    return child[key]
+  File "C:\Python36\lib\site-packages\cherrypy\lib\sessions.py", line 325, in __getitem__
+    return self._data[key]
+KeyError: 'authorized'
+[21/Jun/2019:22:06:34] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  UPGRADE-INSECURE-REQUESTS: 1
+  USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+  REFERER: http://127.0.0.1:8080/
+  ACCEPT-ENCODING: gzip, deflate, br
+  ACCEPT-LANGUAGE: en-US,en;q=0.9,hu;q=0.8
+  COOKIE: session_id=6c494b93d570b02d1e34b35519c898a434864ae0
+[21/Jun/2019:22:06:40] HTTP 
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 628, in respond
+    self._do_respond(path_info)
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 687, in _do_respond
+    response.body = self.handler()
+  File "C:\Python36\lib\site-packages\cherrypy\lib\encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python36\lib\site-packages\cherrypy\_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "D:/07_Development/Projects/Cherrypy/login_server/controllers.py", line 51, in index
+    if cherrypy.session["authorized"] is None:
+  File "C:\Python36\lib\site-packages\cherrypy\__init__.py", line 246, in __getitem__
+    return child[key]
+  File "C:\Python36\lib\site-packages\cherrypy\lib\sessions.py", line 325, in __getitem__
+    return self._data[key]
+KeyError: 'authorized'
+[21/Jun/2019:22:06:40] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  UPGRADE-INSECURE-REQUESTS: 1
+  USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+  REFERER: http://127.0.0.1:8080/
+  ACCEPT-ENCODING: gzip, deflate, br
+  ACCEPT-LANGUAGE: en-US,en;q=0.9,hu;q=0.8
+  COOKIE: session_id=412ce9d9f90a72ae5630f8e3e00d87f219007957
+[21/Jun/2019:23:34:48] ENGINE Listening for SIGTERM.
+[21/Jun/2019:23:34:48] ENGINE Bus STARTING
+[21/Jun/2019:23:34:48] ENGINE Set handler for console events.
+[21/Jun/2019:23:34:48] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:23:34:49] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:23:34:49] ENGINE Bus STARTED
+[21/Jun/2019:23:34:51] ENGINE Started monitor thread 'Session cleanup'.
+[21/Jun/2019:23:34:51] HTTP 
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 628, in respond
+    self._do_respond(path_info)
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 687, in _do_respond
+    response.body = self.handler()
+  File "C:\Python36\lib\site-packages\cherrypy\lib\encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python36\lib\site-packages\cherrypy\_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "D:/07_Development/Projects/Cherrypy/login_server/controllers.py", line 51, in index
+    if cherrypy.session["authorized"] is None:
+  File "C:\Python36\lib\site-packages\cherrypy\__init__.py", line 246, in __getitem__
+    return child[key]
+  File "C:\Python36\lib\site-packages\cherrypy\lib\sessions.py", line 325, in __getitem__
+    return self._data[key]
+KeyError: 'authorized'
+[21/Jun/2019:23:34:51] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  UPGRADE-INSECURE-REQUESTS: 1
+  USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+  REFERER: http://127.0.0.1:8080/
+  ACCEPT-ENCODING: gzip, deflate, br
+  ACCEPT-LANGUAGE: en-US,en;q=0.9,hu;q=0.8
+  COOKIE: session_id=74b95c06c91f4a461d576676acd593a3602e5fd3
+[21/Jun/2019:23:37:26] ENGINE Listening for SIGTERM.
+[21/Jun/2019:23:37:26] ENGINE Bus STARTING
+[21/Jun/2019:23:37:26] ENGINE Set handler for console events.
+[21/Jun/2019:23:37:26] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:23:37:27] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:23:37:27] ENGINE Bus STARTED
+[21/Jun/2019:23:37:29] ENGINE Started monitor thread 'Session cleanup'.
+[21/Jun/2019:23:37:29] HTTP 
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 628, in respond
+    self._do_respond(path_info)
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 687, in _do_respond
+    response.body = self.handler()
+  File "C:\Python36\lib\site-packages\cherrypy\lib\encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python36\lib\site-packages\cherrypy\_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "D:/07_Development/Projects/Cherrypy/login_server/controllers.py", line 51, in index
+    if cherrypy.session["authorized"] is None:
+  File "C:\Python36\lib\site-packages\cherrypy\__init__.py", line 246, in __getitem__
+    return child[key]
+  File "C:\Python36\lib\site-packages\cherrypy\lib\sessions.py", line 325, in __getitem__
+    return self._data[key]
+KeyError: 'authorized'
+[21/Jun/2019:23:37:29] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  UPGRADE-INSECURE-REQUESTS: 1
+  USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+  REFERER: http://127.0.0.1:8080/
+  ACCEPT-ENCODING: gzip, deflate, br
+  ACCEPT-LANGUAGE: en-US,en;q=0.9,hu;q=0.8
+  COOKIE: session_id=482647f1b4f5e8d55c1116e5147ab2c4e8d00050
+[21/Jun/2019:23:41:54] ENGINE Listening for SIGTERM.
+[21/Jun/2019:23:41:54] ENGINE Bus STARTING
+[21/Jun/2019:23:41:54] ENGINE Set handler for console events.
+[21/Jun/2019:23:41:54] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:23:41:54] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:23:41:54] ENGINE Bus STARTED
+[21/Jun/2019:23:41:55]  storage_type is deprecated. Supply storage_class instead
+[21/Jun/2019:23:41:55]  
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\zc\lockfile\__init__.py", line 79, in __init__
+    fp = open(path, 'r+')
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\07_Development\\Projects\\Cherrypy\\login_server\\sessions\\session-82e4e2f03a0fde142b30df34d0f5a53ab5cbb5fe.lock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 104, in run
+    hook()
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 63, in __call__
+    return self.callback(**self.kwargs)
+  File "C:\Python36\lib\site-packages\cherrypy\_cptools.py", line 280, in _lock_session
+    cherrypy.serving.session.acquire_lock()
+  File "C:\Python36\lib\site-packages\cherrypy\lib\sessions.py", line 557, in acquire_lock
+    self.lock = zc.lockfile.LockFile(path)
+  File "C:\Python36\lib\site-packages\zc\lockfile\__init__.py", line 85, in __init__
+    fp = open(path, 'a+')
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\07_Development\\Projects\\Cherrypy\\login_server\\sessions\\session-82e4e2f03a0fde142b30df34d0f5a53ab5cbb5fe.lock'
+[21/Jun/2019:23:41:55] HTTP 
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\zc\lockfile\__init__.py", line 79, in __init__
+    fp = open(path, 'r+')
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\07_Development\\Projects\\Cherrypy\\login_server\\sessions\\session-82e4e2f03a0fde142b30df34d0f5a53ab5cbb5fe.lock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 628, in respond
+    self._do_respond(path_info)
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 684, in _do_respond
+    self.hooks.run('before_handler')
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 114, in run
+    raise exc
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 104, in run
+    hook()
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 63, in __call__
+    return self.callback(**self.kwargs)
+  File "C:\Python36\lib\site-packages\cherrypy\_cptools.py", line 280, in _lock_session
+    cherrypy.serving.session.acquire_lock()
+  File "C:\Python36\lib\site-packages\cherrypy\lib\sessions.py", line 557, in acquire_lock
+    self.lock = zc.lockfile.LockFile(path)
+  File "C:\Python36\lib\site-packages\zc\lockfile\__init__.py", line 85, in __init__
+    fp = open(path, 'a+')
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\07_Development\\Projects\\Cherrypy\\login_server\\sessions\\session-82e4e2f03a0fde142b30df34d0f5a53ab5cbb5fe.lock'
+[21/Jun/2019:23:41:55] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  UPGRADE-INSECURE-REQUESTS: 1
+  USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+  ACCEPT-ENCODING: gzip, deflate, br
+  ACCEPT-LANGUAGE: en-US,en;q=0.9,hu;q=0.8
+  COOKIE: session_id=1a9cf238a21ac98d38ae35d5c6a91470bea0d9c1
+[21/Jun/2019:23:42:23] ENGINE Listening for SIGTERM.
+[21/Jun/2019:23:42:23] ENGINE Bus STARTING
+[21/Jun/2019:23:42:23] ENGINE Set handler for console events.
+[21/Jun/2019:23:42:23] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:23:42:23] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:23:42:23] ENGINE Bus STARTED
+[21/Jun/2019:23:42:27] ENGINE Started monitor thread 'Session cleanup'.
+[21/Jun/2019:23:42:27] HTTP 
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 628, in respond
+    self._do_respond(path_info)
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 687, in _do_respond
+    response.body = self.handler()
+  File "C:\Python36\lib\site-packages\cherrypy\lib\encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python36\lib\site-packages\cherrypy\_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "D:/07_Development/Projects/Cherrypy/login_server/controllers.py", line 51, in index
+    if cherrypy.session["authorized"] is None:
+  File "C:\Python36\lib\site-packages\cherrypy\__init__.py", line 246, in __getitem__
+    return child[key]
+  File "C:\Python36\lib\site-packages\cherrypy\lib\sessions.py", line 325, in __getitem__
+    return self._data[key]
+KeyError: 'authorized'
+[21/Jun/2019:23:42:27] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  UPGRADE-INSECURE-REQUESTS: 1
+  USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+  REFERER: http://127.0.0.1:8080/
+  ACCEPT-ENCODING: gzip, deflate, br
+  ACCEPT-LANGUAGE: en-US,en;q=0.9,hu;q=0.8
+  COOKIE: session_id=70ea34a7109cb274852b4cb75f3334a187c669d8
+[21/Jun/2019:23:42:46] ENGINE Listening for SIGTERM.
+[21/Jun/2019:23:42:46] ENGINE Bus STARTING
+[21/Jun/2019:23:42:46] ENGINE Set handler for console events.
+[21/Jun/2019:23:42:46] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jun/2019:23:42:46] ENGINE Serving on http://127.0.0.1:8080
+[21/Jun/2019:23:42:46] ENGINE Bus STARTED
+[21/Jun/2019:23:42:48] ENGINE Started monitor thread 'Session cleanup'.
+[21/Jun/2019:23:42:48] HTTP 
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 628, in respond
+    self._do_respond(path_info)
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 687, in _do_respond
+    response.body = self.handler()
+  File "C:\Python36\lib\site-packages\cherrypy\lib\encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python36\lib\site-packages\cherrypy\_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "D:/07_Development/Projects/Cherrypy/login_server/controllers.py", line 51, in index
+    if cherrypy.session["authorized"] is None:
+  File "C:\Python36\lib\site-packages\cherrypy\__init__.py", line 246, in __getitem__
+    return child[key]
+  File "C:\Python36\lib\site-packages\cherrypy\lib\sessions.py", line 325, in __getitem__
+    return self._data[key]
+KeyError: 'authorized'
+[21/Jun/2019:23:42:48] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  UPGRADE-INSECURE-REQUESTS: 1
+  USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+  REFERER: http://127.0.0.1:8080/
+  ACCEPT-ENCODING: gzip, deflate, br
+  ACCEPT-LANGUAGE: en-US,en;q=0.9,hu;q=0.8
+  COOKIE: session_id=c682750ed959e0ec9ca570dba2f1f23399251407
+[22/Jun/2019:12:34:36] ENGINE Listening for SIGTERM.
+[22/Jun/2019:12:34:36] ENGINE Bus STARTING
+[22/Jun/2019:12:34:36] ENGINE Set handler for console events.
+[22/Jun/2019:12:34:36] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:12:34:37] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:12:34:37] ENGINE Bus STARTED
+[22/Jun/2019:12:35:21] ENGINE Restarting because D:/07_Development/Projects/Cherrypy/login_server/controllers.py changed.
+[22/Jun/2019:12:35:21] ENGINE Stopped thread 'Autoreloader'.
+[22/Jun/2019:12:35:21] ENGINE Bus STOPPING
+[22/Jun/2019:12:35:22] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[22/Jun/2019:12:35:22] ENGINE Removed handler for console events.
+[22/Jun/2019:12:35:22] ENGINE Bus STOPPED
+[22/Jun/2019:12:35:22] ENGINE Bus EXITING
+[22/Jun/2019:12:35:22] ENGINE Waiting for child threads to terminate...
+[22/Jun/2019:12:35:22] ENGINE Bus EXITED
+[22/Jun/2019:12:35:22] ENGINE Re-spawning C:\Python36\python.exe D:/07_Development/Projects/Cherrypy/login_server/controllers.py
+[22/Jun/2019:12:35:24] ENGINE Listening for SIGTERM.
+[22/Jun/2019:12:35:24] ENGINE Bus STARTING
+[22/Jun/2019:12:35:24] ENGINE Set handler for console events.
+[22/Jun/2019:12:35:24] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:12:35:24] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:12:35:24] ENGINE Bus STARTED
+[22/Jun/2019:12:35:34] ENGINE Listening for SIGTERM.
+[22/Jun/2019:12:35:34] ENGINE Bus STARTING
+[22/Jun/2019:12:35:34] ENGINE Set handler for console events.
+[22/Jun/2019:12:35:34] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:12:35:34] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:12:35:34] ENGINE Bus STARTED
+[22/Jun/2019:12:35:38] HTTP 
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\pymysql\connections.py", line 583, in connect
+    **kwargs)
+  File "C:\Python36\lib\socket.py", line 724, in create_connection
+    raise err
+  File "C:\Python36\lib\socket.py", line 713, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] Nem hozható létre kapcsolat, mert a célszámítógép már visszautasította a kapcsolatot
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 2262, in _wrap_pool_connect
+    return fn()
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 303, in unique_connection
+    return _ConnectionFairy._checkout(self)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 760, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 492, in checkout
+    rec = pool._do_get()
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\impl.py", line 139, in _do_get
+    self._dec_overflow()
+  File "C:\Python36\lib\site-packages\sqlalchemy\util\langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "C:\Python36\lib\site-packages\sqlalchemy\util\compat.py", line 129, in reraise
+    raise value
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\impl.py", line 136, in _do_get
+    return self._create_connection()
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 308, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 437, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 639, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\default.py", line 451, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Python36\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Python36\lib\site-packages\pymysql\connections.py", line 325, in __init__
+    self.connect()
+  File "C:\Python36\lib\site-packages\pymysql\connections.py", line 630, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([WinError 10061] Nem hozható létre kapcsolat, mert a célszámítógép már visszautasította a kapcsolatot)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 628, in respond
+    self._do_respond(path_info)
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 687, in _do_respond
+    response.body = self.handler()
+  File "C:\Python36\lib\site-packages\cherrypy\lib\encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python36\lib\site-packages\cherrypy\_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "D:/07_Development/Projects/Cherrypy/login_server/controllers.py", line 50, in index
+    products_table = db.MySqlHandler('products')
+  File "D:\07_Development\Projects\Cherrypy\login_server\models\database_handler.py", line 53, in __init__
+    self.connection = self.engine.connect()
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 2193, in connect
+    return self._connection_cls(self, **kwargs)
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 103, in __init__
+    else engine.raw_connection()
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 2293, in raw_connection
+    self.pool.unique_connection, _connection
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 2266, in _wrap_pool_connect
+    e, dialect, self
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 1536, in _handle_dbapi_exception_noconnection
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "C:\Python36\lib\site-packages\sqlalchemy\util\compat.py", line 383, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "C:\Python36\lib\site-packages\sqlalchemy\util\compat.py", line 128, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 2262, in _wrap_pool_connect
+    return fn()
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 303, in unique_connection
+    return _ConnectionFairy._checkout(self)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 760, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 492, in checkout
+    rec = pool._do_get()
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\impl.py", line 139, in _do_get
+    self._dec_overflow()
+  File "C:\Python36\lib\site-packages\sqlalchemy\util\langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "C:\Python36\lib\site-packages\sqlalchemy\util\compat.py", line 129, in reraise
+    raise value
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\impl.py", line 136, in _do_get
+    return self._create_connection()
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 308, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 437, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 639, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\default.py", line 451, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Python36\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Python36\lib\site-packages\pymysql\connections.py", line 325, in __init__
+    self.connect()
+  File "C:\Python36\lib\site-packages\pymysql\connections.py", line 630, in connect
+    raise exc
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '127.0.0.1' ([WinError 10061] Nem hozható létre kapcsolat, mert a célszámítógép már visszautasította a kapcsolatot)")
+(Background on this error at: http://sqlalche.me/e/e3q8)
+[22/Jun/2019:12:35:38] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  UPGRADE-INSECURE-REQUESTS: 1
+  USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+  REFERER: http://127.0.0.1:8080/
+  ACCEPT-ENCODING: gzip, deflate, br
+  ACCEPT-LANGUAGE: en-US,en;q=0.9,hu;q=0.8
+  COOKIE: session_id=4049b0a2adc240ce9d2b542e770859a58cf0d8bf
+[22/Jun/2019:12:35:38] HTTP 
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\pymysql\connections.py", line 583, in connect
+    **kwargs)
+  File "C:\Python36\lib\socket.py", line 724, in create_connection
+    raise err
+  File "C:\Python36\lib\socket.py", line 713, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] Nem hozható létre kapcsolat, mert a célszámítógép már visszautasította a kapcsolatot
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 2262, in _wrap_pool_connect
+    return fn()
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 303, in unique_connection
+    return _ConnectionFairy._checkout(self)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 760, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 492, in checkout
+    rec = pool._do_get()
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\impl.py", line 139, in _do_get
+    self._dec_overflow()
+  File "C:\Python36\lib\site-packages\sqlalchemy\util\langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "C:\Python36\lib\site-packages\sqlalchemy\util\compat.py", line 129, in reraise
+    raise value
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\impl.py", line 136, in _do_get
+    return self._create_connection()
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 308, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 437, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 639, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\default.py", line 451, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Python36\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Python36\lib\site-packages\pymysql\connections.py", line 325, in __init__
+    self.connect()
+  File "C:\Python36\lib\site-packages\pymysql\connections.py", line 630, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([WinError 10061] Nem hozható létre kapcsolat, mert a célszámítógép már visszautasította a kapcsolatot)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 628, in respond
+    self._do_respond(path_info)
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 687, in _do_respond
+    response.body = self.handler()
+  File "C:\Python36\lib\site-packages\cherrypy\lib\encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python36\lib\site-packages\cherrypy\_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "D:/07_Development/Projects/Cherrypy/login_server/controllers.py", line 50, in index
+    products_table = db.MySqlHandler('products')
+  File "D:\07_Development\Projects\Cherrypy\login_server\models\database_handler.py", line 53, in __init__
+    self.connection = self.engine.connect()
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 2193, in connect
+    return self._connection_cls(self, **kwargs)
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 103, in __init__
+    else engine.raw_connection()
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 2293, in raw_connection
+    self.pool.unique_connection, _connection
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 2266, in _wrap_pool_connect
+    e, dialect, self
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 1536, in _handle_dbapi_exception_noconnection
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "C:\Python36\lib\site-packages\sqlalchemy\util\compat.py", line 383, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "C:\Python36\lib\site-packages\sqlalchemy\util\compat.py", line 128, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 2262, in _wrap_pool_connect
+    return fn()
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 303, in unique_connection
+    return _ConnectionFairy._checkout(self)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 760, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 492, in checkout
+    rec = pool._do_get()
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\impl.py", line 139, in _do_get
+    self._dec_overflow()
+  File "C:\Python36\lib\site-packages\sqlalchemy\util\langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "C:\Python36\lib\site-packages\sqlalchemy\util\compat.py", line 129, in reraise
+    raise value
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\impl.py", line 136, in _do_get
+    return self._create_connection()
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 308, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 437, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 639, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\default.py", line 451, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Python36\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Python36\lib\site-packages\pymysql\connections.py", line 325, in __init__
+    self.connect()
+  File "C:\Python36\lib\site-packages\pymysql\connections.py", line 630, in connect
+    raise exc
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '127.0.0.1' ([WinError 10061] Nem hozható létre kapcsolat, mert a célszámítógép már visszautasította a kapcsolatot)")
+(Background on this error at: http://sqlalche.me/e/e3q8)
+[22/Jun/2019:12:35:38] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  UPGRADE-INSECURE-REQUESTS: 1
+  USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+  REFERER: http://127.0.0.1:8080/
+  ACCEPT-ENCODING: gzip, deflate, br
+  ACCEPT-LANGUAGE: en-US,en;q=0.9,hu;q=0.8
+  COOKIE: session_id=4049b0a2adc240ce9d2b542e770859a58cf0d8bf
+[22/Jun/2019:12:51:22] ENGINE Listening for SIGTERM.
+[22/Jun/2019:12:51:22] ENGINE Bus STARTING
+[22/Jun/2019:12:51:22] ENGINE Set handler for console events.
+[22/Jun/2019:12:51:22] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:12:51:23] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:12:51:23] ENGINE Bus STARTED
+[22/Jun/2019:13:41:05] ENGINE Listening for SIGTERM.
+[22/Jun/2019:13:41:05] ENGINE Bus STARTING
+[22/Jun/2019:13:41:05] ENGINE Set handler for console events.
+[22/Jun/2019:13:41:05] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:13:41:05] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:13:41:05] ENGINE Bus STARTED
+[22/Jun/2019:13:41:36] ENGINE Listening for SIGTERM.
+[22/Jun/2019:13:41:36] ENGINE Bus STARTING
+[22/Jun/2019:13:41:36] ENGINE Set handler for console events.
+[22/Jun/2019:13:41:36] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:13:41:36] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:13:41:36] ENGINE Bus STARTED
+[22/Jun/2019:15:38:58] ENGINE Listening for SIGTERM.
+[22/Jun/2019:15:38:58] ENGINE Bus STARTING
+[22/Jun/2019:15:38:58] ENGINE Set handler for console events.
+[22/Jun/2019:15:38:58] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:15:38:58] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:15:38:58] ENGINE Bus STARTED
+[22/Jun/2019:16:23:57] ENGINE Listening for SIGTERM.
+[22/Jun/2019:16:23:57] ENGINE Bus STARTING
+[22/Jun/2019:16:23:57] ENGINE Set handler for console events.
+[22/Jun/2019:16:23:57] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:16:23:57] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:16:23:57] ENGINE Bus STARTED
+[22/Jun/2019:16:26:02] ENGINE Listening for SIGTERM.
+[22/Jun/2019:16:26:02] ENGINE Bus STARTING
+[22/Jun/2019:16:26:02] ENGINE Set handler for console events.
+[22/Jun/2019:16:26:02] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:16:26:02] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:16:26:02] ENGINE Bus STARTED
+[22/Jun/2019:16:26:20] ENGINE Listening for SIGTERM.
+[22/Jun/2019:16:26:20] ENGINE Bus STARTING
+[22/Jun/2019:16:26:20] ENGINE Set handler for console events.
+[22/Jun/2019:16:26:20] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:16:26:20] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:16:26:20] ENGINE Bus STARTED
+[22/Jun/2019:16:26:44] ENGINE Listening for SIGTERM.
+[22/Jun/2019:16:26:44] ENGINE Bus STARTING
+[22/Jun/2019:16:26:44] ENGINE Set handler for console events.
+[22/Jun/2019:16:26:44] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:16:26:45] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:16:26:45] ENGINE Bus STARTED
+[22/Jun/2019:16:32:30] ENGINE Listening for SIGTERM.
+[22/Jun/2019:16:32:30] ENGINE Bus STARTING
+[22/Jun/2019:16:32:30] ENGINE Set handler for console events.
+[22/Jun/2019:16:32:30] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:16:32:30] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:16:32:30] ENGINE Bus STARTED
+[22/Jun/2019:16:33:19] ENGINE Listening for SIGTERM.
+[22/Jun/2019:16:33:19] ENGINE Bus STARTING
+[22/Jun/2019:16:33:19] ENGINE Set handler for console events.
+[22/Jun/2019:16:33:19] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:16:33:19] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:16:33:19] ENGINE Bus STARTED
+[22/Jun/2019:16:34:14] ENGINE Listening for SIGTERM.
+[22/Jun/2019:16:34:14] ENGINE Bus STARTING
+[22/Jun/2019:16:34:14] ENGINE Set handler for console events.
+[22/Jun/2019:16:34:14] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:16:34:14] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:16:34:14] ENGINE Bus STARTED
+[22/Jun/2019:16:34:40] ENGINE Listening for SIGTERM.
+[22/Jun/2019:16:34:40] ENGINE Bus STARTING
+[22/Jun/2019:16:34:40] ENGINE Set handler for console events.
+[22/Jun/2019:16:34:40] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:16:34:40] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:16:34:40] ENGINE Bus STARTED
+[22/Jun/2019:16:34:58] ENGINE Listening for SIGTERM.
+[22/Jun/2019:16:34:58] ENGINE Bus STARTING
+[22/Jun/2019:16:34:58] ENGINE Set handler for console events.
+[22/Jun/2019:16:34:58] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:16:34:58] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:16:34:58] ENGINE Bus STARTED
+[22/Jun/2019:16:35:21] ENGINE Listening for SIGTERM.
+[22/Jun/2019:16:35:21] ENGINE Bus STARTING
+[22/Jun/2019:16:35:21] ENGINE Set handler for console events.
+[22/Jun/2019:16:35:21] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:16:35:21] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:16:35:21] ENGINE Bus STARTED
+[22/Jun/2019:16:37:01] ENGINE Listening for SIGTERM.
+[22/Jun/2019:16:37:01] ENGINE Bus STARTING
+[22/Jun/2019:16:37:01] ENGINE Set handler for console events.
+[22/Jun/2019:16:37:01] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:16:37:01] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:16:37:01] ENGINE Bus STARTED
+[22/Jun/2019:16:38:49] ENGINE Listening for SIGTERM.
+[22/Jun/2019:16:38:49] ENGINE Bus STARTING
+[22/Jun/2019:16:38:49] ENGINE Set handler for console events.
+[22/Jun/2019:16:38:49] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:16:38:49] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:16:38:49] ENGINE Bus STARTED
+[22/Jun/2019:16:39:41] ENGINE Listening for SIGTERM.
+[22/Jun/2019:16:39:41] ENGINE Bus STARTING
+[22/Jun/2019:16:39:41] ENGINE Set handler for console events.
+[22/Jun/2019:16:39:41] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:16:39:41] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:16:39:41] ENGINE Bus STARTED
+[22/Jun/2019:16:45:36] ENGINE Listening for SIGTERM.
+[22/Jun/2019:16:45:36] ENGINE Bus STARTING
+[22/Jun/2019:16:45:36] ENGINE Set handler for console events.
+[22/Jun/2019:16:45:36] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:16:45:37] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:16:45:37] ENGINE Bus STARTED
+[22/Jun/2019:16:48:45] ENGINE Listening for SIGTERM.
+[22/Jun/2019:16:48:45] ENGINE Bus STARTING
+[22/Jun/2019:16:48:45] ENGINE Set handler for console events.
+[22/Jun/2019:16:48:45] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:16:48:45] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:16:48:45] ENGINE Bus STARTED
+[22/Jun/2019:16:49:34] ENGINE Listening for SIGTERM.
+[22/Jun/2019:16:49:34] ENGINE Bus STARTING
+[22/Jun/2019:16:49:34] ENGINE Set handler for console events.
+[22/Jun/2019:16:49:34] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:16:49:34] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:16:49:34] ENGINE Bus STARTED
+[22/Jun/2019:16:51:47] ENGINE Listening for SIGTERM.
+[22/Jun/2019:16:51:47] ENGINE Bus STARTING
+[22/Jun/2019:16:51:47] ENGINE Set handler for console events.
+[22/Jun/2019:16:51:47] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:16:51:47] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:16:51:47] ENGINE Bus STARTED
+[22/Jun/2019:16:56:27] ENGINE Listening for SIGTERM.
+[22/Jun/2019:16:56:27] ENGINE Bus STARTING
+[22/Jun/2019:16:56:27] ENGINE Set handler for console events.
+[22/Jun/2019:16:56:27] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:16:56:27] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:16:56:27] ENGINE Bus STARTED
+[22/Jun/2019:16:56:47] ENGINE Listening for SIGTERM.
+[22/Jun/2019:16:56:47] ENGINE Bus STARTING
+[22/Jun/2019:16:56:47] ENGINE Set handler for console events.
+[22/Jun/2019:16:56:47] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:16:56:47] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:16:56:47] ENGINE Bus STARTED
+[22/Jun/2019:16:57:13] ENGINE Listening for SIGTERM.
+[22/Jun/2019:16:57:13] ENGINE Bus STARTING
+[22/Jun/2019:16:57:13] ENGINE Set handler for console events.
+[22/Jun/2019:16:57:13] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:16:57:13] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:16:57:13] ENGINE Bus STARTED
+[22/Jun/2019:16:58:14] ENGINE Listening for SIGTERM.
+[22/Jun/2019:16:58:14] ENGINE Bus STARTING
+[22/Jun/2019:16:58:14] ENGINE Set handler for console events.
+[22/Jun/2019:16:58:14] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:16:58:14] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:16:58:14] ENGINE Bus STARTED
+[22/Jun/2019:17:00:07] ENGINE Listening for SIGTERM.
+[22/Jun/2019:17:00:07] ENGINE Bus STARTING
+[22/Jun/2019:17:00:07] ENGINE Set handler for console events.
+[22/Jun/2019:17:00:07] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:17:00:07] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:17:00:07] ENGINE Bus STARTED
+[22/Jun/2019:17:01:27] ENGINE Listening for SIGTERM.
+[22/Jun/2019:17:01:27] ENGINE Bus STARTING
+[22/Jun/2019:17:01:27] ENGINE Set handler for console events.
+[22/Jun/2019:17:01:27] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:17:01:27] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:17:01:27] ENGINE Bus STARTED
+[22/Jun/2019:17:02:50] ENGINE Listening for SIGTERM.
+[22/Jun/2019:17:02:50] ENGINE Bus STARTING
+[22/Jun/2019:17:02:50] ENGINE Set handler for console events.
+[22/Jun/2019:17:02:50] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:17:02:50] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:17:02:50] ENGINE Bus STARTED
+[22/Jun/2019:17:04:07] ENGINE Listening for SIGTERM.
+[22/Jun/2019:17:04:07] ENGINE Bus STARTING
+[22/Jun/2019:17:04:07] ENGINE Set handler for console events.
+[22/Jun/2019:17:04:07] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:17:04:08] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:17:04:08] ENGINE Bus STARTED
+[22/Jun/2019:17:04:22] ENGINE Listening for SIGTERM.
+[22/Jun/2019:17:04:22] ENGINE Bus STARTING
+[22/Jun/2019:17:04:22] ENGINE Set handler for console events.
+[22/Jun/2019:17:04:22] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:17:04:23] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:17:04:23] ENGINE Bus STARTED
+[22/Jun/2019:17:12:17] ENGINE Listening for SIGTERM.
+[22/Jun/2019:17:12:17] ENGINE Bus STARTING
+[22/Jun/2019:17:12:17] ENGINE Set handler for console events.
+[22/Jun/2019:17:12:17] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:17:12:17] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:17:12:17] ENGINE Bus STARTED
+[22/Jun/2019:18:27:29] ENGINE Listening for SIGTERM.
+[22/Jun/2019:18:27:29] ENGINE Bus STARTING
+[22/Jun/2019:18:27:29] ENGINE Set handler for console events.
+[22/Jun/2019:18:27:29] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:18:27:29] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:18:27:29] ENGINE Bus STARTED
+[22/Jun/2019:18:48:05] ENGINE Listening for SIGTERM.
+[22/Jun/2019:18:48:05] ENGINE Bus STARTING
+[22/Jun/2019:18:48:05] ENGINE Set handler for console events.
+[22/Jun/2019:18:48:05] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:18:48:05] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:18:48:05] ENGINE Bus STARTED
+[22/Jun/2019:18:52:01] ENGINE Listening for SIGTERM.
+[22/Jun/2019:18:52:01] ENGINE Bus STARTING
+[22/Jun/2019:18:52:01] ENGINE Set handler for console events.
+[22/Jun/2019:18:52:01] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:18:52:01] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:18:52:01] ENGINE Bus STARTED
+[22/Jun/2019:19:04:31] ENGINE Listening for SIGTERM.
+[22/Jun/2019:19:04:31] ENGINE Bus STARTING
+[22/Jun/2019:19:04:31] ENGINE Set handler for console events.
+[22/Jun/2019:19:04:31] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:19:04:32] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:19:04:32] ENGINE Bus STARTED
+[22/Jun/2019:19:05:59] ENGINE Listening for SIGTERM.
+[22/Jun/2019:19:05:59] ENGINE Bus STARTING
+[22/Jun/2019:19:05:59] ENGINE Set handler for console events.
+[22/Jun/2019:19:05:59] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:19:05:59] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:19:05:59] ENGINE Bus STARTED
+[22/Jun/2019:19:08:13] ENGINE Listening for SIGTERM.
+[22/Jun/2019:19:08:13] ENGINE Bus STARTING
+[22/Jun/2019:19:08:13] ENGINE Set handler for console events.
+[22/Jun/2019:19:08:13] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:19:08:14] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:19:08:14] ENGINE Bus STARTED
+[22/Jun/2019:19:08:37] ENGINE Listening for SIGTERM.
+[22/Jun/2019:19:08:37] ENGINE Bus STARTING
+[22/Jun/2019:19:08:37] ENGINE Set handler for console events.
+[22/Jun/2019:19:08:37] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:19:08:37] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:19:08:37] ENGINE Bus STARTED
+[22/Jun/2019:19:19:21] ENGINE Listening for SIGTERM.
+[22/Jun/2019:19:19:21] ENGINE Bus STARTING
+[22/Jun/2019:19:19:21] ENGINE Set handler for console events.
+[22/Jun/2019:19:19:21] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:19:19:21] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:19:19:21] ENGINE Bus STARTED
+[22/Jun/2019:19:22:31] ENGINE Listening for SIGTERM.
+[22/Jun/2019:19:22:31] ENGINE Bus STARTING
+[22/Jun/2019:19:22:31] ENGINE Set handler for console events.
+[22/Jun/2019:19:22:31] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:19:22:31] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:19:22:31] ENGINE Bus STARTED
+[22/Jun/2019:19:29:05] ENGINE Listening for SIGTERM.
+[22/Jun/2019:19:29:05] ENGINE Bus STARTING
+[22/Jun/2019:19:29:05] ENGINE Set handler for console events.
+[22/Jun/2019:19:29:05] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:19:29:05] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:19:29:05] ENGINE Bus STARTED
+[22/Jun/2019:19:30:29] ENGINE Listening for SIGTERM.
+[22/Jun/2019:19:30:29] ENGINE Bus STARTING
+[22/Jun/2019:19:30:29] ENGINE Set handler for console events.
+[22/Jun/2019:19:30:29] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:19:30:29] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:19:30:29] ENGINE Bus STARTED
+[22/Jun/2019:19:30:55] ENGINE Listening for SIGTERM.
+[22/Jun/2019:19:30:55] ENGINE Bus STARTING
+[22/Jun/2019:19:30:55] ENGINE Set handler for console events.
+[22/Jun/2019:19:30:55] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:19:30:55] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:19:30:55] ENGINE Bus STARTED
+[22/Jun/2019:19:32:05] ENGINE Listening for SIGTERM.
+[22/Jun/2019:19:32:05] ENGINE Bus STARTING
+[22/Jun/2019:19:32:05] ENGINE Set handler for console events.
+[22/Jun/2019:19:32:05] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:19:32:05] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:19:32:05] ENGINE Bus STARTED
+[22/Jun/2019:19:32:25] ENGINE Listening for SIGTERM.
+[22/Jun/2019:19:32:25] ENGINE Bus STARTING
+[22/Jun/2019:19:32:25] ENGINE Set handler for console events.
+[22/Jun/2019:19:32:25] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:19:32:26] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:19:32:26] ENGINE Bus STARTED
+[22/Jun/2019:19:33:35] ENGINE Listening for SIGTERM.
+[22/Jun/2019:19:33:35] ENGINE Bus STARTING
+[22/Jun/2019:19:33:35] ENGINE Set handler for console events.
+[22/Jun/2019:19:33:35] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:19:33:35] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:19:33:35] ENGINE Bus STARTED
+[22/Jun/2019:19:34:16] ENGINE Listening for SIGTERM.
+[22/Jun/2019:19:34:16] ENGINE Bus STARTING
+[22/Jun/2019:19:34:16] ENGINE Set handler for console events.
+[22/Jun/2019:19:34:16] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:19:34:17] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:19:34:17] ENGINE Bus STARTED
+[22/Jun/2019:19:37:05] ENGINE Listening for SIGTERM.
+[22/Jun/2019:19:37:05] ENGINE Bus STARTING
+[22/Jun/2019:19:37:05] ENGINE Set handler for console events.
+[22/Jun/2019:19:37:05] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:19:37:05] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:19:37:05] ENGINE Bus STARTED
+[22/Jun/2019:19:37:55] ENGINE Listening for SIGTERM.
+[22/Jun/2019:19:37:55] ENGINE Bus STARTING
+[22/Jun/2019:19:37:55] ENGINE Set handler for console events.
+[22/Jun/2019:19:37:55] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:19:37:55] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:19:37:55] ENGINE Bus STARTED
+[22/Jun/2019:19:39:03] ENGINE Listening for SIGTERM.
+[22/Jun/2019:19:39:03] ENGINE Bus STARTING
+[22/Jun/2019:19:39:03] ENGINE Set handler for console events.
+[22/Jun/2019:19:39:03] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:19:39:04] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:19:39:04] ENGINE Bus STARTED
+[22/Jun/2019:19:39:25] ENGINE Listening for SIGTERM.
+[22/Jun/2019:19:39:25] ENGINE Bus STARTING
+[22/Jun/2019:19:39:25] ENGINE Set handler for console events.
+[22/Jun/2019:19:39:25] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:19:39:25] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:19:39:25] ENGINE Bus STARTED
+[22/Jun/2019:19:44:45] ENGINE Listening for SIGTERM.
+[22/Jun/2019:19:44:45] ENGINE Bus STARTING
+[22/Jun/2019:19:44:45] ENGINE Set handler for console events.
+[22/Jun/2019:19:44:45] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:19:44:46] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:19:44:46] ENGINE Bus STARTED
+[22/Jun/2019:19:45:55] ENGINE Listening for SIGTERM.
+[22/Jun/2019:19:45:55] ENGINE Bus STARTING
+[22/Jun/2019:19:45:55] ENGINE Set handler for console events.
+[22/Jun/2019:19:45:55] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:19:45:55] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:19:45:55] ENGINE Bus STARTED
+[22/Jun/2019:19:46:44] ENGINE Listening for SIGTERM.
+[22/Jun/2019:19:46:44] ENGINE Bus STARTING
+[22/Jun/2019:19:46:44] ENGINE Set handler for console events.
+[22/Jun/2019:19:46:44] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:19:46:44] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:19:46:44] ENGINE Bus STARTED
+[22/Jun/2019:20:31:22] ENGINE Listening for SIGTERM.
+[22/Jun/2019:20:31:22] ENGINE Bus STARTING
+[22/Jun/2019:20:31:22] ENGINE Set handler for console events.
+[22/Jun/2019:20:31:22] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:20:31:22] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:20:31:22] ENGINE Bus STARTED
+[22/Jun/2019:20:31:42] ENGINE Listening for SIGTERM.
+[22/Jun/2019:20:31:42] ENGINE Bus STARTING
+[22/Jun/2019:20:31:42] ENGINE Set handler for console events.
+[22/Jun/2019:20:31:42] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:20:31:43] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:20:31:43] ENGINE Bus STARTED
+[22/Jun/2019:20:32:44] ENGINE Listening for SIGTERM.
+[22/Jun/2019:20:32:44] ENGINE Bus STARTING
+[22/Jun/2019:20:32:44] ENGINE Set handler for console events.
+[22/Jun/2019:20:32:44] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:20:32:44] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:20:32:44] ENGINE Bus STARTED
+[22/Jun/2019:20:33:01] ENGINE Listening for SIGTERM.
+[22/Jun/2019:20:33:01] ENGINE Bus STARTING
+[22/Jun/2019:20:33:01] ENGINE Set handler for console events.
+[22/Jun/2019:20:33:01] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:20:33:01] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:20:33:01] ENGINE Bus STARTED
+[22/Jun/2019:20:49:04] ENGINE Listening for SIGTERM.
+[22/Jun/2019:20:49:04] ENGINE Bus STARTING
+[22/Jun/2019:20:49:04] ENGINE Set handler for console events.
+[22/Jun/2019:20:49:04] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:20:49:04] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:20:49:04] ENGINE Bus STARTED
+[22/Jun/2019:20:51:24] ENGINE Listening for SIGTERM.
+[22/Jun/2019:20:51:24] ENGINE Bus STARTING
+[22/Jun/2019:20:51:24] ENGINE Set handler for console events.
+[22/Jun/2019:20:51:24] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:20:51:25] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:20:51:25] ENGINE Bus STARTED
+[22/Jun/2019:20:53:20] ENGINE Listening for SIGTERM.
+[22/Jun/2019:20:53:20] ENGINE Bus STARTING
+[22/Jun/2019:20:53:20] ENGINE Set handler for console events.
+[22/Jun/2019:20:53:20] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jun/2019:20:53:21] ENGINE Serving on http://127.0.0.1:8080
+[22/Jun/2019:20:53:21] ENGINE Bus STARTED
+[23/Jun/2019:22:05:56] ENGINE Listening for SIGTERM.
+[23/Jun/2019:22:05:56] ENGINE Bus STARTING
+[23/Jun/2019:22:05:56] ENGINE Set handler for console events.
+[23/Jun/2019:22:05:56] ENGINE Started monitor thread 'Autoreloader'.
+[23/Jun/2019:22:05:57] ENGINE Serving on http://127.0.0.1:8080
+[23/Jun/2019:22:05:57] ENGINE Bus STARTED
+[23/Jun/2019:22:06:13] HTTP 
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\pymysql\connections.py", line 583, in connect
+    **kwargs)
+  File "C:\Python36\lib\socket.py", line 724, in create_connection
+    raise err
+  File "C:\Python36\lib\socket.py", line 713, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] Nem hozható létre kapcsolat, mert a célszámítógép már visszautasította a kapcsolatot
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 2262, in _wrap_pool_connect
+    return fn()
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 303, in unique_connection
+    return _ConnectionFairy._checkout(self)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 760, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 492, in checkout
+    rec = pool._do_get()
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\impl.py", line 139, in _do_get
+    self._dec_overflow()
+  File "C:\Python36\lib\site-packages\sqlalchemy\util\langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "C:\Python36\lib\site-packages\sqlalchemy\util\compat.py", line 129, in reraise
+    raise value
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\impl.py", line 136, in _do_get
+    return self._create_connection()
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 308, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 437, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 639, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\default.py", line 451, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Python36\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Python36\lib\site-packages\pymysql\connections.py", line 325, in __init__
+    self.connect()
+  File "C:\Python36\lib\site-packages\pymysql\connections.py", line 630, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([WinError 10061] Nem hozható létre kapcsolat, mert a célszámítógép már visszautasította a kapcsolatot)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 628, in respond
+    self._do_respond(path_info)
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 687, in _do_respond
+    response.body = self.handler()
+  File "C:\Python36\lib\site-packages\cherrypy\lib\encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python36\lib\site-packages\cherrypy\_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "D:/07_Development/Projects/Cherrypy/login_server/controllers.py", line 50, in index
+    products_table = db.MySqlHandler('products')
+  File "D:\07_Development\Projects\Cherrypy\login_server\models\database_handler.py", line 53, in __init__
+    self.connection = self.engine.connect()
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 2193, in connect
+    return self._connection_cls(self, **kwargs)
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 103, in __init__
+    else engine.raw_connection()
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 2293, in raw_connection
+    self.pool.unique_connection, _connection
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 2266, in _wrap_pool_connect
+    e, dialect, self
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 1536, in _handle_dbapi_exception_noconnection
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "C:\Python36\lib\site-packages\sqlalchemy\util\compat.py", line 383, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "C:\Python36\lib\site-packages\sqlalchemy\util\compat.py", line 128, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 2262, in _wrap_pool_connect
+    return fn()
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 303, in unique_connection
+    return _ConnectionFairy._checkout(self)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 760, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 492, in checkout
+    rec = pool._do_get()
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\impl.py", line 139, in _do_get
+    self._dec_overflow()
+  File "C:\Python36\lib\site-packages\sqlalchemy\util\langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "C:\Python36\lib\site-packages\sqlalchemy\util\compat.py", line 129, in reraise
+    raise value
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\impl.py", line 136, in _do_get
+    return self._create_connection()
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 308, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 437, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 639, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\default.py", line 451, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Python36\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Python36\lib\site-packages\pymysql\connections.py", line 325, in __init__
+    self.connect()
+  File "C:\Python36\lib\site-packages\pymysql\connections.py", line 630, in connect
+    raise exc
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '127.0.0.1' ([WinError 10061] Nem hozható létre kapcsolat, mert a célszámítógép már visszautasította a kapcsolatot)")
+(Background on this error at: http://sqlalche.me/e/e3q8)
+[23/Jun/2019:22:06:13] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  UPGRADE-INSECURE-REQUESTS: 1
+  USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+  REFERER: http://127.0.0.1:8080/
+  ACCEPT-ENCODING: gzip, deflate, br
+  ACCEPT-LANGUAGE: en-US,en;q=0.9,hu;q=0.8
+  COOKIE: session_id=3440d8166eae11b1ba55484fefd10a0781c95b46
+[23/Jun/2019:22:06:23] HTTP 
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\pymysql\connections.py", line 583, in connect
+    **kwargs)
+  File "C:\Python36\lib\socket.py", line 724, in create_connection
+    raise err
+  File "C:\Python36\lib\socket.py", line 713, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] Nem hozható létre kapcsolat, mert a célszámítógép már visszautasította a kapcsolatot
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 2262, in _wrap_pool_connect
+    return fn()
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 303, in unique_connection
+    return _ConnectionFairy._checkout(self)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 760, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 492, in checkout
+    rec = pool._do_get()
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\impl.py", line 139, in _do_get
+    self._dec_overflow()
+  File "C:\Python36\lib\site-packages\sqlalchemy\util\langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "C:\Python36\lib\site-packages\sqlalchemy\util\compat.py", line 129, in reraise
+    raise value
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\impl.py", line 136, in _do_get
+    return self._create_connection()
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 308, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 437, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 639, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\default.py", line 451, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Python36\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Python36\lib\site-packages\pymysql\connections.py", line 325, in __init__
+    self.connect()
+  File "C:\Python36\lib\site-packages\pymysql\connections.py", line 630, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([WinError 10061] Nem hozható létre kapcsolat, mert a célszámítógép már visszautasította a kapcsolatot)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 628, in respond
+    self._do_respond(path_info)
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 687, in _do_respond
+    response.body = self.handler()
+  File "C:\Python36\lib\site-packages\cherrypy\lib\encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python36\lib\site-packages\cherrypy\_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "D:/07_Development/Projects/Cherrypy/login_server/controllers.py", line 50, in index
+    products_table = db.MySqlHandler('products')
+  File "D:\07_Development\Projects\Cherrypy\login_server\models\database_handler.py", line 53, in __init__
+    self.connection = self.engine.connect()
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 2193, in connect
+    return self._connection_cls(self, **kwargs)
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 103, in __init__
+    else engine.raw_connection()
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 2293, in raw_connection
+    self.pool.unique_connection, _connection
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 2266, in _wrap_pool_connect
+    e, dialect, self
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 1536, in _handle_dbapi_exception_noconnection
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "C:\Python36\lib\site-packages\sqlalchemy\util\compat.py", line 383, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "C:\Python36\lib\site-packages\sqlalchemy\util\compat.py", line 128, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 2262, in _wrap_pool_connect
+    return fn()
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 303, in unique_connection
+    return _ConnectionFairy._checkout(self)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 760, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 492, in checkout
+    rec = pool._do_get()
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\impl.py", line 139, in _do_get
+    self._dec_overflow()
+  File "C:\Python36\lib\site-packages\sqlalchemy\util\langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "C:\Python36\lib\site-packages\sqlalchemy\util\compat.py", line 129, in reraise
+    raise value
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\impl.py", line 136, in _do_get
+    return self._create_connection()
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 308, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 437, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 639, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\default.py", line 451, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Python36\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Python36\lib\site-packages\pymysql\connections.py", line 325, in __init__
+    self.connect()
+  File "C:\Python36\lib\site-packages\pymysql\connections.py", line 630, in connect
+    raise exc
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '127.0.0.1' ([WinError 10061] Nem hozható létre kapcsolat, mert a célszámítógép már visszautasította a kapcsolatot)")
+(Background on this error at: http://sqlalche.me/e/e3q8)
+[23/Jun/2019:22:06:23] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  UPGRADE-INSECURE-REQUESTS: 1
+  USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+  REFERER: http://127.0.0.1:8080/login/
+  ACCEPT-ENCODING: gzip, deflate, br
+  ACCEPT-LANGUAGE: en-US,en;q=0.9,hu;q=0.8
+  COOKIE: session_id=2a009013320b33cfd5f623634320b86729a36660
+[23/Jun/2019:22:57:35] HTTP 
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\pymysql\connections.py", line 583, in connect
+    **kwargs)
+  File "C:\Python36\lib\socket.py", line 724, in create_connection
+    raise err
+  File "C:\Python36\lib\socket.py", line 713, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] Nem hozható létre kapcsolat, mert a célszámítógép már visszautasította a kapcsolatot
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 2262, in _wrap_pool_connect
+    return fn()
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 303, in unique_connection
+    return _ConnectionFairy._checkout(self)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 760, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 492, in checkout
+    rec = pool._do_get()
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\impl.py", line 139, in _do_get
+    self._dec_overflow()
+  File "C:\Python36\lib\site-packages\sqlalchemy\util\langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "C:\Python36\lib\site-packages\sqlalchemy\util\compat.py", line 129, in reraise
+    raise value
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\impl.py", line 136, in _do_get
+    return self._create_connection()
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 308, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 437, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 639, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\default.py", line 451, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Python36\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Python36\lib\site-packages\pymysql\connections.py", line 325, in __init__
+    self.connect()
+  File "C:\Python36\lib\site-packages\pymysql\connections.py", line 630, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([WinError 10061] Nem hozható létre kapcsolat, mert a célszámítógép már visszautasította a kapcsolatot)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 628, in respond
+    self._do_respond(path_info)
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 687, in _do_respond
+    response.body = self.handler()
+  File "C:\Python36\lib\site-packages\cherrypy\lib\encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python36\lib\site-packages\cherrypy\_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "D:/07_Development/Projects/Cherrypy/login_server/controllers.py", line 50, in index
+    products_table = db.MySqlHandler('products')
+  File "D:\07_Development\Projects\Cherrypy\login_server\models\database_handler.py", line 53, in __init__
+    self.connection = self.engine.connect()
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 2193, in connect
+    return self._connection_cls(self, **kwargs)
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 103, in __init__
+    else engine.raw_connection()
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 2293, in raw_connection
+    self.pool.unique_connection, _connection
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 2266, in _wrap_pool_connect
+    e, dialect, self
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 1536, in _handle_dbapi_exception_noconnection
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "C:\Python36\lib\site-packages\sqlalchemy\util\compat.py", line 383, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "C:\Python36\lib\site-packages\sqlalchemy\util\compat.py", line 128, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 2262, in _wrap_pool_connect
+    return fn()
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 303, in unique_connection
+    return _ConnectionFairy._checkout(self)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 760, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 492, in checkout
+    rec = pool._do_get()
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\impl.py", line 139, in _do_get
+    self._dec_overflow()
+  File "C:\Python36\lib\site-packages\sqlalchemy\util\langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "C:\Python36\lib\site-packages\sqlalchemy\util\compat.py", line 129, in reraise
+    raise value
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\impl.py", line 136, in _do_get
+    return self._create_connection()
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 308, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 437, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 639, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\default.py", line 451, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Python36\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Python36\lib\site-packages\pymysql\connections.py", line 325, in __init__
+    self.connect()
+  File "C:\Python36\lib\site-packages\pymysql\connections.py", line 630, in connect
+    raise exc
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '127.0.0.1' ([WinError 10061] Nem hozható létre kapcsolat, mert a célszámítógép már visszautasította a kapcsolatot)")
+(Background on this error at: http://sqlalche.me/e/e3q8)
+[23/Jun/2019:22:57:35] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  UPGRADE-INSECURE-REQUESTS: 1
+  USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+  REFERER: http://127.0.0.1:8080/login/
+  ACCEPT-ENCODING: gzip, deflate, br
+  ACCEPT-LANGUAGE: en-US,en;q=0.9,hu;q=0.8
+  COOKIE: session_id=c39505acbe20cb24fc49dd9e15d073537a35fded
+[23/Jun/2019:22:57:48] HTTP 
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\pymysql\connections.py", line 583, in connect
+    **kwargs)
+  File "C:\Python36\lib\socket.py", line 724, in create_connection
+    raise err
+  File "C:\Python36\lib\socket.py", line 713, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] Nem hozható létre kapcsolat, mert a célszámítógép már visszautasította a kapcsolatot
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 2262, in _wrap_pool_connect
+    return fn()
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 303, in unique_connection
+    return _ConnectionFairy._checkout(self)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 760, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 492, in checkout
+    rec = pool._do_get()
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\impl.py", line 139, in _do_get
+    self._dec_overflow()
+  File "C:\Python36\lib\site-packages\sqlalchemy\util\langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "C:\Python36\lib\site-packages\sqlalchemy\util\compat.py", line 129, in reraise
+    raise value
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\impl.py", line 136, in _do_get
+    return self._create_connection()
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 308, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 437, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 639, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\default.py", line 451, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Python36\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Python36\lib\site-packages\pymysql\connections.py", line 325, in __init__
+    self.connect()
+  File "C:\Python36\lib\site-packages\pymysql\connections.py", line 630, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([WinError 10061] Nem hozható létre kapcsolat, mert a célszámítógép már visszautasította a kapcsolatot)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 628, in respond
+    self._do_respond(path_info)
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 687, in _do_respond
+    response.body = self.handler()
+  File "C:\Python36\lib\site-packages\cherrypy\lib\encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python36\lib\site-packages\cherrypy\_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "D:/07_Development/Projects/Cherrypy/login_server/controllers.py", line 50, in index
+    products_table = db.MySqlHandler('products')
+  File "D:\07_Development\Projects\Cherrypy\login_server\models\database_handler.py", line 53, in __init__
+    self.connection = self.engine.connect()
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 2193, in connect
+    return self._connection_cls(self, **kwargs)
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 103, in __init__
+    else engine.raw_connection()
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 2293, in raw_connection
+    self.pool.unique_connection, _connection
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 2266, in _wrap_pool_connect
+    e, dialect, self
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 1536, in _handle_dbapi_exception_noconnection
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "C:\Python36\lib\site-packages\sqlalchemy\util\compat.py", line 383, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "C:\Python36\lib\site-packages\sqlalchemy\util\compat.py", line 128, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 2262, in _wrap_pool_connect
+    return fn()
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 303, in unique_connection
+    return _ConnectionFairy._checkout(self)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 760, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 492, in checkout
+    rec = pool._do_get()
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\impl.py", line 139, in _do_get
+    self._dec_overflow()
+  File "C:\Python36\lib\site-packages\sqlalchemy\util\langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "C:\Python36\lib\site-packages\sqlalchemy\util\compat.py", line 129, in reraise
+    raise value
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\impl.py", line 136, in _do_get
+    return self._create_connection()
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 308, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 437, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 639, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\default.py", line 451, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Python36\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Python36\lib\site-packages\pymysql\connections.py", line 325, in __init__
+    self.connect()
+  File "C:\Python36\lib\site-packages\pymysql\connections.py", line 630, in connect
+    raise exc
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '127.0.0.1' ([WinError 10061] Nem hozható létre kapcsolat, mert a célszámítógép már visszautasította a kapcsolatot)")
+(Background on this error at: http://sqlalche.me/e/e3q8)
+[23/Jun/2019:22:57:48] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  UPGRADE-INSECURE-REQUESTS: 1
+  USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+  REFERER: http://127.0.0.1:8080/login/
+  ACCEPT-ENCODING: gzip, deflate, br
+  ACCEPT-LANGUAGE: en-US,en;q=0.9,hu;q=0.8
+  COOKIE: session_id=462ca37b870fe2f46a31d71ec38c0d6ce0ad5192
+[23/Jun/2019:23:17:34] HTTP 
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\pymysql\connections.py", line 583, in connect
+    **kwargs)
+  File "C:\Python36\lib\socket.py", line 724, in create_connection
+    raise err
+  File "C:\Python36\lib\socket.py", line 713, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] Nem hozható létre kapcsolat, mert a célszámítógép már visszautasította a kapcsolatot
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 2262, in _wrap_pool_connect
+    return fn()
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 303, in unique_connection
+    return _ConnectionFairy._checkout(self)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 760, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 492, in checkout
+    rec = pool._do_get()
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\impl.py", line 139, in _do_get
+    self._dec_overflow()
+  File "C:\Python36\lib\site-packages\sqlalchemy\util\langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "C:\Python36\lib\site-packages\sqlalchemy\util\compat.py", line 129, in reraise
+    raise value
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\impl.py", line 136, in _do_get
+    return self._create_connection()
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 308, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 437, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 639, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\default.py", line 451, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Python36\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Python36\lib\site-packages\pymysql\connections.py", line 325, in __init__
+    self.connect()
+  File "C:\Python36\lib\site-packages\pymysql\connections.py", line 630, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([WinError 10061] Nem hozható létre kapcsolat, mert a célszámítógép már visszautasította a kapcsolatot)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 628, in respond
+    self._do_respond(path_info)
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 687, in _do_respond
+    response.body = self.handler()
+  File "C:\Python36\lib\site-packages\cherrypy\lib\encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python36\lib\site-packages\cherrypy\_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "D:/07_Development/Projects/Cherrypy/login_server/controllers.py", line 50, in index
+    products_table = db.MySqlHandler('products')
+  File "D:\07_Development\Projects\Cherrypy\login_server\models\database_handler.py", line 53, in __init__
+    self.connection = self.engine.connect()
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 2193, in connect
+    return self._connection_cls(self, **kwargs)
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 103, in __init__
+    else engine.raw_connection()
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 2293, in raw_connection
+    self.pool.unique_connection, _connection
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 2266, in _wrap_pool_connect
+    e, dialect, self
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 1536, in _handle_dbapi_exception_noconnection
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "C:\Python36\lib\site-packages\sqlalchemy\util\compat.py", line 383, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "C:\Python36\lib\site-packages\sqlalchemy\util\compat.py", line 128, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 2262, in _wrap_pool_connect
+    return fn()
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 303, in unique_connection
+    return _ConnectionFairy._checkout(self)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 760, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 492, in checkout
+    rec = pool._do_get()
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\impl.py", line 139, in _do_get
+    self._dec_overflow()
+  File "C:\Python36\lib\site-packages\sqlalchemy\util\langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "C:\Python36\lib\site-packages\sqlalchemy\util\compat.py", line 129, in reraise
+    raise value
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\impl.py", line 136, in _do_get
+    return self._create_connection()
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 308, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 437, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Python36\lib\site-packages\sqlalchemy\pool\base.py", line 639, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Python36\lib\site-packages\sqlalchemy\engine\default.py", line 451, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Python36\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Python36\lib\site-packages\pymysql\connections.py", line 325, in __init__
+    self.connect()
+  File "C:\Python36\lib\site-packages\pymysql\connections.py", line 630, in connect
+    raise exc
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '127.0.0.1' ([WinError 10061] Nem hozható létre kapcsolat, mert a célszámítógép már visszautasította a kapcsolatot)")
+(Background on this error at: http://sqlalche.me/e/e3q8)
+[23/Jun/2019:23:17:34] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  UPGRADE-INSECURE-REQUESTS: 1
+  USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+  REFERER: http://127.0.0.1:8080/
+  ACCEPT-ENCODING: gzip, deflate, br
+  ACCEPT-LANGUAGE: en-US,en;q=0.9,hu;q=0.8
+  COOKIE: session_id=d4aff399cd4b1c0ecbacb883aaf2bd48700f10c5

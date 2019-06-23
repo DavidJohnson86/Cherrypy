@@ -112,6 +112,10 @@ body, input, select, textarea {
   font-size: 1rem;
   line-height: 1.65;}
 
+li{
+    margin: 0px 0;
+}
+
 a {
   -moz-transition: color 0.2s ease-in-out;
   -webkit-transition: color 0.2s ease-in-out;
