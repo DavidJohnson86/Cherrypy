@@ -2,13 +2,10 @@
 <html>
 <head>
     <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     {% block head %}
     <title>{% block title %}{% endblock %}</title>
-    <!--<div id="wrapperHeader">
-        <div id="header">
-        <img src="../public/images/lights.jpg" alt="logo" />
- </div>-->
-</div>
     {% endblock %}
 </head>
 <body>
@@ -19,10 +16,25 @@
         <a href="/store">Store</a>
         <a href="/about">About</a>
     </div>
+   <div class="menu-icons">
+       <a href="">
+           <i class="icon-user" aria-hidden="true">
+           </i>
+       </a>
+       <a href="">
+           <i class="icon-heart" aria-hidden="true">
+           </i>
+       </a>
+       <a href="">
+           <i class="icon-shopping-cart" aria-hidden="true">
+               <span class="cart-items"></span>
+           </i>
+       </a>
+    </div>
     <div id="content">{% block content %}{% endblock %}</div>
     <div id="footer">
         {% block footer %}
-        <font id ="copyright" color="black" size="2"<b>&copy; Copyright 2008 by<a href="http://domain.invalid/">Owner of product</a></b></font>
+          <div class="copyright">&copy;2015 - <strong>SIMPLE Theme</strong></div>
         {% endblock %}
     </div>
 </body>

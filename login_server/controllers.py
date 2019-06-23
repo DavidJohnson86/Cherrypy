@@ -47,21 +47,25 @@ class StorePage(WebService):
 
     @cherrypy.expose
     def index(self):
-        """User must to be authorized to access this page"""
-        if cherrypy.session["authorized"] is None:
-            raise cherrypy.HTTPError(401, 'Unauthorized')
-        if cherrypy.session['authorized'] is True:
-            products_table = db.MySqlHandler('products')
-            columns = [col for col in products_table.get_column_name(products_table.tables)]
-            items = [item for item in products_table.set_store_details()]
-            return self._html_file.render(columns=columns, items=items)
+        products_table = db.MySqlHandler('products')
+        columns = [col for col in products_table.get_column_name(products_table.tables)]
+        items = [item for item in products_table.set_store_details()]
+        return self._html_file.render(columns=columns, items=items)
 
 
 class ProductPage(WebService):
 
+
     @cherrypy.expose
     def index(self, product):
         return self._html_file.render(Product=product)
+
+
+class AboutPage(WebService):
+
+    @cherrypy.expose
+    def index(self):
+        return self._html_file.render()
 
 
 # pylint: disable=C0103
@@ -152,7 +156,7 @@ if __name__ == '__main__':
     cherrypy.config.update({'log.screen': True,
                             'log.access_file': '',
                             'log.error_file': 'error.txt'})
-    WEBAPP = LoginWebService('login.html')
+    WEBAPP = AboutPage('about.html')
     WEBAPP.store = StorePage('store.html')
     WEBAPP.login = LoginWebService('login.html')
     WEBAPP.register = RegisterWebService('login.html')
