@@ -71,14 +71,16 @@ LOG_CONF = {
     }
 }
 
+path = os.path.abspath(os.getcwd())
 
 cherrpy_run_conf = {
-
         '/': {
             'tools.sessions.on': True,
-            'tools.staticdir.root': str(os.path.abspath(os.getcwd()) + r'\views'),
+            'tools.staticdir.root': str(path) + r'\views',
             'tools.sessions.storage_path': 'sessions',
-            'tools.sessions.timeout': 10
+            'tools.sessions.timeout': 10,
+            'tools.staticdir.on': True,
+            'tools.staticdir.dir': '',
         },
         '/contact': {
             'tools.staticdir.on': True,
@@ -90,7 +92,7 @@ cherrpy_run_conf = {
             },
         '/list-view': {
             'tools.staticdir.on': True,
-            'tools.staticdir.dir': '',
+            'tools.staticdir.dir':  '',
             },
         '/grid-view': {
             'tools.staticdir.on': True,
@@ -118,10 +120,10 @@ cherrpy_run_conf = {
         },
 
 
-        '/assets': {
-            'tools.staticdir.on': True,
-            'tools.staticdir.dir': './assets'
-        },
+        # '/assets': {
+        #     'tools.staticdir.on': True,
+        #     'tools.staticdir.dir': './assets'
+        # },
         #
         # '/contact': {
         #     'tools.staticdir.on': True,

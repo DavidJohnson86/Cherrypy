@@ -145,7 +145,7 @@ class RegisterWebService(WebService):
                                       Href_Link='/',
                                       ActionBtn='Register')
 
-    @cherrypy.tools.accept(media='text/plain')
+    8
     def GET(self):
         """GET implementation"""
         cherrypy.session['ts'] = time()
@@ -157,7 +157,4 @@ if __name__ == '__main__':
                             'log.access_file': '',
                             'log.error_file': 'error.txt'})
     WEBAPP = AboutPage('about.html')
-    WEBAPP.store = StorePage('store.html')
-    WEBAPP.login = LoginWebService('login.html')
-    WEBAPP.register = RegisterWebService('login.html')
     cherrypy.quickstart(WEBAPP, '/', config.cherrpy_run_conf)

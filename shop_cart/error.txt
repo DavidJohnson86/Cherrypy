@@ -1578,3 +1578,332 @@ cherrypy.process.wspbus.ChannelFailures: Timeout('Port 8080 not free on 127.0.0.
 [30/Jun/2019:00:53:23] ENGINE Started monitor thread 'Autoreloader'.
 [30/Jun/2019:00:53:23] ENGINE Serving on http://127.0.0.1:8080
 [30/Jun/2019:00:53:23] ENGINE Bus STARTED
+[30/Jun/2019:02:48:33] ENGINE Listening for SIGTERM.
+[30/Jun/2019:02:48:33] ENGINE Bus STARTING
+[30/Jun/2019:02:48:33] ENGINE Set handler for console events.
+[30/Jun/2019:02:48:33] ENGINE Started monitor thread 'Autoreloader'.
+[30/Jun/2019:02:48:33] ENGINE Serving on http://127.0.0.1:8080
+[30/Jun/2019:02:48:33] ENGINE Bus STARTED
+[30/Jun/2019:02:50:01] ENGINE Listening for SIGTERM.
+[30/Jun/2019:02:50:01] ENGINE Bus STARTING
+[30/Jun/2019:02:50:01] ENGINE Set handler for console events.
+[30/Jun/2019:02:50:01] ENGINE Started monitor thread 'Autoreloader'.
+[30/Jun/2019:02:50:01] ENGINE Serving on http://127.0.0.1:8080
+[30/Jun/2019:02:50:01] ENGINE Bus STARTED
+[30/Jun/2019:02:53:25] ENGINE Listening for SIGTERM.
+[30/Jun/2019:02:53:25] ENGINE Bus STARTING
+[30/Jun/2019:02:53:25] ENGINE Set handler for console events.
+[30/Jun/2019:02:53:25] ENGINE Started monitor thread 'Autoreloader'.
+[30/Jun/2019:02:53:25] ENGINE Serving on http://127.0.0.1:8080
+[30/Jun/2019:02:53:25] ENGINE Bus STARTED
+[30/Jun/2019:02:53:58] ENGINE Listening for SIGTERM.
+[30/Jun/2019:02:53:58] ENGINE Bus STARTING
+[30/Jun/2019:02:53:58] ENGINE Set handler for console events.
+[30/Jun/2019:02:53:58] ENGINE Started monitor thread 'Autoreloader'.
+[30/Jun/2019:02:53:58] ENGINE Serving on http://127.0.0.1:8080
+[30/Jun/2019:02:53:58] ENGINE Bus STARTED
+[30/Jun/2019:02:54:15] ENGINE Listening for SIGTERM.
+[30/Jun/2019:02:54:15] ENGINE Bus STARTING
+[30/Jun/2019:02:54:15] ENGINE Set handler for console events.
+[30/Jun/2019:02:54:15] ENGINE Started monitor thread 'Autoreloader'.
+[30/Jun/2019:02:54:15] ENGINE Serving on http://127.0.0.1:8080
+[30/Jun/2019:02:54:15] ENGINE Bus STARTED
+[30/Jun/2019:02:55:38] ENGINE Listening for SIGTERM.
+[30/Jun/2019:02:55:38] ENGINE Bus STARTING
+[30/Jun/2019:02:55:38] ENGINE Set handler for console events.
+[30/Jun/2019:02:55:38] ENGINE Started monitor thread 'Autoreloader'.
+[30/Jun/2019:02:55:38] ENGINE Serving on http://127.0.0.1:8080
+[30/Jun/2019:02:55:38] ENGINE Bus STARTED
+[30/Jun/2019:02:55:51] ENGINE Listening for SIGTERM.
+[30/Jun/2019:02:55:51] ENGINE Bus STARTING
+[30/Jun/2019:02:55:51] ENGINE Set handler for console events.
+[30/Jun/2019:02:55:51] ENGINE Started monitor thread 'Autoreloader'.
+[30/Jun/2019:02:55:51] ENGINE Serving on http://127.0.0.1:8080
+[30/Jun/2019:02:55:51] ENGINE Bus STARTED
+[30/Jun/2019:02:56:04] ENGINE Listening for SIGTERM.
+[30/Jun/2019:02:56:04] ENGINE Bus STARTING
+[30/Jun/2019:02:56:04] ENGINE Set handler for console events.
+[30/Jun/2019:02:56:04] ENGINE Started monitor thread 'Autoreloader'.
+[30/Jun/2019:02:56:04] ENGINE Serving on http://127.0.0.1:8080
+[30/Jun/2019:02:56:04] ENGINE Bus STARTED
+[30/Jun/2019:03:05:27] ENGINE Listening for SIGTERM.
+[30/Jun/2019:03:05:27] ENGINE Bus STARTING
+[30/Jun/2019:03:05:27] ENGINE Set handler for console events.
+[30/Jun/2019:03:05:27] ENGINE Started monitor thread 'Autoreloader'.
+[30/Jun/2019:03:05:27] ENGINE Serving on http://127.0.0.1:8080
+[30/Jun/2019:03:05:27] ENGINE Bus STARTED
+[30/Jun/2019:03:09:13] ENGINE Listening for SIGTERM.
+[30/Jun/2019:03:09:13] ENGINE Bus STARTING
+[30/Jun/2019:03:09:13] ENGINE Set handler for console events.
+[30/Jun/2019:03:09:13] ENGINE Started monitor thread 'Autoreloader'.
+[30/Jun/2019:03:09:13] ENGINE Serving on http://127.0.0.1:8080
+[30/Jun/2019:03:09:13] ENGINE Bus STARTED
+[16/Jul/2019:20:13:37] ENGINE Listening for SIGTERM.
+[16/Jul/2019:20:13:37] ENGINE Bus STARTING
+[16/Jul/2019:20:13:37] ENGINE Set handler for console events.
+[16/Jul/2019:20:13:37] ENGINE Started monitor thread 'Autoreloader'.
+[16/Jul/2019:20:13:37] ENGINE Serving on http://127.0.0.1:8080
+[16/Jul/2019:20:13:37] ENGINE Bus STARTED
+[16/Jul/2019:20:24:12] ENGINE Listening for SIGTERM.
+[16/Jul/2019:20:24:12] ENGINE Bus STARTING
+[16/Jul/2019:20:24:12] ENGINE Set handler for console events.
+[16/Jul/2019:20:24:12] ENGINE Started monitor thread 'Autoreloader'.
+[16/Jul/2019:20:24:13] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x038FF9B0>>
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\cherrypy\process\wspbus.py", line 230, in publish
+    output.append(listener(*args, **kwargs))
+  File "C:\Python36\lib\site-packages\cherrypy\_cpserver.py", line 180, in start
+    super(Server, self).start()
+  File "C:\Python36\lib\site-packages\cherrypy\process\servers.py", line 177, in start
+    portend.free(*self.bind_addr, timeout=Timeouts.free)
+  File "C:\Python36\lib\site-packages\portend.py", line 123, in free
+    raise Timeout("Port {port} not free on {host}.".format(**locals()))
+portend.Timeout: Port 8080 not free on 127.0.0.1.
+
+[16/Jul/2019:20:24:13] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\cherrypy\process\wspbus.py", line 268, in start
+    self.publish('start')
+  File "C:\Python36\lib\site-packages\cherrypy\process\wspbus.py", line 248, in publish
+    raise exc
+cherrypy.process.wspbus.ChannelFailures: Timeout('Port 8080 not free on 127.0.0.1.',)
+
+[16/Jul/2019:20:24:13] ENGINE Bus STOPPING
+[16/Jul/2019:20:24:13] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) already shut down
+[16/Jul/2019:20:24:13] ENGINE Stopped thread 'Autoreloader'.
+[16/Jul/2019:20:24:13] ENGINE Removed handler for console events.
+[16/Jul/2019:20:24:13] ENGINE Bus STOPPED
+[16/Jul/2019:20:24:13] ENGINE Bus EXITING
+[16/Jul/2019:20:24:13] ENGINE Bus EXITED
+[16/Jul/2019:20:24:39] ENGINE Listening for SIGTERM.
+[16/Jul/2019:20:24:39] ENGINE Bus STARTING
+[16/Jul/2019:20:24:39] ENGINE Set handler for console events.
+[16/Jul/2019:20:24:39] ENGINE Started monitor thread 'Autoreloader'.
+[16/Jul/2019:20:24:40] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x044AD050>>
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\cherrypy\process\wspbus.py", line 230, in publish
+    output.append(listener(*args, **kwargs))
+  File "C:\Python36\lib\site-packages\cherrypy\_cpserver.py", line 180, in start
+    super(Server, self).start()
+  File "C:\Python36\lib\site-packages\cherrypy\process\servers.py", line 177, in start
+    portend.free(*self.bind_addr, timeout=Timeouts.free)
+  File "C:\Python36\lib\site-packages\portend.py", line 123, in free
+    raise Timeout("Port {port} not free on {host}.".format(**locals()))
+portend.Timeout: Port 8080 not free on 127.0.0.1.
+
+[16/Jul/2019:20:24:40] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\cherrypy\process\wspbus.py", line 268, in start
+    self.publish('start')
+  File "C:\Python36\lib\site-packages\cherrypy\process\wspbus.py", line 248, in publish
+    raise exc
+cherrypy.process.wspbus.ChannelFailures: Timeout('Port 8080 not free on 127.0.0.1.',)
+
+[16/Jul/2019:20:24:40] ENGINE Bus STOPPING
+[16/Jul/2019:20:24:40] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) already shut down
+[16/Jul/2019:20:24:40] ENGINE Removed handler for console events.
+[16/Jul/2019:20:24:40] ENGINE Stopped thread 'Autoreloader'.
+[16/Jul/2019:20:24:40] ENGINE Bus STOPPED
+[16/Jul/2019:20:24:40] ENGINE Bus EXITING
+[16/Jul/2019:20:24:40] ENGINE Bus EXITED
+[16/Jul/2019:20:24:47] ENGINE Listening for SIGTERM.
+[16/Jul/2019:20:24:47] ENGINE Bus STARTING
+[16/Jul/2019:20:24:47] ENGINE Set handler for console events.
+[16/Jul/2019:20:24:47] ENGINE Started monitor thread 'Autoreloader'.
+[16/Jul/2019:20:24:48] ENGINE Serving on http://127.0.0.1:8080
+[16/Jul/2019:20:24:48] ENGINE Bus STARTED
+[16/Jul/2019:20:28:07] ENGINE Listening for SIGTERM.
+[16/Jul/2019:20:28:07] ENGINE Bus STARTING
+[16/Jul/2019:20:28:07] ENGINE Set handler for console events.
+[16/Jul/2019:20:28:07] ENGINE Started monitor thread 'Autoreloader'.
+[16/Jul/2019:20:28:07] ENGINE Serving on http://127.0.0.1:8080
+[16/Jul/2019:20:28:07] ENGINE Bus STARTED
+[16/Jul/2019:20:29:01] ENGINE Listening for SIGTERM.
+[16/Jul/2019:20:29:01] ENGINE Bus STARTING
+[16/Jul/2019:20:29:01] ENGINE Set handler for console events.
+[16/Jul/2019:20:29:01] ENGINE Started monitor thread 'Autoreloader'.
+[16/Jul/2019:20:29:02] ENGINE Serving on http://127.0.0.1:8080
+[16/Jul/2019:20:29:02] ENGINE Bus STARTED
+[16/Jul/2019:20:30:44] ENGINE Listening for SIGTERM.
+[16/Jul/2019:20:30:44] ENGINE Bus STARTING
+[16/Jul/2019:20:30:44] ENGINE Set handler for console events.
+[16/Jul/2019:20:30:44] ENGINE Started monitor thread 'Autoreloader'.
+[16/Jul/2019:20:30:45] ENGINE Serving on http://127.0.0.1:8080
+[16/Jul/2019:20:30:45] ENGINE Bus STARTED
+[16/Jul/2019:20:31:17] ENGINE Listening for SIGTERM.
+[16/Jul/2019:20:31:17] ENGINE Bus STARTING
+[16/Jul/2019:20:31:17] ENGINE Set handler for console events.
+[16/Jul/2019:20:31:17] ENGINE Started monitor thread 'Autoreloader'.
+[16/Jul/2019:20:31:17] ENGINE Serving on http://127.0.0.1:8080
+[16/Jul/2019:20:31:17] ENGINE Bus STARTED
+[16/Jul/2019:20:31:49] ENGINE Listening for SIGTERM.
+[16/Jul/2019:20:31:49] ENGINE Bus STARTING
+[16/Jul/2019:20:31:49] ENGINE Set handler for console events.
+[16/Jul/2019:20:31:49] ENGINE Started monitor thread 'Autoreloader'.
+[16/Jul/2019:20:31:49] ENGINE Serving on http://127.0.0.1:8080
+[16/Jul/2019:20:31:49] ENGINE Bus STARTED
+[16/Jul/2019:20:32:08] ENGINE Listening for SIGTERM.
+[16/Jul/2019:20:32:08] ENGINE Bus STARTING
+[16/Jul/2019:20:32:08] ENGINE Set handler for console events.
+[16/Jul/2019:20:32:08] ENGINE Started monitor thread 'Autoreloader'.
+[16/Jul/2019:20:32:08] ENGINE Serving on http://127.0.0.1:8080
+[16/Jul/2019:20:32:08] ENGINE Bus STARTED
+[16/Jul/2019:20:33:46] ENGINE Listening for SIGTERM.
+[16/Jul/2019:20:33:46] ENGINE Bus STARTING
+[16/Jul/2019:20:33:46] ENGINE Set handler for console events.
+[16/Jul/2019:20:33:46] ENGINE Started monitor thread 'Autoreloader'.
+[16/Jul/2019:20:33:47] ENGINE Serving on http://127.0.0.1:8080
+[16/Jul/2019:20:33:47] ENGINE Bus STARTED
+[16/Jul/2019:20:39:26] ENGINE Listening for SIGTERM.
+[16/Jul/2019:20:39:26] ENGINE Bus STARTING
+[16/Jul/2019:20:39:26] ENGINE Set handler for console events.
+[16/Jul/2019:20:39:26] ENGINE Started monitor thread 'Autoreloader'.
+[16/Jul/2019:20:39:26] ENGINE Serving on http://127.0.0.1:8080
+[16/Jul/2019:20:39:26] ENGINE Bus STARTED
+[16/Jul/2019:20:41:06] ENGINE Listening for SIGTERM.
+[16/Jul/2019:20:41:06] ENGINE Bus STARTING
+[16/Jul/2019:20:41:06] ENGINE Set handler for console events.
+[16/Jul/2019:20:41:06] ENGINE Started monitor thread 'Autoreloader'.
+[16/Jul/2019:20:41:06] ENGINE Serving on http://127.0.0.1:8080
+[16/Jul/2019:20:41:06] ENGINE Bus STARTED
+[16/Jul/2019:20:41:52] ENGINE Listening for SIGTERM.
+[16/Jul/2019:20:41:52] ENGINE Bus STARTING
+[16/Jul/2019:20:41:52] ENGINE Set handler for console events.
+[16/Jul/2019:20:41:52] ENGINE Started monitor thread 'Autoreloader'.
+[16/Jul/2019:20:41:53] ENGINE Serving on http://127.0.0.1:8080
+[16/Jul/2019:20:41:53] ENGINE Bus STARTED
+[16/Jul/2019:20:43:25] ENGINE Listening for SIGTERM.
+[16/Jul/2019:20:43:25] ENGINE Bus STARTING
+[16/Jul/2019:20:43:25] ENGINE Set handler for console events.
+[16/Jul/2019:20:43:25] ENGINE Started monitor thread 'Autoreloader'.
+[16/Jul/2019:20:43:25] ENGINE Serving on http://127.0.0.1:8080
+[16/Jul/2019:20:43:25] ENGINE Bus STARTED
+[16/Jul/2019:20:43:45] ENGINE Listening for SIGTERM.
+[16/Jul/2019:20:43:45] ENGINE Bus STARTING
+[16/Jul/2019:20:43:45] ENGINE Set handler for console events.
+[16/Jul/2019:20:43:45] ENGINE Started monitor thread 'Autoreloader'.
+[16/Jul/2019:20:43:45] ENGINE Serving on http://127.0.0.1:8080
+[16/Jul/2019:20:43:45] ENGINE Bus STARTED
+[16/Jul/2019:20:43:59] ENGINE Listening for SIGTERM.
+[16/Jul/2019:20:43:59] ENGINE Bus STARTING
+[16/Jul/2019:20:43:59] ENGINE Set handler for console events.
+[16/Jul/2019:20:43:59] ENGINE Started monitor thread 'Autoreloader'.
+[16/Jul/2019:20:43:59] ENGINE Serving on http://127.0.0.1:8080
+[16/Jul/2019:20:43:59] ENGINE Bus STARTED
+[16/Jul/2019:20:45:37] ENGINE Listening for SIGTERM.
+[16/Jul/2019:20:45:37] ENGINE Bus STARTING
+[16/Jul/2019:20:45:37] ENGINE Set handler for console events.
+[16/Jul/2019:20:45:37] ENGINE Started monitor thread 'Autoreloader'.
+[16/Jul/2019:20:45:38] ENGINE Serving on http://127.0.0.1:8080
+[16/Jul/2019:20:45:38] ENGINE Bus STARTED
+[16/Jul/2019:20:46:08] ENGINE Restarting because D:\07_Development\Projects\Cherrypy\shop_cart\config.py changed.
+[16/Jul/2019:20:46:08] ENGINE Stopped thread 'Autoreloader'.
+[16/Jul/2019:20:46:08] ENGINE Bus STOPPING
+[16/Jul/2019:20:46:08] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[16/Jul/2019:20:46:08] ENGINE Removed handler for console events.
+[16/Jul/2019:20:46:08] ENGINE Bus STOPPED
+[16/Jul/2019:20:46:08] ENGINE Bus EXITING
+[16/Jul/2019:20:46:08] ENGINE Waiting for child threads to terminate...
+[16/Jul/2019:20:46:08] ENGINE Bus EXITED
+[16/Jul/2019:20:46:08] ENGINE Re-spawning C:\Python36\python.exe D:/07_Development/Projects/Cherrypy/shop_cart/controllers.py
+[16/Jul/2019:20:46:36] ENGINE Listening for SIGTERM.
+[16/Jul/2019:20:46:36] ENGINE Bus STARTING
+[16/Jul/2019:20:46:36] ENGINE Set handler for console events.
+[16/Jul/2019:20:46:36] ENGINE Started monitor thread 'Autoreloader'.
+[16/Jul/2019:20:46:36] ENGINE Serving on http://127.0.0.1:8080
+[16/Jul/2019:20:46:36] ENGINE Bus STARTED
+[16/Jul/2019:20:48:27] ENGINE Listening for SIGTERM.
+[16/Jul/2019:20:48:27] ENGINE Bus STARTING
+[16/Jul/2019:20:48:27] ENGINE Set handler for console events.
+[16/Jul/2019:20:48:27] ENGINE Started monitor thread 'Autoreloader'.
+[16/Jul/2019:20:48:28] ENGINE Serving on http://127.0.0.1:8080
+[16/Jul/2019:20:48:28] ENGINE Bus STARTED
+[16/Jul/2019:20:49:45] ENGINE Listening for SIGTERM.
+[16/Jul/2019:20:49:45] ENGINE Bus STARTING
+[16/Jul/2019:20:49:45] ENGINE Set handler for console events.
+[16/Jul/2019:20:49:45] ENGINE Started monitor thread 'Autoreloader'.
+[16/Jul/2019:20:49:45] ENGINE Serving on http://127.0.0.1:8080
+[16/Jul/2019:20:49:45] ENGINE Bus STARTED
+[16/Jul/2019:20:50:44] ENGINE Listening for SIGTERM.
+[16/Jul/2019:20:50:44] ENGINE Bus STARTING
+[16/Jul/2019:20:50:44] ENGINE Set handler for console events.
+[16/Jul/2019:20:50:44] ENGINE Started monitor thread 'Autoreloader'.
+[16/Jul/2019:20:50:44] ENGINE Serving on http://127.0.0.1:8080
+[16/Jul/2019:20:50:44] ENGINE Bus STARTED
+[16/Jul/2019:20:51:14] ENGINE Listening for SIGTERM.
+[16/Jul/2019:20:51:14] ENGINE Bus STARTING
+[16/Jul/2019:20:51:14] ENGINE Set handler for console events.
+[16/Jul/2019:20:51:14] ENGINE Started monitor thread 'Autoreloader'.
+[16/Jul/2019:20:51:14] ENGINE Serving on http://127.0.0.1:8080
+[16/Jul/2019:20:51:14] ENGINE Bus STARTED
+[16/Jul/2019:20:52:53] ENGINE Listening for SIGTERM.
+[16/Jul/2019:20:52:53] ENGINE Bus STARTING
+[16/Jul/2019:20:52:53] ENGINE Set handler for console events.
+[16/Jul/2019:20:52:53] ENGINE Started monitor thread 'Autoreloader'.
+[16/Jul/2019:20:52:53] ENGINE Serving on http://127.0.0.1:8080
+[16/Jul/2019:20:52:53] ENGINE Bus STARTED
+[16/Jul/2019:20:54:41] ENGINE Listening for SIGTERM.
+[16/Jul/2019:20:54:41] ENGINE Bus STARTING
+[16/Jul/2019:20:54:41] ENGINE Set handler for console events.
+[16/Jul/2019:20:54:41] ENGINE Started monitor thread 'Autoreloader'.
+[16/Jul/2019:20:54:41] ENGINE Serving on http://127.0.0.1:8080
+[16/Jul/2019:20:54:41] ENGINE Bus STARTED
+[16/Jul/2019:20:56:46] ENGINE Listening for SIGTERM.
+[16/Jul/2019:20:56:46] ENGINE Bus STARTING
+[16/Jul/2019:20:56:46] ENGINE Set handler for console events.
+[16/Jul/2019:20:56:46] ENGINE Started monitor thread 'Autoreloader'.
+[16/Jul/2019:20:56:46] ENGINE Serving on http://127.0.0.1:8080
+[16/Jul/2019:20:56:46] ENGINE Bus STARTED
+[16/Jul/2019:20:57:29] ENGINE Listening for SIGTERM.
+[16/Jul/2019:20:57:29] ENGINE Bus STARTING
+[16/Jul/2019:20:57:29] ENGINE Set handler for console events.
+[16/Jul/2019:20:57:29] ENGINE Started monitor thread 'Autoreloader'.
+[16/Jul/2019:20:57:30] ENGINE Serving on http://127.0.0.1:8080
+[16/Jul/2019:20:57:30] ENGINE Bus STARTED
+[16/Jul/2019:20:59:43] ENGINE Listening for SIGTERM.
+[16/Jul/2019:20:59:43] ENGINE Bus STARTING
+[16/Jul/2019:20:59:43] ENGINE Set handler for console events.
+[16/Jul/2019:20:59:43] ENGINE Started monitor thread 'Autoreloader'.
+[16/Jul/2019:20:59:43] ENGINE Serving on http://127.0.0.1:8080
+[16/Jul/2019:20:59:43] ENGINE Bus STARTED
+[16/Jul/2019:20:59:45]  
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 104, in run
+    hook()
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 63, in __call__
+    return self.callback(**self.kwargs)
+  File "C:\Python36\lib\site-packages\cherrypy\_cptools.py", line 182, in _wrapper
+    if self.callable(**kwargs):
+TypeError: staticdir() missing 2 required positional arguments: 'section' and 'dir'
+[16/Jul/2019:20:59:45] HTTP 
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 628, in respond
+    self._do_respond(path_info)
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 684, in _do_respond
+    self.hooks.run('before_handler')
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 114, in run
+    raise exc
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 104, in run
+    hook()
+  File "C:\Python36\lib\site-packages\cherrypy\_cprequest.py", line 63, in __call__
+    return self.callback(**self.kwargs)
+  File "C:\Python36\lib\site-packages\cherrypy\_cptools.py", line 182, in _wrapper
+    if self.callable(**kwargs):
+TypeError: staticdir() missing 2 required positional arguments: 'section' and 'dir'
+[16/Jul/2019:20:59:45] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  UPGRADE-INSECURE-REQUESTS: 1
+  USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+  ACCEPT-ENCODING: gzip, deflate, br
+  ACCEPT-LANGUAGE: en-US,en;q=0.9,hu;q=0.8
+  COOKIE: session_id=62fdb91033e3ef5d43235fc402b9b4d01d6df618
+[16/Jul/2019:20:59:57] ENGINE Listening for SIGTERM.
+[16/Jul/2019:20:59:57] ENGINE Bus STARTING
+[16/Jul/2019:20:59:57] ENGINE Set handler for console events.
+[16/Jul/2019:20:59:57] ENGINE Started monitor thread 'Autoreloader'.
+[16/Jul/2019:20:59:58] ENGINE Serving on http://127.0.0.1:8080
+[16/Jul/2019:20:59:58] ENGINE Bus STARTED
