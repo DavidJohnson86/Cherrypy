@@ -120,10 +120,10 @@ cherrpy_run_conf = {
         },
 
 
-        # '/assets': {
-        #     'tools.staticdir.on': True,
-        #     'tools.staticdir.dir': './assets'
-        # },
+        '/assets': {
+            'tools.staticdir.on': True,
+            'tools.staticdir.dir': './assets'
+        },
         #
         # '/contact': {
         #     'tools.staticdir.on': True,

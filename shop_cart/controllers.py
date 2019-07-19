@@ -2,13 +2,25 @@
 # pylint --disable=F0401 cherrypy
 import config
 import cherrypy
+from jinja2 import Environment, FileSystemLoader
 import os
 
 
-class HomePage:
+
+class WebService:
+    """This class should be inherited for different pages"""
+
+    TEMPLATE_FOLDER = r"./views"
+
+    def __init__(self, html_template_file_name):
+        """Initialize variables"""
+        self._environment = Environment(loader=FileSystemLoader(WebService.TEMPLATE_FOLDER))
+        self._html_file = self._environment.get_template(html_template_file_name)
+
+class HomePage(WebService):
     @cherrypy.expose
     def index(self):
-        return open(r'views\index.html')
+        return self._html_file.render()
 
 
 class CartPage:
@@ -30,23 +42,19 @@ class ContactPage:
     def index(self):
         return open(r'views\contact.html')
 
+
 class ForgetPasswordPage:
 
     @cherrypy.expose
     def index(self):
         return open(r'views\forget_password.html')
 
-class FourColPage:
+
+class GeneralPage(WebService):
 
     @cherrypy.expose
     def index(self):
-        return open(r'views\four-col.html')
-
-class GeneralPage:
-
-    @cherrypy.expose
-    def index(self):
-        return open(r'views\general.html')
+        return self._html_file.render()
 
 
 class HeaderPage:
@@ -54,20 +62,6 @@ class HeaderPage:
     @cherrypy.expose
     def index(self):
         return open(r'views\header.html')
-
-
-class GridPage:
-
-    @cherrypy.expose
-    def index(self):
-        return open(r'views\grid-view.html')
-
-
-class ListViewPage:
-
-    @cherrypy.expose
-    def index(self):
-        return open(r'views\list-view.html')
 
 
 class LoginPage:
@@ -84,10 +78,10 @@ class ProductsPage:
         return open(r'views\products.html')
 
 
+@cherrypy.popargs('product')
 class ProductDetailsPage:
-
     @cherrypy.expose
-    def index(self):
+    def index(self, product):
         return open(r'views\product-details.html')
 
 
@@ -98,36 +92,20 @@ class RegisterPage:
         return open(r'views\register.html')
 
 
-class ThreeColPage:
-
-    @cherrypy.expose
-    def index(self):
-        return open(r'views\three-col.html')
-
-
-
 if __name__ == '__main__':
     cherrypy.config.update({'log.screen': True,
                             'log.access_file': '',
                             'log.error_file': 'error.txt'})
-    WEBAPP = HomePage()
+    WEBAPP = HomePage('index.html')
     WEBAPP.cart = CartPage()
     WEBAPP.compair = ComPairPage()
     WEBAPP.contact = ContactPage()
     WEBAPP.forget_password = ForgetPasswordPage()
-    four_col = "four-col"
-    grid_view ="grid-view"
-    WEBAPP.four_col = FourColPage()
-    WEBAPP.general = GeneralPage()
-    WEBAPP.grid_view = GridPage()
+    WEBAPP.general = GeneralPage('general.html')
     WEBAPP.header = HeaderPage()
-    list_view = "list-view"
-    WEBAPP.list_view = ListViewPage()
     WEBAPP.login = LoginPage()
     product_details = "product-details"
     WEBAPP.product_details = ProductDetailsPage()
     WEBAPP.products = ProductsPage()
     WEBAPP.register = RegisterPage()
-    three_col = "three-col"
-    WEBAPP.three_col = ThreeColPage()
     cherrypy.quickstart(WEBAPP, '/', config.cherrpy_run_conf)
