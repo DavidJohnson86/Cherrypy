@@ -3,8 +3,6 @@
 import config
 import cherrypy
 from jinja2 import Environment, FileSystemLoader
-import os
-
 
 
 class WebService:
@@ -24,11 +22,11 @@ class HomePage(WebService):
         return self._html_file.render()
 
 
-class CartPage:
+class CartPage(WebService):
 
     @cherrypy.expose
     def index(self):
-        return open(r'views\cart.html')
+        return self._html_file.render()
 
 
 class ComPairPage:
@@ -50,6 +48,7 @@ class ForgetPasswordPage:
     @cherrypy.expose
     def index(self):
         return open(r'views\forget_password.html')
+
 
 class GridViewPage(WebService):
 
@@ -86,11 +85,11 @@ class LoginPage:
         return open(r'views\login.html')
 
 
-class ProductsPage:
+class ProductsPage(WebService):
 
     @cherrypy.expose
     def index(self):
-        return open(r'views\products.html')
+        return self._html_file.render()
 
 class ThreeColPage(WebService):
 
@@ -121,7 +120,7 @@ if __name__ == '__main__':
     list_view = "list-view"
     grid_view = "grid-view"
     WEBAPP = HomePage('index.html')
-    WEBAPP.cart = CartPage()
+    WEBAPP.cart = CartPage('cart.html')
     WEBAPP.compair = ComPairPage()
     WEBAPP.contact = ContactPage('contact.html')
     WEBAPP.list_view = ListViewPage('list-view.html')
@@ -131,6 +130,6 @@ if __name__ == '__main__':
     WEBAPP.header = HeaderPage()
     WEBAPP.login = LoginPage()
     WEBAPP.product_details = ProductDetailsPage()
-    WEBAPP.products = ProductsPage()
+    WEBAPP.products = ProductsPage('products.html')
     WEBAPP.register = RegisterPage('register.html')
     cherrypy.quickstart(WEBAPP, '/', config.cherrpy_run_conf)

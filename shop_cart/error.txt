@@ -2575,3 +2575,580 @@ cherrypy.process.wspbus.ChannelFailures: Timeout('Port 8080 not free on 127.0.0.
 [20/Jul/2019:21:04:31] ENGINE Started monitor thread 'Autoreloader'.
 [20/Jul/2019:21:04:32] ENGINE Serving on http://127.0.0.1:8080
 [20/Jul/2019:21:04:32] ENGINE Bus STARTED
+[22/Jul/2019:10:38:19] ENGINE Listening for SIGTERM.
+[22/Jul/2019:10:38:19] ENGINE Bus STARTING
+[22/Jul/2019:10:38:19] ENGINE Set handler for console events.
+[22/Jul/2019:10:38:19] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jul/2019:10:38:19] ENGINE Serving on http://127.0.0.1:8080
+[22/Jul/2019:10:38:19] ENGINE Bus STARTED
+[22/Jul/2019:10:50:13] ENGINE Listening for SIGTERM.
+[22/Jul/2019:10:50:13] ENGINE Bus STARTING
+[22/Jul/2019:10:50:13] ENGINE Set handler for console events.
+[22/Jul/2019:10:50:13] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jul/2019:10:50:13] ENGINE Serving on http://127.0.0.1:8080
+[22/Jul/2019:10:50:13] ENGINE Bus STARTED
+[22/Jul/2019:10:55:26] ENGINE Restarting because D:\02_implementation\01_python\tool_chain\shop_cart\config.py changed.
+[22/Jul/2019:10:55:26] ENGINE Stopped thread 'Autoreloader'.
+[22/Jul/2019:10:55:26] ENGINE Bus STOPPING
+[22/Jul/2019:10:55:26] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[22/Jul/2019:10:55:26] ENGINE Removed handler for console events.
+[22/Jul/2019:10:55:26] ENGINE Bus STOPPED
+[22/Jul/2019:10:55:26] ENGINE Bus EXITING
+[22/Jul/2019:10:55:26] ENGINE Waiting for child threads to terminate...
+[22/Jul/2019:10:55:26] ENGINE Bus EXITED
+[22/Jul/2019:10:55:26] ENGINE Re-spawning C:\Python37\python.exe D:/02_implementation/01_python/tool_chain/shop_cart/controllers.py
+[22/Jul/2019:10:55:29] ENGINE Listening for SIGTERM.
+[22/Jul/2019:10:55:29] ENGINE Bus STARTING
+[22/Jul/2019:10:55:29] ENGINE Set handler for console events.
+[22/Jul/2019:10:55:29] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jul/2019:10:55:29] ENGINE Serving on http://127.0.0.1:8080
+[22/Jul/2019:10:55:29] ENGINE Bus STARTED
+[22/Jul/2019:10:57:05] ENGINE Restarting because D:\02_implementation\01_python\tool_chain\shop_cart\config.py changed.
+[22/Jul/2019:10:57:05] ENGINE Stopped thread 'Autoreloader'.
+[22/Jul/2019:10:57:05] ENGINE Bus STOPPING
+[22/Jul/2019:10:57:05] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[22/Jul/2019:10:57:05] ENGINE Removed handler for console events.
+[22/Jul/2019:10:57:05] ENGINE Bus STOPPED
+[22/Jul/2019:10:57:05] ENGINE Bus EXITING
+[22/Jul/2019:10:57:05] ENGINE Bus EXITED
+[22/Jul/2019:10:57:05] ENGINE Waiting for child threads to terminate...
+[22/Jul/2019:10:57:05] ENGINE Re-spawning C:\Python37\python.exe D:/02_implementation/01_python/tool_chain/shop_cart/controllers.py
+[22/Jul/2019:10:57:07] ENGINE Listening for SIGTERM.
+[22/Jul/2019:10:57:07] ENGINE Bus STARTING
+[22/Jul/2019:10:57:07] ENGINE Set handler for console events.
+[22/Jul/2019:10:57:07] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jul/2019:10:57:07] ENGINE Serving on http://127.0.0.1:8080
+[22/Jul/2019:10:57:07] ENGINE Bus STARTED
+[22/Jul/2019:10:57:20] ENGINE Listening for SIGTERM.
+[22/Jul/2019:10:57:20] ENGINE Bus STARTING
+[22/Jul/2019:10:57:20] ENGINE Set handler for console events.
+[22/Jul/2019:10:57:20] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jul/2019:10:57:21] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x03B63C50>>
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\portend.py", line 115, in free
+    Checker(timeout=0.1).assert_free(host, port)
+  File "C:\Python37\lib\site-packages\portend.py", line 69, in assert_free
+    list(itertools.starmap(self._connect, info))
+  File "C:\Python37\lib\site-packages\portend.py", line 85, in _connect
+    raise PortNotFree(tmpl.format(**locals()))
+portend.PortNotFree: Port 127.0.0.1 is in use on 8080.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\cherrypy\process\wspbus.py", line 230, in publish
+    output.append(listener(*args, **kwargs))
+  File "C:\Python37\lib\site-packages\cherrypy\_cpserver.py", line 180, in start
+    super(Server, self).start()
+  File "C:\Python37\lib\site-packages\cherrypy\process\servers.py", line 177, in start
+    portend.free(*self.bind_addr, timeout=Timeouts.free)
+  File "C:\Python37\lib\site-packages\portend.py", line 119, in free
+    raise Timeout("Port {port} not free on {host}.".format(**locals()))
+portend.Timeout: Port 8080 not free on 127.0.0.1.
+
+[22/Jul/2019:10:57:21] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\cherrypy\process\wspbus.py", line 268, in start
+    self.publish('start')
+  File "C:\Python37\lib\site-packages\cherrypy\process\wspbus.py", line 248, in publish
+    raise exc
+cherrypy.process.wspbus.ChannelFailures: Timeout('Port 8080 not free on 127.0.0.1.')
+
+[22/Jul/2019:10:57:21] ENGINE Bus STOPPING
+[22/Jul/2019:10:57:21] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) already shut down
+[22/Jul/2019:10:57:21] ENGINE Removed handler for console events.
+[22/Jul/2019:10:57:21] ENGINE Stopped thread 'Autoreloader'.
+[22/Jul/2019:10:57:21] ENGINE Bus STOPPED
+[22/Jul/2019:10:57:21] ENGINE Bus EXITING
+[22/Jul/2019:10:57:21] ENGINE Bus EXITED
+[22/Jul/2019:10:57:41] ENGINE Listening for SIGTERM.
+[22/Jul/2019:10:57:41] ENGINE Bus STARTING
+[22/Jul/2019:10:57:41] ENGINE Set handler for console events.
+[22/Jul/2019:10:57:41] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jul/2019:10:57:41] ENGINE Serving on http://127.0.0.1:8080
+[22/Jul/2019:10:57:41] ENGINE Bus STARTED
+[22/Jul/2019:11:04:38] ENGINE Listening for SIGTERM.
+[22/Jul/2019:11:04:38] ENGINE Bus STARTING
+[22/Jul/2019:11:04:38] ENGINE Set handler for console events.
+[22/Jul/2019:11:04:38] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jul/2019:11:04:38] ENGINE Serving on http://127.0.0.1:8080
+[22/Jul/2019:11:04:38] ENGINE Bus STARTED
+[22/Jul/2019:11:07:44] ENGINE Listening for SIGTERM.
+[22/Jul/2019:11:07:44] ENGINE Bus STARTING
+[22/Jul/2019:11:07:44] ENGINE Set handler for console events.
+[22/Jul/2019:11:07:44] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jul/2019:11:07:44] ENGINE Serving on http://127.0.0.1:8080
+[22/Jul/2019:11:07:44] ENGINE Bus STARTED
+[22/Jul/2019:12:02:03] ENGINE Listening for SIGTERM.
+[22/Jul/2019:12:02:03] ENGINE Bus STARTING
+[22/Jul/2019:12:02:03] ENGINE Set handler for console events.
+[22/Jul/2019:12:02:03] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jul/2019:12:02:03] ENGINE Serving on http://127.0.0.1:8080
+[22/Jul/2019:12:02:03] ENGINE Bus STARTED
+[22/Jul/2019:12:05:03] ENGINE Restarting because D:\02_implementation\01_python\tool_chain\shop_cart\config.py changed.
+[22/Jul/2019:12:05:03] ENGINE Stopped thread 'Autoreloader'.
+[22/Jul/2019:12:05:03] ENGINE Bus STOPPING
+[22/Jul/2019:12:05:03] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[22/Jul/2019:12:05:03] ENGINE Removed handler for console events.
+[22/Jul/2019:12:05:03] ENGINE Bus STOPPED
+[22/Jul/2019:12:05:03] ENGINE Bus EXITING
+[22/Jul/2019:12:05:03] ENGINE Bus EXITED
+[22/Jul/2019:12:05:03] ENGINE Waiting for child threads to terminate...
+[22/Jul/2019:12:05:03] ENGINE Re-spawning C:\Python37\python.exe D:/02_implementation/01_python/tool_chain/shop_cart/controllers.py
+[22/Jul/2019:12:05:04] ENGINE Listening for SIGTERM.
+[22/Jul/2019:12:05:04] ENGINE Bus STARTING
+[22/Jul/2019:12:05:04] ENGINE Set handler for console events.
+[22/Jul/2019:12:05:04] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jul/2019:12:05:04] ENGINE Serving on http://127.0.0.1:8080
+[22/Jul/2019:12:05:04] ENGINE Bus STARTED
+[22/Jul/2019:12:05:34] ENGINE Restarting because D:/02_implementation/01_python/tool_chain/shop_cart/controllers.py changed.
+[22/Jul/2019:12:05:34] ENGINE Stopped thread 'Autoreloader'.
+[22/Jul/2019:12:05:34] ENGINE Bus STOPPING
+[22/Jul/2019:12:05:34] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[22/Jul/2019:12:05:34] ENGINE Removed handler for console events.
+[22/Jul/2019:12:05:34] ENGINE Bus STOPPED
+[22/Jul/2019:12:05:34] ENGINE Bus EXITING
+[22/Jul/2019:12:05:34] ENGINE Bus EXITED
+[22/Jul/2019:12:05:34] ENGINE Waiting for child threads to terminate...
+[22/Jul/2019:12:05:34] ENGINE Re-spawning C:\Python37\python.exe D:/02_implementation/01_python/tool_chain/shop_cart/controllers.py
+[22/Jul/2019:12:05:54] ENGINE Listening for SIGTERM.
+[22/Jul/2019:12:05:54] ENGINE Bus STARTING
+[22/Jul/2019:12:05:54] ENGINE Set handler for console events.
+[22/Jul/2019:12:05:54] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jul/2019:12:05:54] ENGINE Serving on http://127.0.0.1:8080
+[22/Jul/2019:12:05:54] ENGINE Bus STARTED
+[22/Jul/2019:12:08:17] ENGINE Listening for SIGTERM.
+[22/Jul/2019:12:08:17] ENGINE Bus STARTING
+[22/Jul/2019:12:08:17] ENGINE Set handler for console events.
+[22/Jul/2019:12:08:17] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jul/2019:12:08:18] ENGINE Serving on http://127.0.0.1:8080
+[22/Jul/2019:12:08:18] ENGINE Bus STARTED
+[22/Jul/2019:14:07:23] ENGINE Listening for SIGTERM.
+[22/Jul/2019:14:07:23] ENGINE Bus STARTING
+[22/Jul/2019:14:07:23] ENGINE Set handler for console events.
+[22/Jul/2019:14:07:23] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jul/2019:14:07:23] ENGINE Serving on http://127.0.0.1:8080
+[22/Jul/2019:14:07:23] ENGINE Bus STARTED
+[22/Jul/2019:15:29:06] ENGINE Listening for SIGTERM.
+[22/Jul/2019:15:29:06] ENGINE Bus STARTING
+[22/Jul/2019:15:29:06] ENGINE Set handler for console events.
+[22/Jul/2019:15:29:06] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jul/2019:15:29:06] ENGINE Serving on http://127.0.0.1:8080
+[22/Jul/2019:15:29:06] ENGINE Bus STARTED
+[22/Jul/2019:16:42:43] ENGINE Listening for SIGTERM.
+[22/Jul/2019:16:42:43] ENGINE Bus STARTING
+[22/Jul/2019:16:42:43] ENGINE Set handler for console events.
+[22/Jul/2019:16:42:43] ENGINE Started monitor thread 'Autoreloader'.
+[22/Jul/2019:16:42:44] ENGINE Serving on http://127.0.0.1:8080
+[22/Jul/2019:16:42:44] ENGINE Bus STARTED
+[23/Jul/2019:07:59:06] ENGINE Listening for SIGTERM.
+[23/Jul/2019:07:59:06] ENGINE Bus STARTING
+[23/Jul/2019:07:59:06] ENGINE Set handler for console events.
+[23/Jul/2019:07:59:06] ENGINE Started monitor thread 'Autoreloader'.
+[23/Jul/2019:07:59:06] ENGINE Serving on http://127.0.0.1:8080
+[23/Jul/2019:07:59:06] ENGINE Bus STARTED
+[23/Jul/2019:08:28:33] ENGINE Listening for SIGTERM.
+[23/Jul/2019:08:28:33] ENGINE Bus STARTING
+[23/Jul/2019:08:28:33] ENGINE Set handler for console events.
+[23/Jul/2019:08:28:33] ENGINE Started monitor thread 'Autoreloader'.
+[23/Jul/2019:08:28:34] ENGINE Serving on http://127.0.0.1:8080
+[23/Jul/2019:08:28:34] ENGINE Bus STARTED
+[23/Jul/2019:08:28:55] ENGINE Listening for SIGTERM.
+[23/Jul/2019:08:28:55] ENGINE Bus STARTING
+[23/Jul/2019:08:28:55] ENGINE Set handler for console events.
+[23/Jul/2019:08:28:55] ENGINE Started monitor thread 'Autoreloader'.
+[23/Jul/2019:08:28:55] ENGINE Serving on http://127.0.0.1:8080
+[23/Jul/2019:08:28:55] ENGINE Bus STARTED
+[23/Jul/2019:11:32:32] ENGINE Restarting because C:\Python37\lib\site-packages\jinja2\utils.py changed.
+[23/Jul/2019:11:32:32] ENGINE Stopped thread 'Autoreloader'.
+[23/Jul/2019:11:32:32] ENGINE Bus STOPPING
+[23/Jul/2019:11:32:32] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[23/Jul/2019:11:32:32] ENGINE Removed handler for console events.
+[23/Jul/2019:11:32:32] ENGINE Bus STOPPED
+[23/Jul/2019:11:32:32] ENGINE Bus EXITING
+[23/Jul/2019:11:32:32] ENGINE Bus EXITED
+[23/Jul/2019:11:32:32] ENGINE Waiting for child threads to terminate...
+[23/Jul/2019:11:32:32] ENGINE Re-spawning C:\Python37\python.exe D:/02_implementation/01_python/tool_chain/shop_cart/controllers.py
+[23/Jul/2019:11:32:34] ENGINE Listening for SIGTERM.
+[23/Jul/2019:11:32:34] ENGINE Bus STARTING
+[23/Jul/2019:11:32:34] ENGINE Set handler for console events.
+[23/Jul/2019:11:32:34] ENGINE Started monitor thread 'Autoreloader'.
+[23/Jul/2019:11:32:34] ENGINE Serving on http://127.0.0.1:8080
+[23/Jul/2019:11:32:34] ENGINE Bus STARTED
+[23/Jul/2019:14:20:15] ENGINE Listening for SIGTERM.
+[23/Jul/2019:14:20:15] ENGINE Bus STARTING
+[23/Jul/2019:14:20:15] ENGINE Set handler for console events.
+[23/Jul/2019:14:20:15] ENGINE Started monitor thread 'Autoreloader'.
+[23/Jul/2019:14:20:16] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x039D4190>>
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\portend.py", line 115, in free
+    Checker(timeout=0.1).assert_free(host, port)
+  File "C:\Python37\lib\site-packages\portend.py", line 69, in assert_free
+    list(itertools.starmap(self._connect, info))
+  File "C:\Python37\lib\site-packages\portend.py", line 85, in _connect
+    raise PortNotFree(tmpl.format(**locals()))
+portend.PortNotFree: Port 127.0.0.1 is in use on 8080.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\cherrypy\process\wspbus.py", line 230, in publish
+    output.append(listener(*args, **kwargs))
+  File "C:\Python37\lib\site-packages\cherrypy\_cpserver.py", line 180, in start
+    super(Server, self).start()
+  File "C:\Python37\lib\site-packages\cherrypy\process\servers.py", line 177, in start
+    portend.free(*self.bind_addr, timeout=Timeouts.free)
+  File "C:\Python37\lib\site-packages\portend.py", line 119, in free
+    raise Timeout("Port {port} not free on {host}.".format(**locals()))
+portend.Timeout: Port 8080 not free on 127.0.0.1.
+
+[23/Jul/2019:14:20:16] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\cherrypy\process\wspbus.py", line 268, in start
+    self.publish('start')
+  File "C:\Python37\lib\site-packages\cherrypy\process\wspbus.py", line 248, in publish
+    raise exc
+cherrypy.process.wspbus.ChannelFailures: Timeout('Port 8080 not free on 127.0.0.1.')
+
+[23/Jul/2019:14:20:16] ENGINE Bus STOPPING
+[23/Jul/2019:14:20:16] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) already shut down
+[23/Jul/2019:14:20:16] ENGINE Stopped thread 'Autoreloader'.
+[23/Jul/2019:14:20:16] ENGINE Removed handler for console events.
+[23/Jul/2019:14:20:16] ENGINE Bus STOPPED
+[23/Jul/2019:14:20:16] ENGINE Bus EXITING
+[23/Jul/2019:14:20:16] ENGINE Bus EXITED
+[23/Jul/2019:14:28:53] ENGINE Restarting because D:/02_implementation/01_python/tool_chain/shop_cart/controllers.py changed.
+[23/Jul/2019:14:28:53] ENGINE Stopped thread 'Autoreloader'.
+[23/Jul/2019:14:28:53] ENGINE Bus STOPPING
+[23/Jul/2019:14:28:53] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[23/Jul/2019:14:28:53] ENGINE Removed handler for console events.
+[23/Jul/2019:14:28:53] ENGINE Bus STOPPED
+[23/Jul/2019:14:28:53] ENGINE Bus EXITING
+[23/Jul/2019:14:28:53] ENGINE Bus EXITED
+[23/Jul/2019:14:28:53] ENGINE Waiting for child threads to terminate...
+[23/Jul/2019:14:28:53] ENGINE Re-spawning C:\Python37\python.exe D:/02_implementation/01_python/tool_chain/shop_cart/controllers.py
+[23/Jul/2019:14:28:55] ENGINE Listening for SIGTERM.
+[23/Jul/2019:14:28:55] ENGINE Bus STARTING
+[23/Jul/2019:14:28:55] ENGINE Set handler for console events.
+[23/Jul/2019:14:28:55] ENGINE Started monitor thread 'Autoreloader'.
+[23/Jul/2019:14:28:56] ENGINE Serving on http://127.0.0.1:8080
+[23/Jul/2019:14:28:56] ENGINE Bus STARTED
+[23/Jul/2019:14:29:00] ENGINE Listening for SIGTERM.
+[23/Jul/2019:14:29:00] ENGINE Bus STARTING
+[23/Jul/2019:14:29:00] ENGINE Set handler for console events.
+[23/Jul/2019:14:29:00] ENGINE Started monitor thread 'Autoreloader'.
+[23/Jul/2019:14:29:01] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x03DA57B0>>
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\portend.py", line 115, in free
+    Checker(timeout=0.1).assert_free(host, port)
+  File "C:\Python37\lib\site-packages\portend.py", line 69, in assert_free
+    list(itertools.starmap(self._connect, info))
+  File "C:\Python37\lib\site-packages\portend.py", line 85, in _connect
+    raise PortNotFree(tmpl.format(**locals()))
+portend.PortNotFree: Port 127.0.0.1 is in use on 8080.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\cherrypy\process\wspbus.py", line 230, in publish
+    output.append(listener(*args, **kwargs))
+  File "C:\Python37\lib\site-packages\cherrypy\_cpserver.py", line 180, in start
+    super(Server, self).start()
+  File "C:\Python37\lib\site-packages\cherrypy\process\servers.py", line 177, in start
+    portend.free(*self.bind_addr, timeout=Timeouts.free)
+  File "C:\Python37\lib\site-packages\portend.py", line 119, in free
+    raise Timeout("Port {port} not free on {host}.".format(**locals()))
+portend.Timeout: Port 8080 not free on 127.0.0.1.
+
+[23/Jul/2019:14:29:01] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\cherrypy\process\wspbus.py", line 268, in start
+    self.publish('start')
+  File "C:\Python37\lib\site-packages\cherrypy\process\wspbus.py", line 248, in publish
+    raise exc
+cherrypy.process.wspbus.ChannelFailures: Timeout('Port 8080 not free on 127.0.0.1.')
+
+[23/Jul/2019:14:29:01] ENGINE Bus STOPPING
+[23/Jul/2019:14:29:01] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) already shut down
+[23/Jul/2019:14:29:01] ENGINE Stopped thread 'Autoreloader'.
+[23/Jul/2019:14:29:01] ENGINE Removed handler for console events.
+[23/Jul/2019:14:29:01] ENGINE Bus STOPPED
+[23/Jul/2019:14:29:01] ENGINE Bus EXITING
+[23/Jul/2019:14:29:01] ENGINE Bus EXITED
+[23/Jul/2019:14:30:18] ENGINE Restarting because D:/02_implementation/01_python/tool_chain/shop_cart/controllers.py changed.
+[23/Jul/2019:14:30:18] ENGINE Stopped thread 'Autoreloader'.
+[23/Jul/2019:14:30:18] ENGINE Bus STOPPING
+[23/Jul/2019:14:30:18] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[23/Jul/2019:14:30:18] ENGINE Removed handler for console events.
+[23/Jul/2019:14:30:18] ENGINE Bus STOPPED
+[23/Jul/2019:14:30:18] ENGINE Bus EXITING
+[23/Jul/2019:14:30:18] ENGINE Waiting for child threads to terminate...
+[23/Jul/2019:14:30:18] ENGINE Bus EXITED
+[23/Jul/2019:14:30:18] ENGINE Re-spawning C:\Python37\python.exe D:/02_implementation/01_python/tool_chain/shop_cart/controllers.py
+[23/Jul/2019:14:30:20] ENGINE Listening for SIGTERM.
+[23/Jul/2019:14:30:20] ENGINE Bus STARTING
+[23/Jul/2019:14:30:20] ENGINE Set handler for console events.
+[23/Jul/2019:14:30:20] ENGINE Started monitor thread 'Autoreloader'.
+[23/Jul/2019:14:30:20] ENGINE Serving on http://127.0.0.1:8080
+[23/Jul/2019:14:30:20] ENGINE Bus STARTED
+[23/Jul/2019:15:07:05] ENGINE Listening for SIGTERM.
+[23/Jul/2019:15:07:05] ENGINE Bus STARTING
+[23/Jul/2019:15:07:05] ENGINE Set handler for console events.
+[23/Jul/2019:15:07:05] ENGINE Started monitor thread 'Autoreloader'.
+[23/Jul/2019:15:07:06] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x039D07D0>>
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\portend.py", line 115, in free
+    Checker(timeout=0.1).assert_free(host, port)
+  File "C:\Python37\lib\site-packages\portend.py", line 69, in assert_free
+    list(itertools.starmap(self._connect, info))
+  File "C:\Python37\lib\site-packages\portend.py", line 85, in _connect
+    raise PortNotFree(tmpl.format(**locals()))
+portend.PortNotFree: Port 127.0.0.1 is in use on 8080.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\cherrypy\process\wspbus.py", line 230, in publish
+    output.append(listener(*args, **kwargs))
+  File "C:\Python37\lib\site-packages\cherrypy\_cpserver.py", line 180, in start
+    super(Server, self).start()
+  File "C:\Python37\lib\site-packages\cherrypy\process\servers.py", line 177, in start
+    portend.free(*self.bind_addr, timeout=Timeouts.free)
+  File "C:\Python37\lib\site-packages\portend.py", line 119, in free
+    raise Timeout("Port {port} not free on {host}.".format(**locals()))
+portend.Timeout: Port 8080 not free on 127.0.0.1.
+
+[23/Jul/2019:15:07:06] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\cherrypy\process\wspbus.py", line 268, in start
+    self.publish('start')
+  File "C:\Python37\lib\site-packages\cherrypy\process\wspbus.py", line 248, in publish
+    raise exc
+cherrypy.process.wspbus.ChannelFailures: Timeout('Port 8080 not free on 127.0.0.1.')
+
+[23/Jul/2019:15:07:06] ENGINE Bus STOPPING
+[23/Jul/2019:15:07:06] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) already shut down
+[23/Jul/2019:15:07:06] ENGINE Stopped thread 'Autoreloader'.
+[23/Jul/2019:15:07:06] ENGINE Removed handler for console events.
+[23/Jul/2019:15:07:06] ENGINE Bus STOPPED
+[23/Jul/2019:15:07:06] ENGINE Bus EXITING
+[23/Jul/2019:15:07:06] ENGINE Bus EXITED
+[23/Jul/2019:15:25:40] ENGINE Listening for SIGTERM.
+[23/Jul/2019:15:25:40] ENGINE Bus STARTING
+[23/Jul/2019:15:25:40] ENGINE Set handler for console events.
+[23/Jul/2019:15:25:40] ENGINE Started monitor thread 'Autoreloader'.
+[23/Jul/2019:15:25:41] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x039D3190>>
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\portend.py", line 115, in free
+    Checker(timeout=0.1).assert_free(host, port)
+  File "C:\Python37\lib\site-packages\portend.py", line 69, in assert_free
+    list(itertools.starmap(self._connect, info))
+  File "C:\Python37\lib\site-packages\portend.py", line 85, in _connect
+    raise PortNotFree(tmpl.format(**locals()))
+portend.PortNotFree: Port 127.0.0.1 is in use on 8080.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\cherrypy\process\wspbus.py", line 230, in publish
+    output.append(listener(*args, **kwargs))
+  File "C:\Python37\lib\site-packages\cherrypy\_cpserver.py", line 180, in start
+    super(Server, self).start()
+  File "C:\Python37\lib\site-packages\cherrypy\process\servers.py", line 177, in start
+    portend.free(*self.bind_addr, timeout=Timeouts.free)
+  File "C:\Python37\lib\site-packages\portend.py", line 119, in free
+    raise Timeout("Port {port} not free on {host}.".format(**locals()))
+portend.Timeout: Port 8080 not free on 127.0.0.1.
+
+[23/Jul/2019:15:25:41] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\cherrypy\process\wspbus.py", line 268, in start
+    self.publish('start')
+  File "C:\Python37\lib\site-packages\cherrypy\process\wspbus.py", line 248, in publish
+    raise exc
+cherrypy.process.wspbus.ChannelFailures: Timeout('Port 8080 not free on 127.0.0.1.')
+
+[23/Jul/2019:15:25:41] ENGINE Bus STOPPING
+[23/Jul/2019:15:25:41] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) already shut down
+[23/Jul/2019:15:25:41] ENGINE Stopped thread 'Autoreloader'.
+[23/Jul/2019:15:25:41] ENGINE Removed handler for console events.
+[23/Jul/2019:15:25:41] ENGINE Bus STOPPED
+[23/Jul/2019:15:25:41] ENGINE Bus EXITING
+[23/Jul/2019:15:25:41] ENGINE Bus EXITED
+[23/Jul/2019:15:25:51] ENGINE Listening for SIGTERM.
+[23/Jul/2019:15:25:51] ENGINE Bus STARTING
+[23/Jul/2019:15:25:51] ENGINE Set handler for console events.
+[23/Jul/2019:15:25:51] ENGINE Started monitor thread 'Autoreloader'.
+[23/Jul/2019:15:25:52] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x03E92030>>
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\portend.py", line 115, in free
+    Checker(timeout=0.1).assert_free(host, port)
+  File "C:\Python37\lib\site-packages\portend.py", line 69, in assert_free
+    list(itertools.starmap(self._connect, info))
+  File "C:\Python37\lib\site-packages\portend.py", line 85, in _connect
+    raise PortNotFree(tmpl.format(**locals()))
+portend.PortNotFree: Port 127.0.0.1 is in use on 8080.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\cherrypy\process\wspbus.py", line 230, in publish
+    output.append(listener(*args, **kwargs))
+  File "C:\Python37\lib\site-packages\cherrypy\_cpserver.py", line 180, in start
+    super(Server, self).start()
+  File "C:\Python37\lib\site-packages\cherrypy\process\servers.py", line 177, in start
+    portend.free(*self.bind_addr, timeout=Timeouts.free)
+  File "C:\Python37\lib\site-packages\portend.py", line 119, in free
+    raise Timeout("Port {port} not free on {host}.".format(**locals()))
+portend.Timeout: Port 8080 not free on 127.0.0.1.
+
+[23/Jul/2019:15:25:52] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\cherrypy\process\wspbus.py", line 268, in start
+    self.publish('start')
+  File "C:\Python37\lib\site-packages\cherrypy\process\wspbus.py", line 248, in publish
+    raise exc
+cherrypy.process.wspbus.ChannelFailures: Timeout('Port 8080 not free on 127.0.0.1.')
+
+[23/Jul/2019:15:25:52] ENGINE Bus STOPPING
+[23/Jul/2019:15:25:52] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) already shut down
+[23/Jul/2019:15:25:52] ENGINE Stopped thread 'Autoreloader'.
+[23/Jul/2019:15:25:52] ENGINE Removed handler for console events.
+[23/Jul/2019:15:25:52] ENGINE Bus STOPPED
+[23/Jul/2019:15:25:52] ENGINE Bus EXITING
+[23/Jul/2019:15:25:52] ENGINE Bus EXITED
+[23/Jul/2019:15:26:06] ENGINE Listening for SIGTERM.
+[23/Jul/2019:15:26:06] ENGINE Bus STARTING
+[23/Jul/2019:15:26:06] ENGINE Set handler for console events.
+[23/Jul/2019:15:26:06] ENGINE Started monitor thread 'Autoreloader'.
+[23/Jul/2019:15:26:07] ENGINE Serving on http://127.0.0.1:8080
+[23/Jul/2019:15:26:07] ENGINE Bus STARTED
+[23/Jul/2019:17:41:19] ENGINE Listening for SIGTERM.
+[23/Jul/2019:17:41:19] ENGINE Bus STARTING
+[23/Jul/2019:17:41:19] ENGINE Set handler for console events.
+[23/Jul/2019:17:41:19] ENGINE Started monitor thread 'Autoreloader'.
+[23/Jul/2019:17:41:19] ENGINE Serving on http://127.0.0.1:8080
+[23/Jul/2019:17:41:19] ENGINE Bus STARTED
+[23/Jul/2019:17:42:12] ENGINE Restarting because C:\Python36\lib\site-packages\jinja2\asyncfilters.py changed.
+[23/Jul/2019:17:42:12] ENGINE Stopped thread 'Autoreloader'.
+[23/Jul/2019:17:42:12] ENGINE Bus STOPPING
+[23/Jul/2019:17:42:13] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[23/Jul/2019:17:42:13] ENGINE Removed handler for console events.
+[23/Jul/2019:17:42:13] ENGINE Bus STOPPED
+[23/Jul/2019:17:42:13] ENGINE Bus EXITING
+[23/Jul/2019:17:42:13] ENGINE Waiting for child threads to terminate...
+[23/Jul/2019:17:42:13] ENGINE Bus EXITED
+[23/Jul/2019:17:42:13] ENGINE Re-spawning C:\Python36\python.exe D:/07_Development/Projects/Cherrypy/shop_cart/controllers.py
+[23/Jul/2019:17:42:15] ENGINE Listening for SIGTERM.
+[23/Jul/2019:17:42:15] ENGINE Bus STARTING
+[23/Jul/2019:17:42:15] ENGINE Set handler for console events.
+[23/Jul/2019:17:42:15] ENGINE Started monitor thread 'Autoreloader'.
+[23/Jul/2019:17:42:15] ENGINE Serving on http://127.0.0.1:8080
+[23/Jul/2019:17:42:15] ENGINE Bus STARTED
+[23/Jul/2019:17:42:34] ENGINE Listening for SIGTERM.
+[23/Jul/2019:17:42:34] ENGINE Bus STARTING
+[23/Jul/2019:17:42:34] ENGINE Set handler for console events.
+[23/Jul/2019:17:42:34] ENGINE Started monitor thread 'Autoreloader'.
+[23/Jul/2019:17:42:35] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x02FBEB90>>
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\cherrypy\process\wspbus.py", line 230, in publish
+    output.append(listener(*args, **kwargs))
+  File "C:\Python36\lib\site-packages\cherrypy\_cpserver.py", line 180, in start
+    super(Server, self).start()
+  File "C:\Python36\lib\site-packages\cherrypy\process\servers.py", line 177, in start
+    portend.free(*self.bind_addr, timeout=Timeouts.free)
+  File "C:\Python36\lib\site-packages\portend.py", line 123, in free
+    raise Timeout("Port {port} not free on {host}.".format(**locals()))
+portend.Timeout: Port 8080 not free on 127.0.0.1.
+
+[23/Jul/2019:17:42:35] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\cherrypy\process\wspbus.py", line 268, in start
+    self.publish('start')
+  File "C:\Python36\lib\site-packages\cherrypy\process\wspbus.py", line 248, in publish
+    raise exc
+cherrypy.process.wspbus.ChannelFailures: Timeout('Port 8080 not free on 127.0.0.1.',)
+
+[23/Jul/2019:17:42:35] ENGINE Bus STOPPING
+[23/Jul/2019:17:42:35] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) already shut down
+[23/Jul/2019:17:42:35] ENGINE Stopped thread 'Autoreloader'.
+[23/Jul/2019:17:42:35] ENGINE Removed handler for console events.
+[23/Jul/2019:17:42:35] ENGINE Bus STOPPED
+[23/Jul/2019:17:42:35] ENGINE Bus EXITING
+[23/Jul/2019:17:42:35] ENGINE Bus EXITED
+[23/Jul/2019:17:42:55] ENGINE Listening for SIGTERM.
+[23/Jul/2019:17:42:55] ENGINE Bus STARTING
+[23/Jul/2019:17:42:55] ENGINE Set handler for console events.
+[23/Jul/2019:17:42:55] ENGINE Started monitor thread 'Autoreloader'.
+[23/Jul/2019:17:42:56] ENGINE Serving on http://127.0.0.1:8080
+[23/Jul/2019:17:42:56] ENGINE Bus STARTED
+[23/Jul/2019:21:56:22] ENGINE Listening for SIGTERM.
+[23/Jul/2019:21:56:22] ENGINE Bus STARTING
+[23/Jul/2019:21:56:22] ENGINE Set handler for console events.
+[23/Jul/2019:21:56:22] ENGINE Started monitor thread 'Autoreloader'.
+[23/Jul/2019:21:56:22] ENGINE Serving on http://127.0.0.1:8080
+[23/Jul/2019:21:56:22] ENGINE Bus STARTED
+[23/Jul/2019:21:57:56] ENGINE Listening for SIGTERM.
+[23/Jul/2019:21:57:56] ENGINE Bus STARTING
+[23/Jul/2019:21:57:56] ENGINE Set handler for console events.
+[23/Jul/2019:21:57:56] ENGINE Started monitor thread 'Autoreloader'.
+[23/Jul/2019:21:57:56] ENGINE Serving on http://127.0.0.1:8080
+[23/Jul/2019:21:57:56] ENGINE Bus STARTED
+[23/Jul/2019:22:01:46] ENGINE Listening for SIGTERM.
+[23/Jul/2019:22:01:46] ENGINE Bus STARTING
+[23/Jul/2019:22:01:46] ENGINE Set handler for console events.
+[23/Jul/2019:22:01:46] ENGINE Started monitor thread 'Autoreloader'.
+[23/Jul/2019:22:01:46] ENGINE Serving on http://127.0.0.1:8080
+[23/Jul/2019:22:01:46] ENGINE Bus STARTED
+[23/Jul/2019:22:03:18] ENGINE Listening for SIGTERM.
+[23/Jul/2019:22:03:18] ENGINE Bus STARTING
+[23/Jul/2019:22:03:18] ENGINE Set handler for console events.
+[23/Jul/2019:22:03:18] ENGINE Started monitor thread 'Autoreloader'.
+[23/Jul/2019:22:03:18] ENGINE Serving on http://127.0.0.1:8080
+[23/Jul/2019:22:03:18] ENGINE Bus STARTED
+[23/Jul/2019:22:04:43] ENGINE Listening for SIGTERM.
+[23/Jul/2019:22:04:43] ENGINE Bus STARTING
+[23/Jul/2019:22:04:43] ENGINE Set handler for console events.
+[23/Jul/2019:22:04:43] ENGINE Started monitor thread 'Autoreloader'.
+[23/Jul/2019:22:04:43] ENGINE Serving on http://127.0.0.1:8080
+[23/Jul/2019:22:04:43] ENGINE Bus STARTED
+[23/Jul/2019:22:05:09] ENGINE Restarting because D:\07_Development\Projects\Cherrypy\shop_cart\config.py changed.
+[23/Jul/2019:22:05:09] ENGINE Stopped thread 'Autoreloader'.
+[23/Jul/2019:22:05:09] ENGINE Bus STOPPING
+[23/Jul/2019:22:05:09] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[23/Jul/2019:22:05:09] ENGINE Removed handler for console events.
+[23/Jul/2019:22:05:09] ENGINE Bus STOPPED
+[23/Jul/2019:22:05:09] ENGINE Bus EXITING
+[23/Jul/2019:22:05:09] ENGINE Waiting for child threads to terminate...
+[23/Jul/2019:22:05:09] ENGINE Bus EXITED
+[23/Jul/2019:22:05:09] ENGINE Re-spawning C:\Python36\python.exe D:/07_Development/Projects/Cherrypy/shop_cart/controllers.py
+[23/Jul/2019:22:05:11] ENGINE Listening for SIGTERM.
+[23/Jul/2019:22:05:11] ENGINE Bus STARTING
+[23/Jul/2019:22:05:11] ENGINE Set handler for console events.
+[23/Jul/2019:22:05:11] ENGINE Started monitor thread 'Autoreloader'.
+[23/Jul/2019:22:05:11] ENGINE Serving on http://127.0.0.1:8080
+[23/Jul/2019:22:05:11] ENGINE Bus STARTED
+[23/Jul/2019:22:05:22] ENGINE Listening for SIGTERM.
+[23/Jul/2019:22:05:22] ENGINE Bus STARTING
+[23/Jul/2019:22:05:22] ENGINE Set handler for console events.
+[23/Jul/2019:22:05:22] ENGINE Started monitor thread 'Autoreloader'.
+[23/Jul/2019:22:05:23] ENGINE Serving on http://127.0.0.1:8080
+[23/Jul/2019:22:05:23] ENGINE Bus STARTED
+[23/Jul/2019:22:07:20] ENGINE Listening for SIGTERM.
+[23/Jul/2019:22:07:20] ENGINE Bus STARTING
+[23/Jul/2019:22:07:20] ENGINE Set handler for console events.
+[23/Jul/2019:22:07:20] ENGINE Started monitor thread 'Autoreloader'.
+[23/Jul/2019:22:07:20] ENGINE Serving on http://127.0.0.1:8080
+[23/Jul/2019:22:07:20] ENGINE Bus STARTED
+[23/Jul/2019:22:08:26] ENGINE Listening for SIGTERM.
+[23/Jul/2019:22:08:26] ENGINE Bus STARTING
+[23/Jul/2019:22:08:26] ENGINE Set handler for console events.
+[23/Jul/2019:22:08:26] ENGINE Started monitor thread 'Autoreloader'.
+[23/Jul/2019:22:08:26] ENGINE Serving on http://127.0.0.1:8080
+[23/Jul/2019:22:08:26] ENGINE Bus STARTED
+[23/Jul/2019:23:17:46] ENGINE Listening for SIGTERM.
+[23/Jul/2019:23:17:46] ENGINE Bus STARTING
+[23/Jul/2019:23:17:46] ENGINE Set handler for console events.
+[23/Jul/2019:23:17:46] ENGINE Started monitor thread 'Autoreloader'.
+[23/Jul/2019:23:17:47] ENGINE Serving on http://127.0.0.1:8080
+[23/Jul/2019:23:17:47] ENGINE Bus STARTED

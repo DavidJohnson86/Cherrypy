@@ -86,6 +86,10 @@ cherrpy_run_conf = {
             'tools.staticdir.on': True,
             'tools.staticdir.dir': '',
             },
+        '/cart': {
+            'tools.staticdir.on': True,
+            'tools.staticdir.dir': '',
+            },
         '/compair': {
             'tools.staticdir.on': True,
             'tools.staticdir.dir': '',
@@ -118,12 +122,21 @@ cherrpy_run_conf = {
             'tools.staticdir.on': True,
             'tools.staticdir.dir': '',
         },
-
-
-        '/assets': {
+        '/products': {
             'tools.staticdir.on': True,
-            'tools.staticdir.dir': './assets'
+            'tools.staticdir.dir': '',
         },
+
+        # '/assets': {
+        #     'tools.staticdir.on': True,
+        #     'tools.staticdir.dir': './assets'
+        # },
+
+        '/img': {
+            'tools.staticdir.on': True,
+            'tools.staticdir.dir': './assets/img'
+        },
+
         #
         # '/contact': {
         #     'tools.staticdir.on': True,
