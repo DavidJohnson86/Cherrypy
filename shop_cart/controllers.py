@@ -19,7 +19,25 @@ class WebService:
 class HomePage(WebService):
     @cherrypy.expose
     def index(self):
-        return self._html_file.render()
+        new_products = {"product-details/ring": "assets/img/bootstrap-ring.png",
+                        "product-details/purple_necklace": "assets/img/i.jpg",
+                        "product-details/golden_ring":  "assets/img/g.jpg",
+                        "product-details/colorful_necklace":  "assets/img/s.png"}
+        new_products_2 = {"product-details/purple_heart_necklace": "assets/img/i.jpg",
+                          "product-details/queen_necklace": "assets/img/f.jpg",
+                          "product-details/golden_ring2": "assets/img/h.jpg",
+                          "product-details/blue_silver_ring": "assets/img/j.jpg"}
+        products = {"product-details/queen_golden_bracelet": "assets/img/b.jpg",
+                    "product-details/rings": "assets/img/c.jpg",
+                    "product-details/golden_watch": "assets/img/a.jpg"}
+
+        featured_products = {"product-details/silver_rings": "assets/img/d.jpg",
+                             "product-details/golden_ring": "assets/img/e.jpg",
+                             "product-details/queen_necklace": "assets/img/f.jpg"}
+        return self._html_file.render(new_products=new_products,
+                                      new_products_2=new_products_2,
+                                      products=products,
+                                      featured_products= featured_products)
 
 
 class CartPage(WebService):
