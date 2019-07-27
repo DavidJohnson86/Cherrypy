@@ -1,5 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
+{% macro increment(dct, key, inc=1)%}
+    {% if dct.update({key: dct[key] + inc}) %} {% endif %}
+{% endmacro %}
+{% set counter = {
+    'item_active': 1,
+    'counter2': 0,
+    } %}
 	<div class="span9">
 	<div class="well np">
 		<div id="myCarousel" class="carousel slide homCar">
@@ -47,32 +54,34 @@ New Products
 		<div id="newProductCar" class="carousel slide">
             <div class="carousel-inner">
 			<div class="item active">
-			{% for product_item in new_products %}
-			  <ul class="thumbnails">
-				<li class="span3">
-				<div class="thumbnail">
-					<!--<a class="zoomTool" href="product-details" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>-->
-					<!--a href="#" class="tag"></a-->
-					<a href={{product_item}}><img src="{{new_products[product_item]}}" alt="{{products}}"></a>
-				</div>
-				</li>
-			{% endfor %}
-			  </ul>
-			  </div>
-		   <div class="item">
-		   <!--
-			New Products 2
-			-->
-		  <ul class="thumbnails">
-			  {% for product_item in new_products_2 %}
-			<li class="span3">
-			  <div class="thumbnail">
-				<!--<a class="zoomTool" href="product-details" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>-->
-				<a  href="{{product_item}}"><img src="{{new_products_2[product_item]}}" alt=""></a>
-			  </div>
-			</li>
-			  {% endfor %}
-		  </ul>
+				{% for product in new_products %}
+					{% if counter['item_active'] %2!= 0 %}
+					   <ul class="thumbnails">
+							<li class="span3">
+							<div class="thumbnail">
+								<!--<a class="zoomTool" href="product-details" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>-->
+								<!--a href="#" class="tag"></a-->
+								<a href="{{product}}"><img src="{{new_products[product]}}" alt="{{new_products[product]}}"></a>
+        					</div>
+		        			</li>
+					{% else %}
+						   	<ul class="thumbnails">
+						   	<li class="span3">
+			           		<div class="thumbnail">
+                	        <!--<a class="zoomTool" href="product-details" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>-->
+					        <a  href="{{product}}"><img src="{{new_products[product]}}" alt="{{new_products[product]}}"></a>
+				  			</div>
+							</li>
+					{% endif %}
+					{% if loop.index%4==0 %}
+						{{ increment(counter, 'item_active') }}
+						   </ul>
+						   <!--{% if new_products|length!=loop.index %}-->
+			    			</div>
+							<div class="item">
+							<!--{% endif %}-->
+					{% endif %}
+				{% endfor %}
 		  </div>
 		   </div>
 		  <a class="left carousel-control" href="#newProductCar" data-slide="prev">&lsaquo;</a>

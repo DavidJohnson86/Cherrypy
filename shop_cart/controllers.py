@@ -4,7 +4,6 @@ import config
 import cherrypy
 from jinja2 import Environment, FileSystemLoader
 
-
 class WebService:
     """This class should be inherited for different pages"""
 
@@ -17,27 +16,45 @@ class WebService:
 
 
 class HomePage(WebService):
+
+
+    datas = {"ring": {"path": "product-details/ring",
+                      "img:": "assets/img/bootstrap-ring.png",
+                      "price": "140",
+                      "desc":  "Nowadays the lingerie industry is one of the most successful business spheres."
+                               "We always stay in touch with the latest fashion tendencies - that is why our goods are "
+                               "so popular.."},
+             "purple_necklace": {"path": "product-details/purple_necklace",
+                                 "img:": "assets/img/bootstrap-ring.png",
+                                 "price": "140",
+                                 "desc": "Nowadays the lingerie industry is one of the most successful business spheres."
+                                         "We always stay in touch with the latest fashion tendencies - that is why "
+                                         "our goods are so popular.."}
+                        }
+
+    new_products = {"product-details/ring": "assets/img/bootstrap-ring.png",
+                    "product-details/purple_necklace": "assets/img/i.jpg",
+                    "product-details/golden_ring": "assets/img/g.jpg",
+                    "product-details/colorful_necklace": "assets/img/s.png",
+                    "product-details/purple_heart_necklace": "assets/img/i.jpg",
+                    "product-details/queen_necklace": "assets/img/f.jpg",
+                    "product-details/golden_ring2": "assets/img/h.jpg",
+                    "product-details/blue_silver_ring": "assets/img/j.jpg",
+                    }
+
+    products = {"product-details/queen_golden_bracelet": "assets/img/b.jpg",
+                "product-details/rings": "assets/img/c.jpg",
+                "product-details/golden_watch": "assets/img/a.jpg"}
+
+    featured_products = {"product-details/silver_rings": "assets/img/d.jpg",
+                         "product-details/golden_ring": "assets/img/e.jpg",
+                         "product-details/queen_necklace": "assets/img/f.jpg"}
+
     @cherrypy.expose
     def index(self):
-        new_products = {"product-details/ring": "assets/img/bootstrap-ring.png",
-                        "product-details/purple_necklace": "assets/img/i.jpg",
-                        "product-details/golden_ring":  "assets/img/g.jpg",
-                        "product-details/colorful_necklace":  "assets/img/s.png"}
-        new_products_2 = {"product-details/purple_heart_necklace": "assets/img/i.jpg",
-                          "product-details/queen_necklace": "assets/img/f.jpg",
-                          "product-details/golden_ring2": "assets/img/h.jpg",
-                          "product-details/blue_silver_ring": "assets/img/j.jpg"}
-        products = {"product-details/queen_golden_bracelet": "assets/img/b.jpg",
-                    "product-details/rings": "assets/img/c.jpg",
-                    "product-details/golden_watch": "assets/img/a.jpg"}
-
-        featured_products = {"product-details/silver_rings": "assets/img/d.jpg",
-                             "product-details/golden_ring": "assets/img/e.jpg",
-                             "product-details/queen_necklace": "assets/img/f.jpg"}
-        return self._html_file.render(new_products=new_products,
-                                      new_products_2=new_products_2,
-                                      products=products,
-                                      featured_products= featured_products)
+        return self._html_file.render(new_products=HomePage.new_products,
+                                      products=HomePage.new_products,
+                                      featured_products= HomePage.featured_products)
 
 
 class CartPage(WebService):
@@ -83,6 +100,7 @@ class GeneralPage(WebService):
 
 
 class ListViewPage(WebService):
+
 
     @cherrypy.expose
     def index(self):
