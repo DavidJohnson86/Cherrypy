@@ -1,7 +1,7 @@
-"""Login Page Example"""
 # pylint --disable=F0401 cherrypy
 import config
 import cherrypy
+from models.data import products
 from jinja2 import Environment, FileSystemLoader
 
 class WebService:
@@ -16,45 +16,17 @@ class WebService:
 
 
 class HomePage(WebService):
+    """As a webstore homepage welcomes with the product selection."""
 
-
-    datas = {"ring": {"path": "product-details/ring",
-                      "img:": "assets/img/bootstrap-ring.png",
-                      "price": "140",
-                      "desc":  "Nowadays the lingerie industry is one of the most successful business spheres."
-                               "We always stay in touch with the latest fashion tendencies - that is why our goods are "
-                               "so popular.."},
-             "purple_necklace": {"path": "product-details/purple_necklace",
-                                 "img:": "assets/img/bootstrap-ring.png",
-                                 "price": "140",
-                                 "desc": "Nowadays the lingerie industry is one of the most successful business spheres."
-                                         "We always stay in touch with the latest fashion tendencies - that is why "
-                                         "our goods are so popular.."}
-                        }
-
-    new_products = {"product-details/ring": "assets/img/bootstrap-ring.png",
-                    "product-details/purple_necklace": "assets/img/i.jpg",
-                    "product-details/golden_ring": "assets/img/g.jpg",
-                    "product-details/colorful_necklace": "assets/img/s.png",
-                    "product-details/purple_heart_necklace": "assets/img/i.jpg",
-                    "product-details/queen_necklace": "assets/img/f.jpg",
-                    "product-details/golden_ring2": "assets/img/h.jpg",
-                    "product-details/blue_silver_ring": "assets/img/j.jpg",
-                    }
-
-    products = {"product-details/queen_golden_bracelet": "assets/img/b.jpg",
-                "product-details/rings": "assets/img/c.jpg",
-                "product-details/golden_watch": "assets/img/a.jpg"}
-
-    featured_products = {"product-details/silver_rings": "assets/img/d.jpg",
-                         "product-details/golden_ring": "assets/img/e.jpg",
-                         "product-details/queen_necklace": "assets/img/f.jpg"}
+    featured_products = [i for i in products if i["type"] == "featured"]
+    new_products = [i for i in products if i["type"] == "new"]
+    products = [i for i in products if i["type"] == "normal"]
 
     @cherrypy.expose
     def index(self):
         return self._html_file.render(new_products=HomePage.new_products,
-                                      products=HomePage.new_products,
-                                      featured_products= HomePage.featured_products)
+                                      products=HomePage.products,
+                                      featured_products=HomePage.featured_products)
 
 
 class CartPage(WebService):

@@ -5,7 +5,6 @@
 {% endmacro %}
 {% set counter = {
     'item_active': 1,
-    'counter2': 0,
     } %}
 	<div class="span9">
 	<div class="well np">
@@ -61,7 +60,7 @@ New Products
 							<div class="thumbnail">
 								<!--<a class="zoomTool" href="product-details" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>-->
 								<!--a href="#" class="tag"></a-->
-								<a href="{{product}}"><img src="{{new_products[product]}}" alt="{{new_products[product]}}"></a>
+								<a href="{{product['path']}}"><img src="{{product['img']}}" alt="{{product['path']}}"></a>
         					</div>
 		        			</li>
 					{% else %}
@@ -69,7 +68,7 @@ New Products
 						   	<li class="span3">
 			           		<div class="thumbnail">
                 	        <!--<a class="zoomTool" href="product-details" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>-->
-					        <a  href="{{product}}"><img src="{{new_products[product]}}" alt="{{new_products[product]}}"></a>
+					        <a  href="{{product['path']}}"><img src="{{product['img']}}" alt="{{product['img']}}"></a>
 				  			</div>
 							</li>
 					{% endif %}
@@ -90,11 +89,11 @@ New Products
 		  </div>
 		<div class="row-fluid">
 		  <ul class="thumbnails">
-			{% for product_item in products %}
+			{% for product in products %}
 			<li class="span4">
 			  <div class="thumbnail">
 				<!--<a class="zoomTool" href="product-details" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>-->
-				<a href={{product_item}}><img src="{{products[product_item]}}" alt="{{product_item}}"></a>
+				<a href={{product['path']}}><img src="{{product['img']}}" alt="{{product['img']}}"></a>
 				<div class="caption cntr">
 					<p>Manicure & Pedicure</p>
 					<p><strong> $22.00</strong></p>
@@ -119,11 +118,11 @@ New Products
 		  <hr class="soften"/>
 		  <div class="row-fluid">
 		  <ul class="thumbnails">
-			  {% for product_item in featured_products %}
+			{% for product in featured_products %}
 			<li class="span4">
 			  <div class="thumbnail">
 				<!--<a class="zoomTool" href="product-details" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>-->
-				<a  href="{{product_item}}"><img src="{{featured_products[product_item]}}" alt="{{product_item}}"></a>
+					<a href={{product['path']}}><img src="{{product['img']}}" alt="{{product['img']}}"></a>
 				<div class="caption">
 				  <h5>Manicure & Pedicure</h5>
 				  <h4>
