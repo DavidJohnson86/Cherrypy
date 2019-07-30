@@ -3,14 +3,14 @@ default_desc =  """Nowadays the lingerie industry is one of the most successful 
 
 products = [
         {
-            "name": "bootstrap-ring",
+            "name": "Bootstrap Ring",
             "path": "product-details/bootstrap_ring",
             "img": "assets/img/bootstrap-ring.png",
             "price": "140",
             "desc": default_desc,
             "type": "new"},
         {
-            "name": "purple_necklace",
+            "name": "Purple Necklace",
             "path": "product-details/purple_necklace",
             "img": "assets/img/i.jpg",
             "price": "140",
@@ -18,7 +18,7 @@ products = [
             "type": "new"},
 
         {
-            "name": "golden ring",
+            "name": "Golden Ring",
             "path": "product-details/golden_ring",
             "img": "assets/img/g.jpg",
             "price": "140",
@@ -26,7 +26,7 @@ products = [
             "type": "new"},
 
         {
-            "name": "colorful_necklace",
+            "name": "Colorful Necklace",
             "path": "product-details/colorful_necklace",
             "img": "assets/img/s.png",
             "price": "160",
@@ -34,7 +34,7 @@ products = [
             "type": "new"},
 
         {
-            "name": "purple_heart_necklace",
+            "name": "Purple_heart Necklace",
             "path": "product-details/purple_necklace",
             "img": "assets/img/i.jpg",
             "price": "140",
@@ -42,7 +42,7 @@ products = [
             "type": "new"},
 
         {
-            "name": "queen_necklace",
+            "name": "Queen Necklace",
             "path": "product-details/queen_necklace",
             "img": "assets/img/f.jpg",
             "price": "160",
@@ -50,7 +50,7 @@ products = [
             "type": "new"},
 
         {
-            "name": "golden_ring_2",
+            "name": "Golden Ring 2",
             "path": "product-details/golden_ring",
             "img": "assets/img/h.jpg",
             "price": "160",
@@ -58,7 +58,7 @@ products = [
             "type": "new"},
 
         {
-            "name": "blue_silver_ring",
+            "name": "Blue Silver Ring",
             "path": "product-details/blue_silver_ring",
             "img": "assets/img/j.jpg",
             "price": "180",
@@ -66,7 +66,7 @@ products = [
             "type": "new"},
 
         {
-            "name": "queen_golden_bracelet",
+            "name": "Queen Golden Bracelet",
             "path": "product-details/queen_golden_bracelet",
             "img": "assets/img/b.jpg",
             "price": "220",
@@ -74,7 +74,7 @@ products = [
             "type": "normal"},
 
         {
-            "name": "rings",
+            "name": "Rings",
             "path": "product-details/rings",
             "img": "assets/img/c.jpg",
             "price": "220",
@@ -82,7 +82,7 @@ products = [
             "type": "normal"},
 
         {
-            "name": "golden_watch",
+            "name": "Golden Watch",
             "path": "product-details/golden_watch",
             "img": "assets/img/a.jpg",
             "price": "240",
@@ -90,7 +90,7 @@ products = [
             "type": "normal"},
 
         {
-            "name": "silver_rings",
+            "name": "Silver Rings",
             "path": "product-details/silver_rings",
             "img": "assets/img/d.jpg",
             "price": "270",
@@ -98,7 +98,7 @@ products = [
             "type": "featured"},
 
         {
-            "name": "golden_ring",
+            "name": "Golden Ring",
             "path": "product-details/golden_rings",
             "img":  "assets/img/e.jpg",
             "price": "200",
@@ -106,7 +106,7 @@ products = [
             "type": "featured"},
 
         {
-            "name": "queen_necklace",
+            "name": "Queen Necklace",
             "path": "product-details/queen_necklace",
             "img": "assets/img/f.jpg",
             "price": "230",

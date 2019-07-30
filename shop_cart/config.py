@@ -71,76 +71,77 @@ LOG_CONF = {
     }
 }
 
-path = os.path.abspath(os.getcwd())
-
+path = os.path.dirname(os.path.abspath(__file__))
+root_path = os.path.join(path, 'views')
+assets_path = os.path.join(root_path, 'assets')
 cherrpy_run_conf = {
+
         '/': {
             'tools.sessions.on': True,
-            'tools.staticdir.root': str(path) + r'\views',
+            'tools.staticdir.root': root_path,
             'tools.sessions.storage_path': 'sessions',
             'tools.sessions.timeout': 10,
-            'tools.staticdir.on': True,
-            'tools.staticdir.dir': '',
         },
-        '/contact': {
+         # '/contact': {
+         #     'tools.staticdir.on': True,
+         #     'tools.staticdir.dir': '',
+         #     },
+         # '/cart': {
+         #     'tools.staticdir.on': True,
+         #     'tools.staticdir.dir': '',
+         #     },
+         # '/compair': {
+         #     'tools.staticdir.on': True,
+         #     'tools.staticdir.dir': '',
+         #     },
+         # '/list-view': {
+         #     'tools.staticdir.on': True,
+         #     'tools.staticdir.dir':  '',
+         #     },
+         # '/grid-view': {
+         #     'tools.staticdir.on': True,
+         #     'tools.staticdir.dir': '',
+         #     },
+         # '/three-col': {
+         #     'tools.staticdir.on': True,
+         #     'tools.staticdir.dir': '',
+         # },
+         # '/four-col': {
+         #     'tools.staticdir.on': True,
+         #     'tools.staticdir.dir': '',
+         # },
+         # '/general': {
+         #     'tools.staticdir.on': True,
+         #     'tools.staticdir.dir': '',
+         # },
+         # '/register': {
+         #     'tools.staticdir.on': True,
+         #     'tools.staticdir.dir': '',
+         # },
+         # '/product-details': {
+         #     'tools.staticdir.on': True,
+         #     'tools.staticdir.dir': "",
+         # },
+         # '/products': {
+         #     'tools.staticdir.on': True,
+         #     'tools.staticdir.dir': '',
+         # },
+        #
+        '/assets': {
             'tools.staticdir.on': True,
-            'tools.staticdir.dir': '',
-            },
-        '/cart': {
-            'tools.staticdir.on': True,
-            'tools.staticdir.dir': '',
-            },
-        '/compair': {
-            'tools.staticdir.on': True,
-            'tools.staticdir.dir': '',
-            },
-        '/list-view': {
-            'tools.staticdir.on': True,
-            'tools.staticdir.dir':  '',
-            },
-        '/grid-view': {
-            'tools.staticdir.on': True,
-            'tools.staticdir.dir': '',
-            },
-        '/three-col': {
-            'tools.staticdir.on': True,
-            'tools.staticdir.dir': '',
-        },
-        '/four-col': {
-            'tools.staticdir.on': True,
-            'tools.staticdir.dir': '',
-        },
-        '/general': {
-            'tools.staticdir.on': True,
-            'tools.staticdir.dir': '',
-        },
-        '/register': {
-            'tools.staticdir.on': True,
-            'tools.staticdir.dir': '',
-        },
-        '/product-details': {
-            'tools.staticdir.on': True,
-            'tools.staticdir.dir': '',
-        },
-        '/products': {
-            'tools.staticdir.on': True,
-            'tools.staticdir.dir': '',
-        },
+            'tools.staticdir.dir': './assets' },
 
-        # '/assets': {
-        #     'tools.staticdir.on': True,
-        #     'tools.staticdir.dir': './assets'
-        # },
-
-        '/img': {
+        '/css': {
             'tools.staticdir.on': True,
-            'tools.staticdir.dir': './assets/img'
-        },
+            'tools.staticdir.dir': './assets/css'},
 
         #
-        # '/contact': {
+        # '/img': {
         #     'tools.staticdir.on': True,
-        #     'tools.staticdir.dir': '../assets'
+        #     'tools.staticdir.dir': './assets/img'
+        # },
+
+
     # },
 
     # '/js': {

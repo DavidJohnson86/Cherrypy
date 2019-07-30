@@ -73,10 +73,11 @@ class GeneralPage(WebService):
 
 class ListViewPage(WebService):
 
+    products = [i for i in products][0]
 
     @cherrypy.expose
     def index(self):
-        return self._html_file.render()
+        return self._html_file.render(products=products)
 
 
 class HeaderPage:
@@ -107,10 +108,12 @@ class ThreeColPage(WebService):
 
 
 @cherrypy.popargs('product')
-class ProductDetailsPage:
+class ProductDetailsPage(WebService):
+
     @cherrypy.expose
     def index(self, product):
-        return open(r'views\product-details.html')
+        choosen_product = [i for i in products if i['path'].split('/')[-1] == product ][0]
+        return self._html_file.render(product=choosen_product)
 
 
 class RegisterPage(WebService):
@@ -137,7 +140,7 @@ if __name__ == '__main__':
     WEBAPP.general = GeneralPage('general.html')
     WEBAPP.header = HeaderPage()
     WEBAPP.login = LoginPage()
-    WEBAPP.product_details = ProductDetailsPage()
+    WEBAPP.product_details = ProductDetailsPage('product-details.html')
     WEBAPP.products = ProductsPage('products.html')
     WEBAPP.register = RegisterPage('register.html')
     cherrypy.quickstart(WEBAPP, '/', config.cherrpy_run_conf)
